@@ -5743,7 +5743,7 @@ figcaption {
 }
 .cookies__checkbox.checked {
   background-color: #1c1c1c;
-  background-image: url("https://assets.website-files.com/5efb5554479f7f8c1f36d3a4/5f871618cee6a4026e30f441_tws-icon-check.svg");
+  background-image: url("../img/5f871618cee6a4026e30f441_tws-icon-check.svg");
   background-position: 50% 50%;
   background-size: 11px;
   background-repeat: no-repeat;
@@ -7776,43 +7776,5 @@ figcaption {
     justify-content: flex-start;
   }
 }
-@font-face {
-  font-family: "Gordita";
-  src: url("https://assets.website-files.com/5efb5554479f7f8c1f36d3a4/5efc9025cd669cc82a5bc376_hinted-Gordita-Medium.otf")
-    format("opentype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: auto;
-}
-@font-face {
-  font-family: "Gordita";
-  src: url("https://assets.website-files.com/5efb5554479f7f8c1f36d3a4/5efc90258b01498577808681_hinted-Gordita-Regular.otf")
-    format("opentype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: auto;
-}
-@font-face {
-  font-family: "Gordita";
-  src: url("https://assets.website-files.com/5efb5554479f7f8c1f36d3a4/5efc9025b38d5e21a77091ac_Gordita-Black.otf")
-    format("opentype");
-  font-weight: 900;
-  font-style: normal;
-  font-display: auto;
-}
-@font-face {
-  font-family: "Gordita";
-  src: url("https://assets.website-files.com/5efb5554479f7f8c1f36d3a4/5efc90250639076af89cfe94_Gordita%20Thin.otf")
-    format("opentype");
-  font-weight: 100;
-  font-style: normal;
-  font-display: auto;
-}
-@font-face {
-  font-family: "Gordita";
-  src: url("https://assets.website-files.com/5efb5554479f7f8c1f36d3a4/5efc9025d136a81a776f94ec_GorditaLight.otf")
-    format("opentype");
-  font-weight: 300;
-  font-style: normal;
-  font-display: auto;
-}
+
+@import url('http://fonts.cdnfonts.com/css/gordita');

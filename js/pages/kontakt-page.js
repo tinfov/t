@@ -250,7 +250,7 @@ function initMap() {
   var myLatLng = {lat: 47.360521, lng: 8.550595};
 
   var image = {
-    url: 'https://uploads-ssl.webflow.com/5efb5554479f7f8c1f36d3a4/5f3182b24ad8dd68fcfe3de5_aebi-icons-map-marker.svg',
+    url: '/img/5f3182b24ad8dd68fcfe3de5_aebi-icons-map-marker.svg',
     // This marker is 20 pixels wide by 32 pixels high.
     scaledSize: new google.maps.Size(60, 60), // scaled size
     // The origin for this image is (0, 0).

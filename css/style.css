@@ -130,13 +130,13 @@
 	background-color: rgba(255, 255, 255, 1)
 }
 .w-lightbox-right {
-	background-image: url("https://uploads-ssl.webflow.com/5efb5554479f7f8c1f36d3a4/5f199543caaa8415ae9807f6_right-arrow.svg")
+	background-image: url("../img/5f199543caaa8415ae9807f6_right-arrow.svg")
 }
 .w-lightbox-left {
-	background-image: url("https://uploads-ssl.webflow.com/5efb5554479f7f8c1f36d3a4/5f19951f85124cb1b3e03d0d_left-arrow.svg")
+	background-image: url("../img/5f19951f85124cb1b3e03d0d_left-arrow.svg")
 }
 .w-lightbox-close {
-	background-image: url("https://uploads-ssl.webflow.com/5efb5554479f7f8c1f36d3a4/5f30400f6730a47d7491a5b4_aebi-icons-close.svg")
+	background-image: url("../img/5f30400f6730a47d7491a5b4_aebi-icons-close.svg")
 }
 .cms-p__gallery__lightbox.active img {
 	transform: scale3d(1, 1, 1) !important
