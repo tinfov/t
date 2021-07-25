@@ -247,7 +247,7 @@ var mapStyle = [
 ]
 
 function initMap() {
-  var myLatLng = {lat: 47.360521, lng: 8.550595};
+  var myLatLng = {lat: 9.8579599, lng: 105.6269519};
 
   var image = {
     url: '/img/5f3182b24ad8dd68fcfe3de5_aebi-icons-map-marker.svg',
@@ -276,3 +276,4 @@ function initMap() {
 }
 
 initMap()
+
