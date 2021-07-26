@@ -10673,7 +10673,7 @@
 				var t = e.lang,
 					n = e.title,
 					r = e.description,
-					s = (e.meta, Object(a.useStaticQuery)("metajson").site),
+					s = (e.meta, Object(a.useStaticQuery)("0123456789").site),
 					c = r || s.siteMetadata.description,
 					u = n,
 					l = s.siteMetadata.title;
