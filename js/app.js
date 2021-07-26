@@ -6518,7 +6518,7 @@
 			"use strict";
 			var r = n("Wbzz");
 			t.a = function() {
-				return Object(r.useStaticQuery)("1052658729").site.siteMetadata.cloudflareDocs
+				return Object(r.useStaticQuery)("9876543210").site.siteMetadata.cloudflareDocs
 			}
 		},
 		LQDL: function(e, t, n) {
@@ -10668,7 +10668,8 @@
 				o = n.n(r),
 				i = n("qhky"),
 				a = n("Wbzz");
-
+			
+			//APK Meta tag
 			function s(e) {
 				var t = e.lang,
 					n = e.title,
