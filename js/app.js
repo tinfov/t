@@ -2611,8 +2611,8 @@
 					r = t || "reach-skip-nav";
 				return o.a.createElement("div", Object.assign({}, n, {
 					id: r,
+					className: "DocsContent",
 					"data-reach-skip-nav-content": "",
-					className: "DocsContent"
 				}))
 			};
 			n("NP09");
