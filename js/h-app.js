@@ -4722,7 +4722,7 @@
 		"YLt+": function(t) {
 			t.exports = JSON.parse("[]")
 		},
-		YVoz: function(t, e, n) {
+		6qGY: function(t, e, n) {
 			"use strict";
 			t.exports = Object.assign
 		},
@@ -7540,7 +7540,7 @@
 					N = n.n(j),
 					L = n("q1tI"),
 					l = n.n(L),
-					g = n("YVoz"),
+					g = n("6qGY"),
 					y = n.n(g),
 					T = "bodyAttributes",
 					I = "htmlAttributes",
