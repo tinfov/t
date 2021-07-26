@@ -8963,7 +8963,7 @@
 				},
 				T = function(e) {
 					var t;
-					return "/search/page-data/" + ("/" === e ? "index" : t = (t = "/" === (t = e)[0] ? t.slice(1) : t).endsWith("/") ? t.slice(0, -1) : t) + "/page-data.json"
+					return "/search/label/page-data/" + ("/" === e ? "index" : t = (t = "/" === (t = e)[0] ? t.slice(1) : t).endsWith("/") ? t.slice(0, -1) : t) + "/page-data.json"
 				};
 
 			function j(e, t) {
@@ -9079,7 +9079,7 @@
 											jsonPayload: n
 										}
 									}
-									return t.memoizedGet("/search/static/d/" + e + ".json").then((function(t) {
+									return t.memoizedGet("/search/label/static/d/" + e + ".json").then((function(t) {
 										var n = JSON.parse(t.responseText);
 										return {
 											staticQueryHash: e,
@@ -9151,7 +9151,7 @@
 						return n && !0 === n.notFound
 					}, t.loadAppData = function(e) {
 						var t = this;
-						return void 0 === e && (e = 0), this.memoizedGet("/search/page-data/app-data.json").then((function(n) {
+						return void 0 === e && (e = 0), this.memoizedGet("/search/label/page-data/app-data.json").then((function(n) {
 							var r, o = n.status,
 								i = n.responseText;
 							if (200 !== o && e < 3) return t.loadAppData(e + 1);
