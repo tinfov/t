@@ -20,6 +20,85 @@
 				}
 			}, {
 				"node": {
+            "fields": {
+              "slug": "/framework-guides/deploy-a-zola-site"
+            },
+            "frontmatter": {
+              "title": "",
+              "updated": null,
+              "difficulty": null
+            },
+            "headings": [
+              {
+                "value": "Deploy a Zola site"
+              }
+            ],
+            "wordCount": {
+              "words": 489
+            }
+          }
+        },
+        {
+          "node": {
+            "fields": {
+              "slug": "/framework-guides/deploy-an-angular-application"
+            },
+            "frontmatter": {
+              "title": "",
+              "updated": null,
+              "difficulty": null
+            },
+            "headings": [
+              {
+                "value": "Deploy an Angular application"
+              }
+            ],
+            "wordCount": {
+              "words": 543
+            }
+          }
+        },
+        {
+          "node": {
+            "fields": {
+              "slug": "/framework-guides/deploy-anything"
+            },
+            "frontmatter": {
+              "title": "",
+              "updated": null,
+              "difficulty": null
+            },
+            "headings": [
+              {
+                "value": "Deploying your site"
+              }
+            ],
+            "wordCount": {
+              "words": 267
+            }
+          }
+        },
+        {
+          "node": {
+            "fields": {
+              "slug": "/framework-guides/elderjs"
+            },
+            "frontmatter": {
+              "title": "",
+              "updated": null,
+              "difficulty": null
+            },
+            "headings": [
+              {
+                "value": "Deploy an Elder.js site"
+              }
+            ],
+            "wordCount": {
+              "words": 337
+            }
+          }
+        },
+        {"node": {
 					"fields": {
 						"slug": "/tutorials/build-an-api-with-workers"
 					},
