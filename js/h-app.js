@@ -1,4 +1,3 @@
-/*! For license information please see app-ae812a1be150dd300a86.js.LICENSE.txt */
 (window.webpackJsonp = window.webpackJsonp || []).push([
 	[2], {
 		"+2A6": function(t, e) {
