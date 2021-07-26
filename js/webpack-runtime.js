@@ -106,7 +106,7 @@
 		return u.d(r, "a", r), r
 	}, u.o = function(e, r) {
 		return Object.prototype.hasOwnProperty.call(e, r)
-	}, u.p = "/pages/", u.oe = function(e) {
+	}, u.p = "/search/", u.oe = function(e) {
 		throw console.error(e), e
 	};
 	var c = window.webpackJsonp = window.webpackJsonp || [],

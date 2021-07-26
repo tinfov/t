@@ -28,10 +28,10 @@
 				return "" + ((null == o ? void 0 : o.endsWith("/")) ? o.slice(0, -1) : o) + (e.startsWith("/") ? e : "/" + e)
 			}
 			var m = function() {
-					return "/pages"
+					return "/search"
 				},
 				v = function() {
-					return "/pages"
+					return "/search"
 				},
 				g = function(e) {
 					return e && !e.startsWith("http://") && !e.startsWith("https://") && !e.startsWith("//")
@@ -7414,6 +7414,7 @@
 				s = n.n(a),
 				c = function(e) {
 					var t = e.path,
+						//APK Fillter list of child limks
 						n = Object(i.useStaticQuery)("3477848867"),
 						r = new RegExp("^/" + t + "/.+"),
 						a = n.allMdx.edges.map((function(e) {
@@ -7784,11 +7785,11 @@
 									location: o,
 									shouldUpdateScroll: k
 								}, a.a.createElement(u.Router, {
-									basepath: "/pages",
+									basepath: "/search",
 									location: o,
 									id: "gatsby-focus-wrapper"
 								}, a.a.createElement(e, Object.assign({
-									path: "/404.html" === r.page.path ? Object(_.a)(o.pathname, "/pages") : encodeURI(r.page.matchPath || r.page.path)
+									path: "/404.html" === r.page.path ? Object(_.a)(o.pathname, "/search") : encodeURI(r.page.matchPath || r.page.path)
 								}, n.props, {
 									location: o,
 									pageResources: r
@@ -7799,7 +7800,7 @@
 					f = window,
 					m = f.pagePath,
 					v = f.location;
-				m && "/pages" + m !== v.pathname && !(H.findMatchPath(Object(_.a)(v.pathname, "/pages")) || "/404.html" === m || m.match(/^\/404\/?$/) || m.match(/^\/offline-plugin-app-shell-fallback\/?$/)) && Object(u.navigate)("/pages" + m + v.search + v.hash, {
+				m && "/search" + m !== v.pathname && !(H.findMatchPath(Object(_.a)(v.pathname, "/search")) || "/404.html" === m || m.match(/^\/404\/?$/) || m.match(/^\/offline-plugin-app-shell-fallback\/?$/)) && Object(u.navigate)("/search" + m + v.search + v.hash, {
 					replace: !0
 				}), h.publicLoader.loadPage(v.pathname).then((function(e) {
 					if (!e || e.status === h.PageResourceStatus.Error) throw new Error("page resources for " + v.pathname + " not found. Not rendering React");
@@ -8905,7 +8906,7 @@
 				v = [],
 				g = function(e) {
 					var t = decodeURIComponent(e);
-					return Object(f.a)(t, "/pages").split("#")[0].split("?")[0]
+					return Object(f.a)(t, "/search").split("#")[0].split("?")[0]
 				};
 
 			function y(e) {
@@ -8962,7 +8963,7 @@
 				},
 				T = function(e) {
 					var t;
-					return "/pages/page-data/" + ("/" === e ? "index" : t = (t = "/" === (t = e)[0] ? t.slice(1) : t).endsWith("/") ? t.slice(0, -1) : t) + "/page-data.json"
+					return "/search/page-data/" + ("/" === e ? "index" : t = (t = "/" === (t = e)[0] ? t.slice(1) : t).endsWith("/") ? t.slice(0, -1) : t) + "/page-data.json"
 				};
 
 			function j(e, t) {
@@ -9078,7 +9079,7 @@
 											jsonPayload: n
 										}
 									}
-									return t.memoizedGet("/pages/static/d/" + e + ".json").then((function(t) {
+									return t.memoizedGet("/search/static/d/" + e + ".json").then((function(t) {
 										var n = JSON.parse(t.responseText);
 										return {
 											staticQueryHash: e,
@@ -9150,7 +9151,7 @@
 						return n && !0 === n.notFound
 					}, t.loadAppData = function(e) {
 						var t = this;
-						return void 0 === e && (e = 0), this.memoizedGet("/pages/page-data/app-data.json").then((function(n) {
+						return void 0 === e && (e = 0), this.memoizedGet("/search/page-data/app-data.json").then((function(n) {
 							var r, o = n.status,
 								i = n.responseText;
 							if (200 !== o && e < 3) return t.loadAppData(e + 1);
@@ -9165,7 +9166,7 @@
 				}(),
 				R = function(e) {
 					return (window.___chunkMapping[e] || []).map((function(e) {
-						return "/pages" + e
+						return "/search" + e
 					}))
 				},
 				M = function(e) {
