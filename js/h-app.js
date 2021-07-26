@@ -4722,7 +4722,7 @@
 		"YLt+": function(t) {
 			t.exports = JSON.parse("[]")
 		},
-		6qGY: function(t, e, n) {
+		"6qGY": function(t, e, n) {
 			"use strict";
 			t.exports = Object.assign
 		},
