@@ -9,13 +9,13 @@
 					"contentRepo": "cloudflare/cloudflare-docs",
 					"contentRepoFolder": "products/pages",
 					"externalLinks": [{
-						"title": "Pages home",
+						"title": "Pages home / 9876543210.json",
 						"url": "https://pages.cloudflare.com"
 					}, {
-						"title": "Announcement blog post",
+						"title": "Announcement blog post / 9876543210.json",
 						"url": "https://blog.cloudflare.com/cloudflare-pages"
 					}, {
-						"title": "First look at Cloudflare Pages (video)",
+						"title": "First look at Cloudflare Pages (video) / 9876543210.json",
 						"url": "https://www.youtube.com/watch?v=IeHC4NwkEfc"
 					}],
 					"search": {
