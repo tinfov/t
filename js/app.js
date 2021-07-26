@@ -27,11 +27,12 @@
 				var o = null !== (n = null !== (r = t) && void 0 !== r ? r : m()) && void 0 !== n ? n : "/";
 				return "" + ((null == o ? void 0 : o.endsWith("/")) ? o.slice(0, -1) : o) + (e.startsWith("/") ? e : "/" + e)
 			}
+			//APK
 			var m = function() {
-					return "/search"
+					return "/search/label"
 				},
 				v = function() {
-					return "/search"
+					return "/search/label"
 				},
 				g = function(e) {
 					return e && !e.startsWith("http://") && !e.startsWith("https://") && !e.startsWith("//")
@@ -7785,11 +7786,12 @@
 									location: o,
 									shouldUpdateScroll: k
 								}, a.a.createElement(u.Router, {
-									basepath: "/search",
+									//APK
+									basepath: "/search/label",
 									location: o,
 									id: "gatsby-focus-wrapper"
 								}, a.a.createElement(e, Object.assign({
-									path: "/404.html" === r.page.path ? Object(_.a)(o.pathname, "/search") : encodeURI(r.page.matchPath || r.page.path)
+									path: "/404.html" === r.page.path ? Object(_.a)(o.pathname, "/search/label") : encodeURI(r.page.matchPath || r.page.path)
 								}, n.props, {
 									location: o,
 									pageResources: r
@@ -7800,7 +7802,7 @@
 					f = window,
 					m = f.pagePath,
 					v = f.location;
-				m && "/search" + m !== v.pathname && !(H.findMatchPath(Object(_.a)(v.pathname, "/search")) || "/404.html" === m || m.match(/^\/404\/?$/) || m.match(/^\/offline-plugin-app-shell-fallback\/?$/)) && Object(u.navigate)("/search" + m + v.search + v.hash, {
+				m && "/search/label" + m !== v.pathname && !(H.findMatchPath(Object(_.a)(v.pathname, "/search/label")) || "/404.html" === m || m.match(/^\/404\/?$/) || m.match(/^\/offline-plugin-app-shell-fallback\/?$/)) && Object(u.navigate)("/search/label" + m + v.search + v.hash, {
 					replace: !0
 				}), h.publicLoader.loadPage(v.pathname).then((function(e) {
 					if (!e || e.status === h.PageResourceStatus.Error) throw new Error("page resources for " + v.pathname + " not found. Not rendering React");
@@ -9166,7 +9168,7 @@
 				}(),
 				R = function(e) {
 					return (window.___chunkMapping[e] || []).map((function(e) {
-						return "/search" + e
+						return "/search/label" + e
 					}))
 				},
 				M = function(e) {
