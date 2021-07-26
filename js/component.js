@@ -630,7 +630,8 @@
 				E = n("A22z"),
 				A = n("AXUl"),
 				k = function(e) {
-					var t = Object(o.useStaticQuery)("811020565").allMdx.edges.map((function(e) {
+					//APK component js MENU LEFT SIDEBAR
+					var t = Object(o.useStaticQuery)("1357902468").allMdx.edges.map((function(e) {
 						return e.node
 					})).filter((function(e) {
 						return !e.frontmatter.hidden
