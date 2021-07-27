@@ -1,6 +1,6 @@
 {
   "componentChunkName": "component-mdx.js",
-  "path": "/edge-certificates/universal-ssl/enable-universal-ssl",
+  "path": "/edge-certificates-mirror/universal-ssl/enable-universal-ssl",
   "result": {
     "data": {
       "mdx": {
@@ -20,7 +20,7 @@
     "pageContext": {
       "id": "191354ce-2bd5-55b1-b91b-a3f78f6dfd7d",
       "fields": {
-        "slug": "/edge-certificates/universal-ssl/enable-universal-ssl"
+        "slug": "/edge-certificates-mirror/universal-ssl/enable-universal-ssl"
       },
       "frontmatter": {
         "title": "",
@@ -56,7 +56,7 @@
       },
       "parent": {
         "modifiedTime": "2021-07-26",
-        "relativePath": "edge-certificates/universal-ssl/enable-universal-ssl.md"
+        "relativePath": "edge-certificates-mirror/universal-ssl/enable-universal-ssl.md"
       }
     }
   },

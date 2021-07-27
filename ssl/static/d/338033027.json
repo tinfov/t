@@ -1084,7 +1084,7 @@
           "node": {
             "id": "191354ce-2bd5-55b1-b91b-a3f78f6dfd7d",
             "fields": {
-              "slug": "/edge-certificates/universal-ssl/enable-universal-ssl"
+              "slug": "/edge-certificates-mirror/universal-ssl/enable-universal-ssl"
             },
             "frontmatter": {
               "title": "",
