@@ -631,7 +631,10 @@
 				E = n("A22z"),
 				A = n("AXUl"),
 				k = function(e) {
-					var t = Object(o.useStaticQuery)("811020565").allMdx.edges.map((function(e) {
+					
+					
+					//APK //811020565
+					var t = Object(o.useStaticQuery)("123456789").allMdx.edges.map((function(e) {
 						return e.node
 					})).filter((function(e) {
 						return !e.frontmatter.hidden
@@ -8033,7 +8036,9 @@
 					}))))
 				},
 				L = function(e) {
-					var t = Object(T.useStaticQuery)("2814688963").allMdx.edges.map((function(e) {
+					
+					//APK //2814688963
+					var t = Object(T.useStaticQuery)("123456789").allMdx.edges.map((function(e) {
 							return e.node
 						})),
 						n = e.className,
@@ -9310,8 +9315,8 @@
 						
 						
 						
-						//APK MENU.JSON
-					}(Object(T.useStaticQuery)("338033027").allMdx.edges.map((function(e) {
+						//APK MENU.JSON // 338033027
+					}(Object(T.useStaticQuery)("123456789").allMdx.edges.map((function(e) {
 						return e.node
 					})).filter((function(e) {
 						return !e.frontmatter.hidden
