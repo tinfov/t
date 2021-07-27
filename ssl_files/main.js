@@ -5433,10 +5433,17 @@
 				return "" + ((null == o ? void 0 : o.endsWith("/")) ? o.slice(0, -1) : o) + (e.startsWith("/") ? e : "/" + e)
 			}
 			var m = function() {
-					return "/ssl"
+					//APK
+					//return "/ssl"
+					
+					
+					return ""
 				},
 				v = function() {
-					return "/ssl"
+					//APK
+					//return "/ssl"
+					
+					return ""
 				},
 				g = function(e) {
 					return e && !e.startsWith("http://") && !e.startsWith("https://") && !e.startsWith("//")
