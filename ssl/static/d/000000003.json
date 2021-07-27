@@ -15,8 +15,8 @@
             }
           ],
           "search": {
-            "indexName": "developers-cloudflare",
-            "apiKey": "b23088ab4d346409f9d3ece6606344c3",
+            "indexName": "anphukhang",
+            "apiKey": "acb393bd2e9487cadf3202e5be4272e3",
             "algoliaOptions": {
               "facetFilters": "[\"project:ssl\"]"
             }
