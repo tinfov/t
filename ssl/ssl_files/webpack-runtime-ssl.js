@@ -45,12 +45,12 @@
 				c.charset = "utf-8", c.timeout = 120, u.nc && c.setAttribute("nonce", u.nc), c.src = function(e) {
 					return u.p + "" + ({
 						1: "9f96d65d",
-						3: "component-mdx.js"
-						//4: "component-err.js"
+						3: "component-mdx.js",
+						4: "component-err.js"
 					} [e] || e) + "-" + {
 						1: "522a389a12a4d4ef380c",
-						3: "2bbafd25c6fe2b49adea"
-						//4: "d2651ad1c53b3a7294c6"
+						3: "2bbafd25c6fe2b49adea",
+						4: "404"
 					} [e] + ".js"
 				}(e);
 				var i = new Error;
