@@ -11822,6 +11822,9 @@
 			"use strict";
 			var r = n("Wbzz");
 			t.a = function() {
+				
+				
+				//APK CLOUDFLAREDOCS.JSON
 				return Object(r.useStaticQuery)("1052658729").site.siteMetadata.cloudflareDocs
 			}
 		},
@@ -15871,6 +15874,9 @@
 				var t = e.lang,
 					n = e.title,
 					r = e.description,
+					
+					
+					//APK META.JSON
 					s = (e.meta, Object(a.useStaticQuery)("32046230").site),
 					c = r || s.siteMetadata.description,
 					u = n,
