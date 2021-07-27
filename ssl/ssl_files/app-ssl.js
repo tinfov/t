@@ -7764,10 +7764,10 @@
 		},
 		XyBk: function(e, t, n) {
 			t.components = {
-				"component---src-components-mdx-custom-renderer-js": function() {
+				"component-mdx.js": function() {
 					return Promise.all([n.e(1), n.e(3)]).then(n.bind(null, "84QV"))
 				},
-				"component---src-pages-404-js": function() {
+				"component-err.js": function() {
 					return n.e(4).then(n.bind(null, "w2l6"))
 				}
 			}
