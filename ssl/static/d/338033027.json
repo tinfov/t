@@ -188,7 +188,7 @@
               "title": "",
               "type": null,
               "order": 2,
-              "hidden": null,
+              "hidden": true,
               "hideChildren": null,
               "breadcrumbs": null
             },
