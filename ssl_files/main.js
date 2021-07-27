@@ -12990,11 +12990,18 @@
 									location: o,
 									shouldUpdateScroll: k
 								}, a.a.createElement(u.Router, {
-									basepath: "/ssl",
+									
+									//APK
+									//basepath: "/ssl",
+									
+									basepath: "",
 									location: o,
 									id: "gatsby-focus-wrapper"
 								}, a.a.createElement(e, Object.assign({
-									path: "/404.html" === r.page.path ? Object(N.a)(o.pathname, "/ssl") : encodeURI(r.page.matchPath || r.page.path)
+									
+									//APK
+									// path: "/404.html" === r.page.path ? Object(N.a)(o.pathname, "/ssl") : encodeURI(r.page.matchPath || r.page.path)
+									path: "/404.html" === r.page.path ? Object(N.a)(o.pathname, "") : encodeURI(r.page.matchPath || r.page.path)
 								}, n.props, {
 									location: o,
 									pageResources: r
@@ -13005,7 +13012,12 @@
 					f = window,
 					m = f.pagePath,
 					v = f.location;
-				m && "/ssl" + m !== v.pathname && !(H.findMatchPath(Object(N.a)(v.pathname, "/ssl")) || "/404.html" === m || m.match(/^\/404\/?$/) || m.match(/^\/offline-plugin-app-shell-fallback\/?$/)) && Object(u.navigate)("/ssl" + m + v.search + v.hash, {
+					
+				//APK
+				// m && "/ssl" + m !== v.pathname && !(H.findMatchPath(Object(N.a)(v.pathname, "/ssl")) || "/404.html" === m || m.match(/^\/404\/?$/) || m.match(/^\/offline-plugin-app-shell-fallback\/?$/)) && Object(u.navigate)("/ssl" + m + v.search + v.hash, {
+					
+					
+				m && "" + m !== v.pathname && !(H.findMatchPath(Object(N.a)(v.pathname, "")) || "/404.html" === m || m.match(/^\/404\/?$/) || m.match(/^\/offline-plugin-app-shell-fallback\/?$/)) && Object(u.navigate)("" + m + v.search + v.hash, {
 					replace: !0
 				}), h.publicLoader.loadPage(v.pathname).then((function(e) {
 					if (!e || e.status === h.PageResourceStatus.Error) throw new Error("page resources for " + v.pathname + " not found. Not rendering React");
@@ -14111,7 +14123,11 @@
 				v = [],
 				g = function(e) {
 					var t = decodeURIComponent(e);
-					return Object(f.a)(t, "/ssl").split("#")[0].split("?")[0]
+					
+					//APK
+					//return Object(f.a)(t, "/ssl").split("#")[0].split("?")[0]
+					
+					return Object(f.a)(t, "").split("#")[0].split("?")[0]
 				};
 
 			function y(e) {
@@ -14168,7 +14184,11 @@
 				},
 				T = function(e) {
 					var t;
-					return "/ssl/page-data/" + ("/" === e ? "index" : t = (t = "/" === (t = e)[0] ? t.slice(1) : t).endsWith("/") ? t.slice(0, -1) : t) + "/page-data.json"
+					
+					//APK
+					//return "/ssl/page-data/" + ("/" === e ? "index" : t = (t = "/" === (t = e)[0] ? t.slice(1) : t).endsWith("/") ? t.slice(0, -1) : t) + "/page-data.json"
+					
+					return "/page-data/" + ("/" === e ? "index" : t = (t = "/" === (t = e)[0] ? t.slice(1) : t).endsWith("/") ? t.slice(0, -1) : t) + "/page-data.json"
 				};
 
 			function j(e, t) {
@@ -14284,7 +14304,10 @@
 											jsonPayload: n
 										}
 									}
-									return t.memoizedGet("/ssl/static/d/" + e + ".json").then((function(t) {
+									//APK
+									//return t.memoizedGet("/ssl/static/d/" + e + ".json").then((function(t) {
+										
+									return t.memoizedGet("/static/d/" + e + ".json").then((function(t) {
 										var n = JSON.parse(t.responseText);
 										return {
 											staticQueryHash: e,
@@ -14356,7 +14379,11 @@
 						return n && !0 === n.notFound
 					}, t.loadAppData = function(e) {
 						var t = this;
-						return void 0 === e && (e = 0), this.memoizedGet("/ssl/page-data/app-data.json").then((function(n) {
+						
+						//APK
+						//return void 0 === e && (e = 0), this.memoizedGet("/ssl/page-data/app-data.json").then((function(n) {
+							
+						return void 0 === e && (e = 0), this.memoizedGet("/page-data/app-data.json").then((function(n) {
 							var r, o = n.status,
 								i = n.responseText;
 							if (200 !== o && e < 3) return t.loadAppData(e + 1);
@@ -14371,7 +14398,11 @@
 				}(),
 				M = function(e) {
 					return (window.___chunkMapping[e] || []).map((function(e) {
-						return "/ssl" + e
+						
+						//APK
+						//return "/ssl" + e
+						
+						return "" + e
 					}))
 				},
 				D = function(e) {
@@ -17048,7 +17079,11 @@
 		return u.d(r, "a", r), r
 	}, u.o = function(e, r) {
 		return Object.prototype.hasOwnProperty.call(e, r)
-	}, u.p = "/ssl/", u.oe = function(e) {
+		
+	//APK	
+	//}, u.p = "/ssl/", u.oe = function(e) {
+		
+	}, u.p = "/", u.oe = function(e) {
 		throw console.error(e), e
 	};
 	var c = window.webpackJsonp = window.webpackJsonp || [],
