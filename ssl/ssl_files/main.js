@@ -634,7 +634,7 @@
 					
 					
 					//APK //811020565 // createElement menu 
-					var t = Object(o.useStaticQuery)("123456789").allMdx.edges.map((function(e) {
+					var t = Object(o.useStaticQuery)("811020565").allMdx.edges.map((function(e) {
 						return e.node
 					})).filter((function(e) {
 						return !e.frontmatter.hidden
@@ -8038,7 +8038,7 @@
 				L = function(e) {
 					
 					//APK //2814688963
-					var t = Object(T.useStaticQuery)("123456789").allMdx.edges.map((function(e) {
+					var t = Object(T.useStaticQuery)("2814688963").allMdx.edges.map((function(e) {
 							return e.node
 						})),
 						n = e.className,
