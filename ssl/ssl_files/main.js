@@ -633,13 +633,13 @@
 				k = function(e) {
 					
 					
-					//APK //811020565 // createElement menu 
-					var t = Object(o.useStaticQuery)("811020565").allMdx.edges.map((function(e) {
+					//APK //113355779 // createElement sub list
+					var t = Object(o.useStaticQuery)("113355779").allMdx.edges.map((function(e) {
 						return e.node
 					})).filter((function(e) {
 						return !e.frontmatter.hidden
 					})).filter((function(t) {
-						return Object(w.a)(t.fields.slug) === e.path
+						return Object(w.a)(t.fields.slug) === e.path // Liet ke theo parent
 					})).map((function(e) {
 						return {
 							title: "0565" + Object(E.a)(e),
@@ -8037,8 +8037,8 @@
 				},
 				L = function(e) {
 					
-					//APK //2814688963 // Rut gon con 1 phan tu
-					var t = Object(T.useStaticQuery)("2814688963").allMdx.edges.map((function(e) {
+					//APK //000000001 // Rut gon con 1 phan tu
+					var t = Object(T.useStaticQuery)("000000001").allMdx.edges.map((function(e) {
 							return e.node
 						})),
 						n = e.className,
@@ -11830,7 +11830,7 @@
 				
 				
 				//APK CLOUDFLAREDOCS.JSON
-				return Object(r.useStaticQuery)("1052658729").site.siteMetadata.cloudflareDocs
+				return Object(r.useStaticQuery)("000000003").site.siteMetadata.cloudflareDocs
 			}
 		},
 		LQDL: function(e, t, n) {
@@ -15882,7 +15882,7 @@
 					
 					
 					//APK META.JSON
-					s = (e.meta, Object(a.useStaticQuery)("32046230").site),
+					s = (e.meta, Object(a.useStaticQuery)("000000002").site),
 					c = r || s.siteMetadata.description,
 					u = n,
 					l = s.siteMetadata.title;
