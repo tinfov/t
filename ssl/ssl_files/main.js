@@ -8037,7 +8037,7 @@
 				},
 				L = function(e) {
 					
-					//APK //2814688963
+					//APK //2814688963 // Rut gon con 1 phan tu
 					var t = Object(T.useStaticQuery)("2814688963").allMdx.edges.map((function(e) {
 							return e.node
 						})),

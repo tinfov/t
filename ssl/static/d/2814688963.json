@@ -23,50 +23,6 @@
               }
             ]
           }
-        },
-        {
-          "node": {
-            "id": "b6aca9c8-fc93-58e3-9fed-93b44e0b2b73",
-            "fields": {
-              "slug": "/edge-certificates/advanced-certificate-manager"
-            },
-            "frontmatter": {
-              "title": "",
-              "type": "overview",
-              "order": 1,
-              "hidden": null,
-              "hideChildren": null,
-              "breadcrumbs": null
-            },
-            "headings": [
-              {
-                "value": "Advanced Certificate Manager",
-                "depth": 1
-              }
-            ]
-          }
-        },
-        {
-          "node": {
-            "id": "69dd61bf-f461-58fc-b2b9-d061deae4893",
-            "fields": {
-              "slug": "/ssl-for-saas/status-codes"
-            },
-            "frontmatter": {
-              "title": "",
-              "type": null,
-              "order": 1,
-              "hidden": null,
-              "hideChildren": null,
-              "breadcrumbs": null
-            },
-            "headings": [
-              {
-                "value": "Status codes",
-                "depth": 1
-              }
-            ]
-          }
         }
       ]
     }
