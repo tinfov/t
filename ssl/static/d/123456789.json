@@ -34,7 +34,7 @@
               "title": "",
               "type": null,
               "order": 3,
-              "hidden": true,
+              "hidden": null,
               "hideChildren": null,
               "breadcrumbs": null
             },
@@ -50,13 +50,13 @@
           "node": {
             "id": "9cbb6245-3ad8-59d1-be0b-cf5a8b077406",
             "fields": {
-              "slug": "/client-certificates/create-a-client-certificate-del"
+              "slug": "/client-certificates-add/create-a-client-certificate-del"
             },
             "frontmatter": {
               "title": "",
               "type": null,
               "order": 2,
-              "hidden": true,
+              "hidden": null,
               "hideChildren": null,
               "breadcrumbs": null
             },
@@ -122,7 +122,7 @@
               "title": "",
               "type": null,
               "order": 5,
-              "hidden": true,
+              "hidden": null,
               "hideChildren": null,
               "breadcrumbs": null
             },
@@ -188,7 +188,7 @@
               "title": "",
               "type": null,
               "order": 2,
-              "hidden": true,
+              "hidden": null,
               "hideChildren": null,
               "breadcrumbs": null
             },
