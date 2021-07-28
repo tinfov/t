@@ -829,6 +829,8 @@
 			e.exports = function(e, t, n) {
 				if (null == t && null == n) switch (r(e)) {
 					case "object":
+						//APK data - feed
+						//t = e.data, n = {};
 						t = e.data, n = {};
 						break;
 					case "string":
@@ -13298,7 +13300,7 @@
 					//if(ee==="/feeds/posts/summary/?max-results=0&alt=json") e = "000000012";
 					
 					if (isNaN(Number(e))) throw new Error("useStaticQuery was called with a string but expects to be called using `graphql`. Try this:\n\nimport { useStaticQuery, graphql } from 'gatsby';\n\nuseStaticQuery(graphql`" + e + "`);\n");
-					if (null != n && null !== (t = n[e]) && void 0 !== t && t.data) return n[e].data;
+					//if (null != n && null !== (t = n[e]) && void 0 !== t && t.data) return n[e].data;
 					//if (null != n && null !== (t = n[e]) && void 0 !== t && t.feed) return n[e].feed;
 					
 					throw new Error("The result of this StaticQuery could not be fetched.\n\nThis is likely a bug in Gatsby and if refreshing the page does not fix it, please open an issue in https://github.com/gatsbyjs/gatsby/issues")
@@ -14471,6 +14473,9 @@
 										
 										return t.memoizedGet("https://d.t.info.vn/static/d/" + e + ".json").then((function(t) {
 										var n = JSON.parse(t.responseText);
+										
+										console.log(e);
+										
 										return {
 											staticQueryHash: e,
 											jsonPayload: n
