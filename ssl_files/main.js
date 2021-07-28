@@ -553,7 +553,11 @@
 				}
 			})
 		},
-		"84QV": function(e, t, n) {
+		
+		//APK components component-mdx.js
+		//"84QV": function(e, t, n) {
+			
+		"comapkmdx": function(e, t, n) {
 			"use strict";
 			n.r(t);
 			var r = n("rePB"),
@@ -802,6 +806,8 @@
 					})))
 				}
 			});
+			
+			//APK article post body
 			t.default = function(e) {
 				var t = e.data.mdx;
 				return a.a.createElement(s.MDXProvider, {
@@ -13195,13 +13201,23 @@
 				})), o
 			}
 		},
+		
+		//APK components
 		XyBk: function(e, t, n) {
 			t.components = {
 				"component-mdx.js": function() {
-					return Promise.all([n.e(1), n.e(3)]).then(n.bind(null, "84QV"))
+					
+					//APK
+					//return Promise.all([n.e(1), n.e(3)]).then(n.bind(null, "84QV"))
+					
+					return Promise.all([n.e(1), n.e(3)]).then(n.bind(null, "comapkmdx"))
 				},
 				"component-err.js": function() {
-					return n.e(4).then(n.bind(null, "w2l6"))
+					
+					//APK
+					//return n.e(4).then(n.bind(null, "w2l6"))
+					
+					return n.e(4).then(n.bind(null, "comapkerr"))
 				}
 			}
 		},
