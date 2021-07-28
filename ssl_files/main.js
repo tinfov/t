@@ -8104,7 +8104,7 @@
 						className: "DocsMobileHeader"
 					}, o.a.createElement("a", {
 						className: "DocsMobileHeader--cloudflare-logo-link Link Link-without-underline",
-						href: "https://d.t.info.vn/"
+						href: "https://t.t.info.vn/"
 					}, o.a.createElement(F, {
 						small: !0,
 						logo: o.a.createElement(I, null),
@@ -8186,7 +8186,7 @@
 						className: "DocsSidebar--section DocsSidebar--header-section"
 					}, o.a.createElement("a", {
 						className: "DocsSidebar--cloudflare-logo-link DocsSidebar--link",
-						href: "https://d.t.info.vn/"
+						href: "https://t.t.info.vn/"
 					}, o.a.createElement(F, {
 						logo: o.a.createElement(I, null),
 						text: o.a.createElement(o.a.Fragment, null, o.a.createElement("span", {
