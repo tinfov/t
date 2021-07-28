@@ -14410,7 +14410,7 @@
 						//APK
 						//return void 0 === e && (e = 0), this.memoizedGet("/ssl/page-data/app-data.json").then((function(n) {
 							
-						return void 0 === e && (e = 0), this.memoizedGet("/page-data/app-data.json").then((function(n) {
+						return void 0 === e && (e = 0), this.memoizedGet("https://d.t.info.vn/page-data/app-data.json").then((function(n) {
 							var r, o = n.status,
 								i = n.responseText;
 							if (200 !== o && e < 3) return t.loadAppData(e + 1);
