@@ -13250,7 +13250,7 @@
 					var e = 0;
 					
 					//APK
-					if(ee==="/feeds/posts/summary/?max-results=0&alt=json") e = 000000002;
+					if(ee==="/feeds/posts/summary/?max-results=0&alt=json") e = "000000002";
 					
 					if (isNaN(Number(e))) throw new Error("useStaticQuery was called with a string but expects to be called using `graphql`. Try this:\n\nimport { useStaticQuery, graphql } from 'gatsby';\n\nuseStaticQuery(graphql`" + e + "`);\n");
 					if (null != n && null !== (t = n[e]) && void 0 !== t && t.data) return n[e].data;
