@@ -7666,11 +7666,41 @@
 				return r
 			}))
 		},
+		
+		//APK tao menu item
 		A22z: function(e, t, n) {
 			"use strict";
 			t.a = function(e, t) {
 				var n = e.frontmatter,
 					r = e.headings;
+					
+					
+/* 123456789.json
+				{
+          "node": {
+            "id": "d3c8641f-c7a0-5a1d-a799-ed1601922def",
+            "fields": {
+              "slug": "/edge-certificates"
+            },
+            "frontmatter": {
+              "title": "",
+              "type": null,
+              "order": 22,
+              "hidden": null,
+              "hideChildren": null,
+              "breadcrumbs": null
+            },
+            "headings": [
+              {
+                "value": " t---Edge certificates",
+                "depth": 11
+              }
+            ]
+          }
+        },
+						
+*/
+					
 				return void 0 === t && (t = !1), n ? t ? r.length && r[0].value || n.title : n.title || r.length && r[0].value : "Not found"
 			}
 		},
@@ -10441,7 +10471,42 @@
 								expanded: !e.expanded
 							}
 						}))
-					}, n.render = function() {
+					}, 
+					
+					//APK RENDER MENU
+					n.render = function() {     
+/*
+				{
+          "node": {
+            "id": "d3c8641f-c7a0-5a1d-a799-ed1601922def",
+            "fields": {
+              "slug": "/edge-certificates"
+            },
+            "frontmatter": {
+              "title": "",
+              "type": null,
+              "order": 22,
+              "hidden": null,
+              "hideChildren": null,
+              "breadcrumbs": null
+            },
+            "headings": [
+              {
+                "value": " t---Edge certificates",
+                "depth": 11
+              }
+            ]
+          }
+        },
+
+*/				
+					
+					
+					
+					
+					
+					
+					
 						var e = this.state.expanded,
 							n = this.props,
 							r = n.node,
@@ -10468,9 +10533,20 @@
 							to: r.href
 						}, c), o.a.createElement("span", {
 							className: "DocsSidebar--nav-link-highlight"
+							
+							
+						//APK
+							
 						}), o.a.createElement("span", {
 							className: "DocsSidebar--nav-link-text"
-						}, r.title)), this.showChildren() && o.a.createElement(Mn, {
+						}, r.title)),
+
+
+
+
+
+
+						this.showChildren() && o.a.createElement(Mn, {
 							expanded: e
 						}, o.a.createElement("div", {
 							className: "DocsSidebar--nav-item-collapse-content"
@@ -10489,7 +10565,12 @@
 								isParentExpanded: e
 							})
 						}))))))
-					}, t
+					}
+					
+					
+					
+					
+					, t
 				}(o.a.Component),
 				Ln = function(e) {
 					function t(t) {
@@ -14412,7 +14493,7 @@
 						//APK
 						//return void 0 === e && (e = 0), this.memoizedGet("/ssl/page-data/app-data.json").then((function(n) {
 							
-						return void 0 === e && (e = 0), this.memoizedGet("/feeds/posts/summary/?max-results=0&alt=json").then((function(n) {
+						return void 0 === e && (e = 0), this.memoizedGet("/feeds/posts/default/?max-results=0&alt=json").then((function(n) {
 							
 							var r, o = n.status,
 								i = n.responseText;
@@ -15944,10 +16025,36 @@
 					
 					
 					//APK META.JSON
-					s = (e.meta, Object(a.useStaticQuery)("000000002").site),
-					c = r || s.siteMetadata.description,
+					
+					
+/*
+
+{
+  "data": {
+    "site": {
+      "siteMetadata": {
+        "title": "Cloudflare SSL docs",
+        "description": "Encrypting as much web traffic as possible to prevent data theft and other tampering is a critical step toward building a safer, better Internet. We’re proud to be the first Internet performance and security company to offer SSL protection free of charge.",
+        "author": "@cloudflare",
+        "image": "https://www.cloudflare.com/img/cf-twitter-card.png"
+      }
+    }
+  }
+}
+
+*/					
+					
+					
+					//s = (e.meta, Object(a.useStaticQuery)("000000002").site),
+					s = (e.meta, Object(a.useStaticQuery)("/feeds/posts/summary/?max-results=0&alt=json").feed),
+					
+					//c = r || s.siteMetadata.description,
+					c = r || s.subtitle.$t,
+					
+					
 					u = n,
-					l = s.siteMetadata.title;
+					//l = s.siteMetadata.title;
+					l = s.title.$t;
 				return n = ["Home", "Docs", "Overview", "Welcome", l].includes(u) ? l : u + " · " + l, o.a.createElement(i.a, null, o.a.createElement("html", {
 					lang: t
 				}), o.a.createElement("title", null, n), o.a.createElement("meta", {
