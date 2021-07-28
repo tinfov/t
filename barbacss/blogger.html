@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html theme="light" is-docs-page="" js-focus-visible-polyfill-available="" data-react-helmet="lang,is-docs-page" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	
+	
+		
+		<style type="text/css">
+		<!--/*--><![CDATA[/*><!--*/
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Work+Sans:wght@300&display=swap);
 a,
 abbr,
@@ -132,6 +144,7 @@ table {
 
 
 
+
 .home-once {
   opacity: 0;
 }
@@ -242,9 +255,8 @@ table {
 .with-cover-enter-to .content {
   transform: translateY(0);
 }
-
-
-
+	
+	
 
 .btn-back {
   position: fixed;
@@ -349,3 +361,116 @@ header.is-cover {
   font-size: 40px;
   color: #202020;
 }
+
+	
+		/*]]>*/-->
+		</style>
+		
+		
+		<b:skin>
+		</b:skin>
+		
+		<title>(:)</title>
+  
+		
+  </head>
+  <body data-barba="wrapper">
+    
+		<a class="btn-back" data-barba-prevent="" href="/">← All demos</a>
+		
+		<header data-barba="container" class="is-home" data-barba-namespace="home" data-background="#5C85EE">
+		
+			<b:attr cond='data:view.isHomepage' name='data-barba-namespace' value='home'/>
+			<b:attr cond='data:view.isHomepage' name='data-background' value='#5C85EE'/>
+			<b:attr cond='data:view.isHomepage' name='class' value='is-home'/>
+			
+			<b:attr cond='data:view.isPage' name='data-barba-namespace' value='fade'/>
+			<b:attr cond='data:view.isPage' name='data-background' value='#CC98C6'/>
+			<b:attr cond='data:view.isPage' name='class' value='is-fade'/>
+			
+			
+			<b:attr cond='data:view.isPost' name='data-barba-namespace' value='clip'/>
+			<b:attr cond='data:view.isPost' name='data-background' value='#161636'/>
+			<b:attr cond='data:view.isPost' name='class' value='is-clip'/>
+			
+			<b:attr cond='data:view.isArchive' name='data-barba-namespace' value='cover'/>
+			<b:attr cond='data:view.isArchive' name='data-background' value='#E66F7F'/>
+			<b:attr cond='data:view.isArchive' name='class' value='is-cover'/>
+			
+      <div class="transition">
+        <h2>IS: <data:view.pageType/></h2>
+      </div>
+      <div class="content">
+        <h1>We are learning<br />page transitions<br />with Barba.js</h1>
+        <p>This demo is using @barba/css plugin.</p>
+				
+				<b:if cond='data:view.isHomepage'>
+					<a href="/p/project.html">project Fade Transition</a>
+				</b:if>
+				
+				<b:if cond='data:view.isPage'>
+					<a href="/2021/07/test.html">test - Clip-Path Transition</a>
+				</b:if>
+				
+				<b:if cond='data:view.isPost'>
+					<a href="/2021/07/">2021 - Cover Transition</a>
+				</b:if>
+				
+				<b:if cond='data:view.isArchive'>
+					<a href="/">Slide Home Transition</a>
+				</b:if>
+				
+      </div>
+    </header>
+		
+		<script src="https://unpkg.com/@barba/core"></script>
+		<script src="https://unpkg.com/@barba/css"></script>
+		
+		<script>
+      /*<![CDATA[*/
+			
+barba.use(barbaCss);
+
+const body = document.querySelector('body');
+
+barba.hooks.before((data) => {
+  const background = data.current.container.dataset.background;
+  body.style.setProperty('--page-background', background);
+});
+
+barba.init({
+  transitions: [
+    {
+      name: 'home',
+      sync: true,
+      to: { namespace: ['home'] },
+      once() {},
+      leave() {},
+      enter() {},
+    }, {
+      name: 'fade',
+      to: { namespace: ['fade'] },
+      leave() {},
+      enter() {},
+    }, {
+      name: 'clip',
+      sync: true,
+      to: { namespace: ['clip'] },
+      leave() {},
+      enter() {},
+    }, {
+      name: 'with-cover',
+      to: { namespace: ['with-cover'] },
+      leave() {},
+      enter() {},
+    },
+  ],
+});
+      
+			
+    /*]]>*/
+    </script>
+		
+		<b:section id='www'/>
+  </body>
+</html>
