@@ -14410,13 +14410,15 @@
 						//APK
 						//return void 0 === e && (e = 0), this.memoizedGet("/ssl/page-data/app-data.json").then((function(n) {
 							
-						return void 0 === e && (e = 0), this.memoizedGet("https://d.t.info.vn/page-data/app-data.json").then((function(n) {
+						return void 0 === e && (e = 0), this.memoizedGet("/feeds/posts/summary/?max-results=1&alt=json").then((function(n) {
+							
 							var r, o = n.status,
 								i = n.responseText;
 							if (200 !== o && e < 3) return t.loadAppData(e + 1);
 							if (200 === o) try {
 								var a = JSON.parse(i);
-								if (void 0 === a.webpackCompilationHash) throw new Error("not a valid app-data response");
+								//if (void 0 === a.webpackCompilationHash) throw new Error("not a valid app-data response");
+								if ("1.0" !== a.version) throw new Error("not a valid app-data response");
 								r = a
 							} catch (s) {}
 							return r
