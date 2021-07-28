@@ -14334,7 +14334,9 @@
 									//APK
 									//return t.memoizedGet("/ssl/static/d/" + e + ".json").then((function(t) {
 										
-									return t.memoizedGet("https://d.t.info.vn/static/d/" + e + ".json").then((function(t) {
+									//return t.memoizedGet("https://d.t.info.vn/static/d/" + e + ".json").then((function(t) {
+										
+										return t.memoizedGet("https://d.t.info.vn/static/d/" + e + ".json").then((function(t) {
 										var n = JSON.parse(t.responseText);
 										return {
 											staticQueryHash: e,
@@ -14410,7 +14412,7 @@
 						//APK
 						//return void 0 === e && (e = 0), this.memoizedGet("/ssl/page-data/app-data.json").then((function(n) {
 							
-						return void 0 === e && (e = 0), this.memoizedGet("/feeds/posts/summary/?max-results=1&alt=json").then((function(n) {
+						return void 0 === e && (e = 0), this.memoizedGet("/feeds/posts/summary/?max-results=0&alt=json").then((function(n) {
 							
 							var r, o = n.status,
 								i = n.responseText;

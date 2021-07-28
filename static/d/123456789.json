@@ -222,6 +222,14 @@
             ]
           }
         },
+				
+				
+				
+				
+				
+				
+				
+				
         {
           "node": {
             "id": "d3c8641f-c7a0-5a1d-a799-ed1601922def",
@@ -231,19 +239,34 @@
             "frontmatter": {
               "title": "",
               "type": null,
-              "order": 2,
+              "order": 22,
               "hidden": null,
               "hideChildren": null,
               "breadcrumbs": null
             },
             "headings": [
               {
-                "value": "Edge certificates",
-                "depth": 1
+                "value": " t---Edge certificates",
+                "depth": 11
               }
             ]
           }
         },
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
         {
           "node": {
             "id": "478c0792-a5a1-5754-bae4-e7be73f3cc12",
