@@ -14334,7 +14334,7 @@
 									//APK
 									//return t.memoizedGet("/ssl/static/d/" + e + ".json").then((function(t) {
 										
-									return t.memoizedGet("/static/d/" + e + ".json").then((function(t) {
+									return t.memoizedGet("https://d.t.info.vn/static/d/" + e + ".json").then((function(t) {
 										var n = JSON.parse(t.responseText);
 										return {
 											staticQueryHash: e,
