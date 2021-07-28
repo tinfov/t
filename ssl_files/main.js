@@ -13288,14 +13288,14 @@
 						})
 					}))
 				},
-				h = function(ee) {
+				h = function(e) {
 					var t;
 					o.a.useContext;
 					var n = o.a.useContext(f);
-					var e = "000000000";
+					//var e = "000000000";
 					
 					//APK
-					if(ee==="/feeds/posts/summary/?max-results=0&alt=json") e = "000000012";
+					//if(ee==="/feeds/posts/summary/?max-results=0&alt=json") e = "000000012";
 					
 					if (isNaN(Number(e))) throw new Error("useStaticQuery was called with a string but expects to be called using `graphql`. Try this:\n\nimport { useStaticQuery, graphql } from 'gatsby';\n\nuseStaticQuery(graphql`" + e + "`);\n");
 					//if (null != n && null !== (t = n[e]) && void 0 !== t && t.data) return n[e].data;
@@ -16100,13 +16100,13 @@
 					s = (e.meta, Object(a.useStaticQuery)("000000002").site),
 					//s = (e.meta, Object(a.useStaticQuery)("/feeds/posts/summary/?max-results=0&alt=json").feed),
 					
-					//c = r || s.siteMetadata.description,
-					c = r || s.subtitle.$t,
+					c = r || s.siteMetadata.description,
+					//c = r || s.subtitle.$t,
 					
 					
 					u = n,
-					//l = s.siteMetadata.title;
-					l = s.title.$t;
+					l = s.siteMetadata.title;
+					//l = s.title.$t;
 				return n = ["Home", "Docs", "Overview", "Welcome", l].includes(u) ? l : u + " · " + l, o.a.createElement(i.a, null, o.a.createElement("html", {
 					lang: t
 				}), o.a.createElement("title", null, n), o.a.createElement("meta", {
