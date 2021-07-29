@@ -16083,6 +16083,9 @@
 				a = n("Wbzz");
 
 			function s(e) {
+				
+				alert("000000002");
+				
 				var t = e.lang,
 					n = e.title,
 					r = e.description,
@@ -16090,28 +16093,10 @@
 					
 					//APK META.JSON
 					
-					
-/*
-
-{
-  "data": {
-    "site": {
-      "siteMetadata": {
-        "title": "Cloudflare SSL docs",
-        "description": "Encrypting as much web traffic as possible to prevent data theft and other tampering is a critical step toward building a safer, better Internet. We’re proud to be the first Internet performance and security company to offer SSL protection free of charge.",
-        "author": "@cloudflare",
-        "image": "https://www.cloudflare.com/img/cf-twitter-card.png"
-      }
-    }
-  }
-}
-
-*/					
-
 
 					//s = (e.meta, Object(a.useStaticQuery)("000000002").site),
 					
-					alert("000000002");
+					
 					
 					s = (e.meta, JSON.parse(window.useStaticQuery2)),
 					
