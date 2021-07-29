@@ -823,11 +823,16 @@
 			t.default = function(e) {
 				var t = e.data.mdx;
 				
-				document.getElementsByTagName("article")[0].innerHTML = t.body;
+				//document.getElementsByTagName("article")[0].innerHTML = t.body;
 				
-					return a.a.createElement("div", {
+					var xxx = a.a.createElement("div", {
 						className: "abc"
-					}, t.body)
+					}, "abc")
+					
+					xxx.innerHTML= t.body;
+					//xxx.htm
+					
+					return xxx;
 				
 				//
 				
