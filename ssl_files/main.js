@@ -17278,7 +17278,7 @@
 	//APK
 	//}, u.p = "/ssl/", u.oe = function(e) {
 		
-	}, u.p = "/", u.oe = function(e) {
+	}, u.p = "https://d.t.info.vn/", u.oe = function(e) {
 		throw console.error(e), e
 	};
 	var c = window.webpackJsonp = window.webpackJsonp || [],
