@@ -7676,34 +7676,7 @@
 				var n = e.frontmatter,
 					r = e.headings;
 					
-					
-/* 123456789.json
-				{
-          "node": {
-            "id": "d3c8641f-c7a0-5a1d-a799-ed1601922def",
-            "fields": {
-              "slug": "/edge-certificates"
-            },
-            "frontmatter": {
-              "title": "",
-              "type": null,
-              "order": 22,
-              "hidden": null,
-              "hideChildren": null,
-              "breadcrumbs": null
-            },
-            "headings": [
-              {
-                "value": " t---Edge certificates",
-                "depth": 11
-              }
-            ]
-          }
-        },
-						
-*/
-					
-				return void 0 === t && (t = !1), n ? t ? r.length && r[0].value || n.title : (n.title + "-7706") || r.length && r[0].value : "Not found"
+				return void 0 === t && (t = !1), n ? t ? r.length && r[0].value || n.title : n.title || r.length && r[0].value : "Not found"
 			}
 		},
 		"AO7/": function(e, t, n) {
@@ -10439,9 +10412,13 @@
 					}
 					Object(p.a)(t, e);
 					var n = t.prototype;
+					
+					
 					return n.showChildren = function() {
 						var e = this.props.node;
-						return Array.isArray(e.children) && !e.frontmatter.hideChildren
+						
+						//APK
+						return Array.isArray(e.children) //&& !e.frontmatter.hideChildren
 					}, n.isActive = function() {
 						var e = this.props,
 							t = e.node,
@@ -13049,6 +13026,9 @@
 				}
 				return e
 			}
+			
+			
+			
 			var _ = function(e) {
 					function t(t) {
 						var n;
