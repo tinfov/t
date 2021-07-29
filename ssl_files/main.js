@@ -16137,9 +16137,21 @@
 }
 
 */					
+
+
+					//s = (e.meta, Object(a.useStaticQuery)("000000002").site),
 					
 					
-					s = (e.meta, Object(a.useStaticQuery)("000000002").site),
+					var tObject = JSON.parse(window.useStaticQuery2),
+					s = (e.meta, tObject),
+					
+					
+					
+					
+					
+					
+					
+					
 					//s = (e.meta, Object(a.useStaticQuery)("/feeds/posts/summary/?max-results=0&alt=json").feed),
 					
 					c = r || s.siteMetadata.description,
