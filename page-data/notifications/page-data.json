@@ -1,6 +1,6 @@
 {
   "componentChunkName": "component-mdx.js",
-  "path": "/notifications",
+  "path": "/notificationss",
   "result": {
     "data": {
       "mdx": {
@@ -75,6 +75,10 @@
     }
   },
   "staticQueryHashes": [
-    
+    "000000003",
+    "000000001",
+    "000000002",
+    "123456789",
+    "113355779"
   ]
 }
