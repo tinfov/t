@@ -835,6 +835,7 @@
 						className: "abc"
 					}, "abdc")
 					
+				window.aaaa=a.a;
 				
 					
 					
