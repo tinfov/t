@@ -11111,13 +11111,13 @@
 				}, n))), 
 				
 				
-				window.ttttttt1 = t,
+				//window.ttttttt1 = t,
 				
 				o.a.createElement(Jn, {
 					page: t  //APK tao noi dung article
-				}))),
+				})))
 				
-				window.ttttttt2 = t
+				//window.ttttttt2 = t
 			}
 		},
 		GrmL: function(e, t, n) {},
