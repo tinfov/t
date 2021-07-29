@@ -823,10 +823,11 @@
 			t.default = function(e) {
 				var t = e.data.mdx;
 				
+				var window.tttttttttt0 = e.children;
 				
 					return a.a.createElement("div", {
 						className: "abc"
-					}, t.body)
+					}, t.body.children)
 				
 				
 			}
