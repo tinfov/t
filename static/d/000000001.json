@@ -6,7 +6,7 @@
           "node": {
             "id": "38139070-47f7-5691-b410-897599f1b059",
             "fields": {
-              "slug": "/"
+              "slug": "/" 
             },
             "frontmatter": {
               "title": "Welcome",

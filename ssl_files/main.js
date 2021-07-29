@@ -8120,6 +8120,7 @@
 					
 					
 					var t = Object(T.useStaticQuery)("000000001").allMdx.edges.map((function(e) {
+						window.aaaaaaaa = e.node;
 							return e.node
 						})),
 						n = e.className,
