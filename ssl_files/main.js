@@ -647,7 +647,7 @@
 						return Object(w.a)(t.fields.slug) === e.path // Liet ke theo parent
 					})).map((function(e) {
 						return {
-							title: "0565" + Object(E.a)(e),
+							title: "1133 - " + Object(E.a)(e),
 							url: e.fields.slug,
 							order: Object(A.a)(e)
 						}
@@ -11021,11 +11021,9 @@
 						i = n.relativePath,
 						
 						//APK
-						//a = Object(V.a)(),
-						//s = a.contentRepo,
-						//c = a.contentRepoFolder,
-						s = "cloudflare/cloudflare-docs",
-						c = "products/ssl",
+						a = Object(V.a)(),
+						s = "cloudflare/cloudflare-docs", //a.contentRepo,
+						c = "products/ssl", // a.contentRepoFolder,
 						
 						u = "https://github.com/" + s + "/blob/production/" + ((c ? c + "/" : "") + "src/content/" + i);
 					return o.a.createElement("footer", {
