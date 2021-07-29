@@ -1,0 +1,86 @@
+{
+  "version": "1.0",
+  "encoding": "UTF-8",
+  "entry": {
+    "xmlns": "http://www.w3.org/2005/Atom",
+    "xmlns$blogger": "http://schemas.google.com/blogger/2008",
+    "xmlns$georss": "http://www.georss.org/georss",
+    "xmlns$gd": "http://schemas.google.com/g/2005",
+    "xmlns$thr": "http://purl.org/syndication/thread/1.0",
+    "id": {
+      "$t": "tag:blogger.com,1999:blog-176988983972172119.post-6432183545142124710"
+    },
+    "published": {
+      "$t": "2021-07-05T00:55:00.014+07:00"
+    },
+    "updated": {
+      "$t": "2021-07-24T22:44:27.984+07:00"
+    },
+    "category": [
+      {
+        "scheme": "http://www.blogger.com/atom/ns#",
+        "term": "project"
+      }
+    ],
+    "title": {
+      "type": "text",
+      "$t": "test"
+    },
+    "content": {
+      "type": "html",
+      "$t": "<p style=\"text-align: justify;\">Mới đây, trên Facebook cá nhân, MC Thành  Trung đã đăng tải bài viết nâng cao tinh thần chống dịch nhưng lại gây  xôn xao vì sử dụng quá nhiều lời lẽ tục tĩu, khó nghe. Bài viết có nội  dung như sau: <em>\"Có những loại người ăn không được, ** không ra chúng  nó cũng lên Facebook để khoe xong ảnh hưởng tới cả xã hội vì lòng tin và  sự đoàn kết. Gọi chúng nó là ngu như lợn không được vì con mình tuổi  lợn, mà gọi nó là mấy con chó thì cũng không xong vì mình tuổi chó, gọi  là con chó lợn thì lại liên quan đến cả nhà mình nên gọi nó là con gì  bây giờ mọi người?\".</em></p><p style=\"text-align: justify;\">Nam MC nói thêm:<em> \"Mọi người ơi, lúc  này là lúc phải đoàn kết đồng lòng và hãy tin ở sự điều hành của chính  phủ. Nếu chúng ta xáo động, bi quan thì sẽ càng khó khăn cho tất cả 2  miền Nam Bắc là 1 nhà, tất cả sẽ cùng nỗ lực cố gắng để vượt qua thời  khắc khó khăn này mọi người nhé! Tôi tin dân tộc tôi, đất nước tôi sẽ  vượt qua tất cả bởi sự đồng lòng và tinh thần quật cường\".</em></p><figure class=\"image\"><img alt=\"mc thành trung, sao việt, đức hải\" src=\"https://s1.media.ngoisao.vn/resize_580/news/2021/07/21/2-ngoisaovn-w1080-h1200.jpg\" title=\"1.jpg 0\" /><figcaption>Bài đăng gây tranh cãi của MC Thành Trung</figcaption></figure><p>Bài viết này ngay sau khi đăng tải đã thu hút đông đảo sự chú ý của  netizen và làm dấy lên hàng loạt những tranh cãi dữ dội trên mạng xã  hội. Dưới phần bình luận, nhiều người cho rằng bài viết của nam MC quá  khiếm nhã và liên tục chỉ trích anh. Đáng nói, dù bị \"khủng bố\", Thành  Trung vẫn coi đây là chuyện bình thường và chẳng ngại đáp trả một đấu  một.</p><center></center><p style=\"text-align: justify;\">Bên cạnh đó, khi bị netizen nhắc nhở và lấy Đức Hải ra làm ví dụ: <em>\"Anh  lại muốn đi theo anh Đức Hải rồi nhỉ? Nghệ sĩ là người của công chúng  đấy anh. Rất quý đức tính của anh nhưng lần này anh phát ngôn chưa đúng  mực rồi\"</em>. Ngay sau đó, Thành Trung đã lên tiếng phản bác cực căng và không ngần ngại dùng những từ ngữ thô tục, phản cảm: <em>\"Anh  sợ cái gì thế em? Bảo đứa nào vào đây mà ăn thịt anh đi. Khi anh còn  cầm súng ra chiến trường được chứ anh sợ cái *** gì việc giữ hình tượng  với cái loại ngu dốt ảnh hưởng tới đất nước và bao nhiêu con người\".</em></p>"
+    },
+    "link": [
+      {
+        "rel": "replies",
+        "type": "application/atom+xml",
+        "href": "https://t.t.info.vn/feeds/6432183545142124710/comments/default",
+        "title": "Đăng Nhận xét"
+      },
+      {
+        "rel": "replies",
+        "type": "text/html",
+        "href": "https://t.t.info.vn/2021/07/test.html#comment-form",
+        "title": "0 Nhận xét"
+      },
+      {
+        "rel": "edit",
+        "type": "application/atom+xml",
+        "href": "https://www.blogger.com/feeds/176988983972172119/posts/default/6432183545142124710"
+      },
+      {
+        "rel": "self",
+        "type": "application/atom+xml",
+        "href": "https://www.blogger.com/feeds/176988983972172119/posts/default/6432183545142124710"
+      },
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://t.t.info.vn/2021/07/test.html",
+        "title": "test"
+      }
+    ],
+    "author": [
+      {
+        "name": {
+          "$t": "/An"
+        },
+        "uri": {
+          "$t": "http://www.blogger.com/profile/03329584729039837975"
+        },
+        "email": {
+          "$t": "noreply@blogger.com"
+        },
+        "gd$image": {
+          "rel": "http://schemas.google.com/g/2005#thumbnail",
+          "width": "32",
+          "height": "32",
+          "src": "//4.bp.blogspot.com/-ZeWIlfgv0I8/Xo2kiTgDEVI/AAAAAAAACP4/1gid_EJV8Iwugq3HDI2Q5_VbpWReykcGACK4BGAYYCw/s113/logo.jpg"
+        }
+      }
+    ],
+    "thr$total": {
+      "$t": "0"
+    }
+  }
+}

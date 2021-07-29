@@ -14355,8 +14355,6 @@
 					var t;
 					
 					//APK
-					//return "/ssl/page-data/" + ("/" === e ? "index" : t = (t = "/" === (t = e)[0] ? t.slice(1) : t).endsWith("/") ? t.slice(0, -1) : t) + "/page-data.json"
-					
 					return "https://d.t.info.vn/page-data/" + ("/" === e ? "index" : t = (t = "/" === (t = e)[0] ? t.slice(1) : t).endsWith("/") ? t.slice(0, -1) : t) + "/page-data.json"
 				};
 
@@ -14383,11 +14381,21 @@
 						page: n
 					}
 				},
+				
+				
+				
+				
+				
+				
+				
 				R = function() {
 					function e(e, t) {
 						this.inFlightNetworkRequests = new Map, this.pageDb = new Map, this.inFlightDb = new Map, this.staticQueryDb = new Map, this.pageDataDb = new Map, this.prefetchTriggered = new Set, this.prefetchCompleted = new Set, this.loadComponent = e, v = t
 					}
 					var t = e.prototype;
+					
+					
+					
 					return t.memoizedGet = function(e) {
 						var t = this,
 							n = this.inFlightNetworkRequests.get(e);
@@ -14396,11 +14404,17 @@
 						})).catch((function(n) {
 							throw t.inFlightNetworkRequests.delete(e), n
 						}))
-					}, t.setApiRunner = function(e) {
+					}, 
+					
+					
+					t.setApiRunner = function(e) {
 						this.apiRunner = e, this.prefetchDisabled = e("disableCorePrefetching").some((function(e) {
 							return e
 						}))
-					}, t.fetchPageDataJson = function(e) {
+					}, 
+					
+					
+					t.fetchPageDataJson = function(e) {
 						var t = this,
 							n = e.pagePath,
 							r = e.retries,
@@ -14430,7 +14444,10 @@
 								status: S.Error
 							})
 						}))
-					}, t.loadPageDataJson = function(e) {
+					}, 
+					
+					
+					t.loadPageDataJson = function(e) {
 						var t = this,
 							n = w(e);
 						return this.pageDataDb.has(n) ? Promise.resolve(this.pageDataDb.get(n)) : this.fetchPageDataJson({
@@ -14438,9 +14455,15 @@
 						}).then((function(e) {
 							return t.pageDataDb.set(n, e), e
 						}))
-					}, t.findMatchPath = function(e) {
+					}, 
+					
+					
+					t.findMatchPath = function(e) {
 						return b(e)
-					}, t.loadPage = function(e) {
+					},
+
+
+					t.loadPage = function(e) {
 						var t = this,
 							n = w(e);
 						if (this.pageDb.has(n)) {
@@ -14448,6 +14471,9 @@
 							return Promise.resolve(r.payload)
 						}
 						if (this.inFlightDb.has(n)) return this.inFlightDb.get(n);
+						
+						
+						
 						var o = Promise.all([this.loadAppData(), this.loadPageDataJson(n)]).then((function(e) {
 							var r = e[1];
 							if (r.status === S.Error) return {
@@ -14475,9 +14501,6 @@
 									}
 									//APK
 									//return t.memoizedGet("/ssl/static/d/" + e + ".json").then((function(t) {
-										
-									//return t.memoizedGet("https://d.t.info.vn/static/d/" + e + ".json").then((function(t) {
-										
 										return t.memoizedGet("https://d.t.info.vn/static/d/" + e + ".json").then((function(t) {
 										var n = JSON.parse(t.responseText);
 										
@@ -14507,15 +14530,25 @@
 								})), t.pageDb.set(n, l), r
 							}))
 						}));
+						
+						
 						return o.then((function(e) {
 							t.inFlightDb.delete(n)
 						})).catch((function(e) {
 							throw t.inFlightDb.delete(n), e
 						})), this.inFlightDb.set(n, o), o
-					}, t.loadPageSync = function(e) {
+					}, 
+					
+					
+					
+					t.loadPageSync = function(e) {
 						var t = w(e);
 						if (this.pageDb.has(t)) return this.pageDb.get(t).payload
-					}, t.shouldPrefetch = function(e) {
+					}, 
+					
+					
+					
+					t.shouldPrefetch = function(e) {
 						return !! function() {
 							if ("connection" in navigator && void 0 !== navigator.connection) {
 								if ((navigator.connection.effectiveType || "").includes("2g")) return !1;
@@ -14523,7 +14556,10 @@
 							}
 							return !0
 						}() && !this.pageDb.has(e)
-					}, t.prefetch = function(e) {
+					},
+
+
+					t.prefetch = function(e) {
 						var t = this;
 						if (!this.shouldPrefetch(e)) return !1;
 						if (this.prefetchTriggered.has(e) || (this.apiRunner("onPrefetchPathname", {
@@ -14535,11 +14571,20 @@
 								pathname: e
 							}), t.prefetchCompleted.add(e))
 						})), !0
-					}, t.doPrefetch = function(e) {
+					},
+
+
+					t.doPrefetch = function(e) {
 						throw new Error("doPrefetch not implemented")
-					}, t.hovering = function(e) {
+					}, 
+					
+					
+					t.hovering = function(e) {
 						this.loadPage(e)
-					}, t.getResourceURLsForPathname = function(e) {
+					}, 
+					
+					
+					t.getResourceURLsForPathname = function(e) {
 						var t = w(e),
 							n = this.pageDataDb.get(t);
 						if (n) {
@@ -14547,16 +14592,20 @@
 							return [].concat(Object(o.a)(M(r.page.componentChunkName)), [T(t)])
 						}
 						return null
-					}, t.isPageNotFound = function(e) {
+					}, 
+					
+					
+					t.isPageNotFound = function(e) {
 						var t = w(e),
 							n = this.pageDb.get(t);
 						return n && !0 === n.notFound
-					}, t.loadAppData = function(e) {
+					}, 
+					
+					
+					t.loadAppData = function(e) {
 						var t = this;
 						
 						//APK
-						//return void 0 === e && (e = 0), this.memoizedGet("/ssl/page-data/app-data.json").then((function(n) {
-							
 						return void 0 === e && (e = 0), this.memoizedGet("/feeds/posts/default/?max-results=0&alt=json").then((function(n) {
 							
 							var r, o = n.status,
@@ -14564,7 +14613,7 @@
 							if (200 !== o && e < 3) return t.loadAppData(e + 1);
 							if (200 === o) try {
 								var a = JSON.parse(i);
-								//if (void 0 === a.webpackCompilationHash) throw new Error("not a valid app-data response");
+								//APK
 								if ("1.0" !== a.version) throw new Error("not a valid app-data response");
 								r = a
 							} catch (s) {}
@@ -14572,6 +14621,11 @@
 						}))
 					}, e
 				}(),
+				
+				
+				
+				
+				
 				M = function(e) {
 					return (window.___chunkMapping[e] || []).map((function(e) {
 						
