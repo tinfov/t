@@ -12008,7 +12008,9 @@
 				
 				
 				//APK CLOUDFLAREDOCS.JSON
-				return Object(r.useStaticQuery)("000000003").site.siteMetadata.cloudflareDocs
+				//return Object(r.useStaticQuery)("000000003").site.siteMetadata.cloudflareDocs
+				
+				return JSON.parse(window.useStaticQuery3)
 				
 			}
 		},
