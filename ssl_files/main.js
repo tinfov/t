@@ -7703,7 +7703,7 @@
 						
 */
 					
-				return void 0 === t && (t = !1), n ? t ? r.length && r[0].value || n.title : n.title || r.length && r[0].value : "Not found"
+				return void 0 === t && (t = !1), n ? t ? r.length && r[0].value || n.title : (n.title + "-7706") || r.length && r[0].value : "Not found"
 			}
 		},
 		"AO7/": function(e, t, n) {
@@ -11005,6 +11005,10 @@
 						}))))
 					}, t
 				}(o.a.Component),
+				
+				
+				
+				//APK DocsTableOfContents
 				Vn = function(e) {
 					var t = e.items;
 					return t.length ? o.a.createElement("ul", {
@@ -11025,6 +11029,11 @@
 				Kn = n("LlRK"),
 				Yn = n.n(Kn),
 				Xn = n("07sb"),
+				
+				
+				
+				
+				//APK
 				Jn = function(e) {
 					var t = e.page;
 					if (!t || !t.parent) return null;
@@ -11085,7 +11094,11 @@
 					className: "DocsPage"
 				}, o.a.createElement(z, null), o.a.createElement(K, null), o.a.createElement("div", {
 					className: "DocsMobileNavBackdrop"
-				}), o.a.createElement(In, null), o.a.createElement(Bn, null), o.a.createElement("main", {
+				}), o.a.createElement(In, null), o.a.createElement(Bn, null), 
+				
+				
+				
+				o.a.createElement("main", {
 					className: "DocsBody"
 				}, "document" === a && s && o.a.createElement("div", {
 					className: "DocsBody--sidebar",
@@ -11110,7 +11123,7 @@
 				}), o.a.createElement("article", {
 					className: Object(Gn.a)()
 				}, n))), o.a.createElement(Jn, {
-					page: t
+					page: t  //APK tao noi dung article
 				})))
 			}
 		},
