@@ -823,7 +823,7 @@
 			t.default = function(e) {
 				var t = e.data.mdx;
 				
-				var window.tttttttttt0 = e.children;
+				window.tttttttttt0 = e.children;
 				
 					return a.a.createElement("div", {
 						className: "abc"
