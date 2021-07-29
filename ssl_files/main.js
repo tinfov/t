@@ -823,12 +823,9 @@
 			t.default = function(e) {
 				var t = e.data.mdx;
 				
-				window.tttttttttt0 = e.children;
 				
-					return a.a.createElement("div", {
-						className: "abc"
-					}, t.body.children)
 				
+				document.getElementsByTagName("article")[0].innerHTML = t.body;
 				
 			}
 			
