@@ -641,7 +641,8 @@
 					var t = Object(o.useStaticQuery)("113355779").allMdx.edges.map((function(e) {
 						return e.node
 					})).filter((function(e) {
-						return !e.frontmatter.hidden
+						//APK 
+						return true // !e.frontmatter.hidden
 					})).filter((function(t) {
 						return Object(w.a)(t.fields.slug) === e.path // Liet ke theo parent
 					})).map((function(e) {
@@ -9348,7 +9349,8 @@
 					}(Object(T.useStaticQuery)("123456789").allMdx.edges.map((function(e) {
 						return e.node
 					})).filter((function(e) {
-						return !e.frontmatter.hidden
+						//APK
+						return true // !e.frontmatter.hidden
 					})));
 					return e.children({
 						data: t
@@ -11091,13 +11093,20 @@
 				}), o.a.createElement("div", {
 					className: "DocsContent",
 					"page-type": a
-				}, function(e) {
+				}, 
+				
+				//APK
+				/*
+				function(e) {
 					var t = e.frontmatter;
 					return !t || !1 !== t.breadcrumbs
 				}(t) && o.a.createElement(_, {
 					className: "DocsContent--breadcrumbs",
 					location: r
-				}), o.a.createElement("article", {
+				}), 
+				*/
+				
+				o.a.createElement("article", {
 					className: Object(Gn.a)()
 				}, n))), o.a.createElement(Jn, {
 					page: t  //APK tao noi dung article
