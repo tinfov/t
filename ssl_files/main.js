@@ -809,6 +809,8 @@
 			});
 			
 			//APK article post body
+			
+/*			
 			t.default = function(e) {
 				var t = e.data.mdx;
 				return a.a.createElement(s.MDXProvider, {
@@ -817,6 +819,19 @@
 					frontmatter: t.frontmatter
 				}, t.body))
 			}
+*/			
+			t.default = function(e) {
+				var t = e.data.mdx;
+				
+				
+					return a.a.createElement("div", {
+						className: "abc"
+					}, t.body)
+				
+				
+			}
+			
+			
 		},
 		"8Qj+": function(e, t, n) {
 			"use strict";
