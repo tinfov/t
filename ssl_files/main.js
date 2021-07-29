@@ -16142,8 +16142,7 @@
 					//s = (e.meta, Object(a.useStaticQuery)("000000002").site),
 					
 					
-					var tObject = JSON.parse(window.useStaticQuery2),
-					s = (e.meta, tObject),
+					s = (e.meta, JSON.parse(window.useStaticQuery2)),
 					
 					
 					
