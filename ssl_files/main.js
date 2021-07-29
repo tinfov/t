@@ -14571,7 +14571,7 @@
 						//APK
 						//return "/ssl" + e
 						
-						return "" + e
+						return "https://d.t.info.vn/ssl_files/" + e
 					}))
 				},
 				D = function(e) {
