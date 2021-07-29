@@ -13324,6 +13324,9 @@
 						})
 					}))
 				},
+				
+				//APK
+				//useStaticQuery
 				h = function(e) {
 					var t;
 					o.a.useContext;
