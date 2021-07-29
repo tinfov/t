@@ -8083,47 +8083,14 @@
 				L = function(e) {
 					
 					//APK //000000001 // Rut gon con 1 phan tu
-/*
 
-{
-  "data": {
-    "allMdx": {
-      "edges": [
-        {
-          "node": {
-            "id": "38139070-47f7-5691-b410-897599f1b059",
-            "fields": {
-              "slug": "/"
-            },
-            "frontmatter": {
-              "title": "Welcome",
-              "type": null,
-              "order": 0,
-              "hidden": null,
-              "hideChildren": null,
-              "breadcrumbs": null
-            },
-            "headings": [
-              {
-                "value": "Cloudflare SSL documentation",
-                "depth": 1
-              }
-            ]
-          }
-        }
-      ]
-    }
-  }
-}
-
-*/					
-					
 	/*				
 					var t = Object(T.useStaticQuery)("000000001").allMdx.edges.map((function(e) {
 							return e.node
 						})),
 		*/				
 						
+						alert("000000001");
 						
 					var t = JSON.parse(window.useStaticQuery1),
 						
@@ -12010,6 +11977,7 @@
 				//APK CLOUDFLAREDOCS.JSON
 				//return Object(r.useStaticQuery)("000000003").site.siteMetadata.cloudflareDocs
 				
+				alert("000000003");
 				return JSON.parse(window.useStaticQuery3)
 				
 			}
@@ -16143,6 +16111,7 @@
 
 					//s = (e.meta, Object(a.useStaticQuery)("000000002").site),
 					
+					alert("000000002");
 					
 					s = (e.meta, JSON.parse(window.useStaticQuery2)),
 					
