@@ -8090,7 +8090,7 @@
 						})),
 		*/				
 						
-						alert("000000001");
+						console.log("000000001");
 						
 					var t = JSON.parse(window.useStaticQuery1),
 						
@@ -11977,7 +11977,7 @@
 				//APK CLOUDFLAREDOCS.JSON
 				//return Object(r.useStaticQuery)("000000003").site.siteMetadata.cloudflareDocs
 				
-				alert("000000003");
+				console.log("000000003");
 				return JSON.parse(window.useStaticQuery3)
 				
 			}
@@ -16084,7 +16084,8 @@
 
 			function s(e) {
 				
-				alert("000000002");
+				console.log("000000002");
+				
 				
 				var t = e.lang,
 					n = e.title,
