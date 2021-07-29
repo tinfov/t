@@ -825,14 +825,22 @@
 				
 				//document.getElementsByTagName("article")[0].innerHTML = t.body;
 				
-					var xxx = a.a.createElement("div", {
+					
+					
+					var xxx= document.createElement("div")
+					xxx.innerHTML= t.body;
+					
+					
+					var yyy = a.a.createElement("div", {
 						className: "abc"
 					}, "abc")
 					
-					xxx.innerHTML= t.body;
-					//xxx.htm
 					
-					return xxx;
+					return Object.assign(yyy,xxx)
+					
+					
+				
+					
 				
 				//
 				
