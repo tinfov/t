@@ -8121,6 +8121,10 @@
 					
 					var t = Object(T.useStaticQuery)("000000001").allMdx.edges.map((function(e) {
 						window.aaaaaaaa = e.node;
+						
+						var enode = '{"id":"38139070-47f7-5691-b410-897599f1b059","fields":{"slug":"/"},"frontmatter":{"title":"Welcome","type":null,"order":0,"hidden":null,"hideChildren":null,"breadcrumbs":null},"headings":[{"value":"Cloudflare SSL documentation","depth":1}]}';
+						
+						return JSON.parse(enode)
 							return e.node
 						})),
 						n = e.className,
