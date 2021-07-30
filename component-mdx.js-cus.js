@@ -274,11 +274,8 @@
 			
 			"use strict";
 			n.r(t);
-			var a = n("q1tI"),
-				l = n.n(a),
-				o = n("07sb"),
-				r = n("vrFN"),
-				u = n("mT7v");
+			var i = n("q1tI"),
+				a = n.n(i);
 				
 			t.default = function(e) {
 				console.log("comapkmdxcus.default");
