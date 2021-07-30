@@ -285,7 +285,7 @@
 				
 				return a.a.createElement("div",null, HTMLReactParser(e.data.mdx.body))
 			}
-		}
+		},
 					
 		//APK
 		n0UO: function(module, exports, __webpack_require__) {
