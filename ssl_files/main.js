@@ -820,34 +820,13 @@
 				}, t.body))
 			}
 */			
+			
+			
 			t.default = function(e) {
 				var t = e.data.mdx;
-				
-				//document.getElementsByTagName("article")[0].innerHTML = t.body;
-				
-					
-					
-					var xxx= document.createElement("div")
-					xxx.innerHTML= t.body;
-					
-					
-					var yyy = a.a.createElement("div", {
-						className: "abc"
-					}, "abdc")
-					
-				window.aaaa=a.a;
-				
-					
-					
-					return Object.assign(yyy,xxx)
-					
-					
-				
-					
-				
-				//
-				
+				return a.a.createElement("div",null, HTMLReactParser(t.body))
 			}
+			
 			
 			
 		},
