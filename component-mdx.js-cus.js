@@ -2,6 +2,326 @@
 /* component-mdx.js 206kb */
 (window.webpackJsonp = window.webpackJsonp || []).push([
 	[3], {
+		//APK components component-mdx.js
+		//"84QV": function(e, t, n) {
+			
+		"comapkmdx": function(e, t, n) {
+			console.log("comapkmdx");
+			
+			
+			"use strict";
+			n.r(t);
+			var r = n("rePB"),
+				i = n("q1tI"),
+				a = n.n(i),
+				o = n("Wbzz"),
+				s = n("7ljp"),
+				l = n("A2+M"),
+				u = n("07sb"),
+				c = n("RWNR"),
+				p = function(e) {
+					return function(t) {
+						var n = "#" + t.id;
+						return a.a.createElement(e, {
+							id: t.id
+						}, a.a.createElement("span", {
+							className: Object(c.a)("header-anchor-positioner")
+						}, a.a.createElement("a", {
+							className: Object(c.a)("header-anchor") + " Link Link-without-underline",
+							href: n,
+							"aria-hidden": "true"
+						}, "​")), a.a.createElement("span", null, t.children))
+					}
+				},
+				f = {
+					h2: p("h2"),
+					h3: p("h3"),
+					h4: p("h4"),
+					h5: p("h5"),
+					h6: p("h6")
+				},
+				d = n("V1oJ"),
+				g = n("zLVn"),
+				h = ["type", "href", "children"],
+				m = function(e) {
+					return a.a.createElement("aside", {
+						className: Object(c.a)("aside"),
+						role: "note",
+						"data-type": e.type
+					}, e.header && a.a.createElement("div", {
+						className: Object(c.a)("aside-header")
+					}, e.header), e.children)
+				};
+			m.defaultProps = {
+				type: "note"
+			};
+			var b = m,
+				y = function(e) {
+					var t = e.src,
+						n = e.title,
+						r = e.height,
+						i = e.aspectRatio,
+						o = Object(c.a)("demo") + (i ? " AspectRatio" : ""),
+						s = i ? "AspectRatio--content" : "",
+						l = i ? {
+							"--aspect-ratio": "calc(" + i + ")"
+						} : {
+							height: r + "px"
+						};
+					return a.a.createElement("div", {
+						className: o,
+						style: l
+					}, a.a.createElement("iframe", {
+						className: s,
+						src: t,
+						title: "Demo of: " + n,
+						frameBorder: "0"
+					}))
+				};
+			y.defaultProps = {
+				height: 400
+			};
+			var v = y,
+				w = (n("ToJy"), n("6l+n")),
+				E = n("A22z"),
+				A = n("AXUl"),
+				k = function(e) {
+					
+					
+					//APK //113355779 // createElement sub list
+					var t = Object(o.useStaticQuery)("113355779").allMdx.edges.map((function(e) {
+						return e.node
+					})).filter((function(e) {
+						//APK 
+						return true // !e.frontmatter.hidden
+					})).filter((function(t) {
+						return Object(w.a)(t.fields.slug) === e.path // Liet ke theo parent
+					})).map((function(e) {
+						return {
+							title: "1133 - " + Object(E.a)(e),
+							url: e.fields.slug,
+							order: Object(A.a)(e)
+						}
+					})).sort((function(e, t) {
+						return e.title < t.title ? -1 : e.title > t.title ? 1 : 0
+					})).sort((function(e, t) {
+						return e.order - t.order
+					}));
+					return a.a.createElement("ul", null, t.map((function(e) {
+						return a.a.createElement("li", {
+							key: e.url
+						}, a.a.createElement(u.a, {
+							href: e.url
+						}, e.title))
+					})))
+				};
+
+			function S(e, t) {
+				var n = Object.keys(e);
+				if (Object.getOwnPropertySymbols) {
+					var r = Object.getOwnPropertySymbols(e);
+					t && (r = r.filter((function(t) {
+						return Object.getOwnPropertyDescriptor(e, t).enumerable
+					}))), n.push.apply(n, r)
+				}
+				return n
+			}
+
+			function x(e) {
+				for (var t = 1; t < arguments.length; t++) {
+					var n = null != arguments[t] ? arguments[t] : {};
+					t % 2 ? S(Object(n), !0).forEach((function(t) {
+						Object(r.a)(e, t, n[t])
+					})) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : S(Object(n)).forEach((function(t) {
+						Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+					}))
+				}
+				return e
+			}
+			var _ = x(x({
+				a: u.a
+			}, f), {}, {
+				inlineCode: function(e) {
+					return a.a.createElement("code", {
+						className: "InlineCode"
+					}, e.children)
+				},
+				pre: d.a,
+				Link: o.Link,
+				Button: function(e) {
+					var t = e.type,
+						n = e.href,
+						r = e.children,
+						i = Object(g.a)(e, h),
+						o = "Button";
+					return "primary" === t ? o += " Button-is-docs-primary" : "secondary" === t && (o += " Button-is-docs-secondary"), i.className && (o += " " + i.className), n ? a.a.createElement(u.a, Object.assign({
+						href: n,
+						className: o
+					}, i), r) : a.a.createElement("button", Object.assign({
+						className: o
+					}, i), r)
+				},
+				ButtonGroup: function(e) {
+					return a.a.createElement("p", {
+						className: Object(c.a)("button-group")
+					}, a.a.createElement("span", {
+						className: Object(c.a)("button-group-content")
+					}, e.children))
+				},
+				Aside: b,
+				ContentColumn: function(e) {
+					return a.a.createElement("div", {
+						className: Object(c.a)("content-column")
+					}, e.children)
+				},
+				Example: function(e) {
+					return a.a.createElement("div", {
+						className: Object(c.a)("example")
+					}, e.children)
+				},
+				Demo: v,
+				TableWrap: function(e) {
+					return a.a.createElement("div", {
+						className: Object(c.a)("table-wrap")
+					}, a.a.createElement("div", {
+						className: Object(c.a)("table-wrap-inner")
+					}, e.children))
+				},
+				Definitions: function(e) {
+					return a.a.createElement("div", {
+						className: Object(c.a)("definitions")
+					}, e.children)
+				},
+				Code: function(e) {
+					return a.a.createElement("code", {
+						className: "InlineCode"
+					}, e.children)
+				},
+				ParamType: function(e) {
+					return a.a.createElement("span", {
+						className: "InlineCode--type"
+					}, e.children)
+				},
+				Type: function(e) {
+					return a.a.createElement("code", {
+						className: "InlineCode InlineCode-is-type"
+					}, e.children)
+				},
+				TypeLink: function(e) {
+					return a.a.createElement(u.a, {
+						href: e.href,
+						"data-is-type-link": "true"
+					}, a.a.createElement("code", {
+						className: "InlineCode InlineCode-is-type"
+					}, e.children))
+				},
+				PropMeta: function(e) {
+					return a.a.createElement("span", {
+						className: Object(c.a)("prop-meta")
+					}, e.children)
+				},
+				DirectoryListing: k,
+				YouTube: function(e) {
+					var t = {
+						"--aspect-ratio": "calc(" + (e.aspectRatio || 16 / 9) + ")"
+					};
+					return a.a.createElement("figure", {
+						"data-type": "youtube"
+					}, a.a.createElement("div", {
+						className: "AspectRatio",
+						style: t
+					}, a.a.createElement("iframe", {
+						className: "AspectRatio--content",
+						src: "https://www.youtube.com/embed/" + e.id,
+						title: e.title || "YouTube video with ID " + e.id,
+						frameBorder: "0",
+						allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+						allowFullScreen: !0
+					})))
+				},
+				StreamVideo: function(e) {
+					var t = {
+						"--aspect-ratio": "calc(" + (e.aspectRatio || 16 / 9) + ")"
+					};
+					return a.a.createElement("figure", {
+						"data-type": "stream-video"
+					}, a.a.createElement("div", {
+						className: "AspectRatio",
+						style: t
+					}, a.a.createElement("iframe", {
+						className: "AspectRatio--content",
+						src: "https://iframe.videodelivery.net/" + e.id + (e.params || ""),
+						title: e.title || "Stream video with ID " + e.id,
+						frameBorder: "0",
+						allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+						allowFullScreen: !0
+					})))
+				}
+				
+			
+			});
+			
+			t.default = function(e) {
+				console.log("comapkmdx.default");
+				
+				return a.a.createElement("div",null, HTMLReactParser(e.data.mdx.body))
+			}
+		},
+		
+		
+		"comapkmdxcus": function(e, t, n) {
+			console.log("comapkmdxcus");
+			
+			"use strict";
+			n.r(t);
+			var a = n("q1tI"),
+				l = n.n(a),
+				o = n("07sb"),
+				r = n("vrFN"),
+				u = n("mT7v");
+				
+			t.default = function(e) {
+				console.log("comapkmdxcus.default");
+				
+				return a.a.createElement("div",null, HTMLReactParser(e.data.mdx.body))
+			}
+		}
+					
+		//APK
+		n0UO: function(module, exports, __webpack_require__) {
+			console.log("n0UO")
+			
+			"use strict";
+			var yaml = __webpack_require__("ZR4k"),
+				engines = exports = module.exports;
+			engines.yaml = {
+				parse: yaml.safeLoad.bind(yaml),
+				stringify: yaml.safeDump.bind(yaml)
+			}, engines.json = {
+				parse: JSON.parse.bind(JSON),
+				stringify: function(e, t) {
+					var n = Object.assign({
+						replacer: null,
+						space: 2
+					}, t);
+					return JSON.stringify(e, n.replacer, n.space)
+				}
+			}, engines.javascript = {
+				parse: function parse(str, options, wrap) {
+					try {
+						return !1 !== wrap && (str = "(function() {\nreturn " + str.trim() + ";\n}());"), eval(str) || {}
+					} catch (err) {
+						if (!1 !== wrap && /(unexpected|identifier)/i.test(err.message)) return parse(str, options, !1);
+						throw new SyntaxError(err)
+					}
+				},
+				stringify: function() {
+					throw new Error("stringifying JavaScript is not supported")
+				}
+			}
+		},
+		
+		
 		"+VNs": function(e, t, n) {
 			console.log("+VNs");
 			
@@ -577,286 +897,6 @@
 					return null !== e ? e : []
 				}
 			})
-		},
-		
-		//APK components component-mdx.js
-		//"84QV": function(e, t, n) {
-			
-		"comapkmdx": function(e, t, n) {
-			console.log("comapkmdx");
-			
-			
-			"use strict";
-			n.r(t);
-			var r = n("rePB"),
-				i = n("q1tI"),
-				a = n.n(i),
-				o = n("Wbzz"),
-				s = n("7ljp"),
-				l = n("A2+M"),
-				u = n("07sb"),
-				c = n("RWNR"),
-				p = function(e) {
-					return function(t) {
-						var n = "#" + t.id;
-						return a.a.createElement(e, {
-							id: t.id
-						}, a.a.createElement("span", {
-							className: Object(c.a)("header-anchor-positioner")
-						}, a.a.createElement("a", {
-							className: Object(c.a)("header-anchor") + " Link Link-without-underline",
-							href: n,
-							"aria-hidden": "true"
-						}, "​")), a.a.createElement("span", null, t.children))
-					}
-				},
-				f = {
-					h2: p("h2"),
-					h3: p("h3"),
-					h4: p("h4"),
-					h5: p("h5"),
-					h6: p("h6")
-				},
-				d = n("V1oJ"),
-				g = n("zLVn"),
-				h = ["type", "href", "children"],
-				m = function(e) {
-					return a.a.createElement("aside", {
-						className: Object(c.a)("aside"),
-						role: "note",
-						"data-type": e.type
-					}, e.header && a.a.createElement("div", {
-						className: Object(c.a)("aside-header")
-					}, e.header), e.children)
-				};
-			m.defaultProps = {
-				type: "note"
-			};
-			var b = m,
-				y = function(e) {
-					var t = e.src,
-						n = e.title,
-						r = e.height,
-						i = e.aspectRatio,
-						o = Object(c.a)("demo") + (i ? " AspectRatio" : ""),
-						s = i ? "AspectRatio--content" : "",
-						l = i ? {
-							"--aspect-ratio": "calc(" + i + ")"
-						} : {
-							height: r + "px"
-						};
-					return a.a.createElement("div", {
-						className: o,
-						style: l
-					}, a.a.createElement("iframe", {
-						className: s,
-						src: t,
-						title: "Demo of: " + n,
-						frameBorder: "0"
-					}))
-				};
-			y.defaultProps = {
-				height: 400
-			};
-			var v = y,
-				w = (n("ToJy"), n("6l+n")),
-				E = n("A22z"),
-				A = n("AXUl"),
-				k = function(e) {
-					
-					
-					//APK //113355779 // createElement sub list
-					var t = Object(o.useStaticQuery)("113355779").allMdx.edges.map((function(e) {
-						return e.node
-					})).filter((function(e) {
-						//APK 
-						return true // !e.frontmatter.hidden
-					})).filter((function(t) {
-						return Object(w.a)(t.fields.slug) === e.path // Liet ke theo parent
-					})).map((function(e) {
-						return {
-							title: "1133 - " + Object(E.a)(e),
-							url: e.fields.slug,
-							order: Object(A.a)(e)
-						}
-					})).sort((function(e, t) {
-						return e.title < t.title ? -1 : e.title > t.title ? 1 : 0
-					})).sort((function(e, t) {
-						return e.order - t.order
-					}));
-					return a.a.createElement("ul", null, t.map((function(e) {
-						return a.a.createElement("li", {
-							key: e.url
-						}, a.a.createElement(u.a, {
-							href: e.url
-						}, e.title))
-					})))
-				};
-
-			function S(e, t) {
-				var n = Object.keys(e);
-				if (Object.getOwnPropertySymbols) {
-					var r = Object.getOwnPropertySymbols(e);
-					t && (r = r.filter((function(t) {
-						return Object.getOwnPropertyDescriptor(e, t).enumerable
-					}))), n.push.apply(n, r)
-				}
-				return n
-			}
-
-			function x(e) {
-				for (var t = 1; t < arguments.length; t++) {
-					var n = null != arguments[t] ? arguments[t] : {};
-					t % 2 ? S(Object(n), !0).forEach((function(t) {
-						Object(r.a)(e, t, n[t])
-					})) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : S(Object(n)).forEach((function(t) {
-						Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
-					}))
-				}
-				return e
-			}
-			var _ = x(x({
-				a: u.a
-			}, f), {}, {
-				inlineCode: function(e) {
-					return a.a.createElement("code", {
-						className: "InlineCode"
-					}, e.children)
-				},
-				pre: d.a,
-				Link: o.Link,
-				Button: function(e) {
-					var t = e.type,
-						n = e.href,
-						r = e.children,
-						i = Object(g.a)(e, h),
-						o = "Button";
-					return "primary" === t ? o += " Button-is-docs-primary" : "secondary" === t && (o += " Button-is-docs-secondary"), i.className && (o += " " + i.className), n ? a.a.createElement(u.a, Object.assign({
-						href: n,
-						className: o
-					}, i), r) : a.a.createElement("button", Object.assign({
-						className: o
-					}, i), r)
-				},
-				ButtonGroup: function(e) {
-					return a.a.createElement("p", {
-						className: Object(c.a)("button-group")
-					}, a.a.createElement("span", {
-						className: Object(c.a)("button-group-content")
-					}, e.children))
-				},
-				Aside: b,
-				ContentColumn: function(e) {
-					return a.a.createElement("div", {
-						className: Object(c.a)("content-column")
-					}, e.children)
-				},
-				Example: function(e) {
-					return a.a.createElement("div", {
-						className: Object(c.a)("example")
-					}, e.children)
-				},
-				Demo: v,
-				TableWrap: function(e) {
-					return a.a.createElement("div", {
-						className: Object(c.a)("table-wrap")
-					}, a.a.createElement("div", {
-						className: Object(c.a)("table-wrap-inner")
-					}, e.children))
-				},
-				Definitions: function(e) {
-					return a.a.createElement("div", {
-						className: Object(c.a)("definitions")
-					}, e.children)
-				},
-				Code: function(e) {
-					return a.a.createElement("code", {
-						className: "InlineCode"
-					}, e.children)
-				},
-				ParamType: function(e) {
-					return a.a.createElement("span", {
-						className: "InlineCode--type"
-					}, e.children)
-				},
-				Type: function(e) {
-					return a.a.createElement("code", {
-						className: "InlineCode InlineCode-is-type"
-					}, e.children)
-				},
-				TypeLink: function(e) {
-					return a.a.createElement(u.a, {
-						href: e.href,
-						"data-is-type-link": "true"
-					}, a.a.createElement("code", {
-						className: "InlineCode InlineCode-is-type"
-					}, e.children))
-				},
-				PropMeta: function(e) {
-					return a.a.createElement("span", {
-						className: Object(c.a)("prop-meta")
-					}, e.children)
-				},
-				DirectoryListing: k,
-				YouTube: function(e) {
-					var t = {
-						"--aspect-ratio": "calc(" + (e.aspectRatio || 16 / 9) + ")"
-					};
-					return a.a.createElement("figure", {
-						"data-type": "youtube"
-					}, a.a.createElement("div", {
-						className: "AspectRatio",
-						style: t
-					}, a.a.createElement("iframe", {
-						className: "AspectRatio--content",
-						src: "https://www.youtube.com/embed/" + e.id,
-						title: e.title || "YouTube video with ID " + e.id,
-						frameBorder: "0",
-						allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
-						allowFullScreen: !0
-					})))
-				},
-				StreamVideo: function(e) {
-					var t = {
-						"--aspect-ratio": "calc(" + (e.aspectRatio || 16 / 9) + ")"
-					};
-					return a.a.createElement("figure", {
-						"data-type": "stream-video"
-					}, a.a.createElement("div", {
-						className: "AspectRatio",
-						style: t
-					}, a.a.createElement("iframe", {
-						className: "AspectRatio--content",
-						src: "https://iframe.videodelivery.net/" + e.id + (e.params || ""),
-						title: e.title || "Stream video with ID " + e.id,
-						frameBorder: "0",
-						allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
-						allowFullScreen: !0
-					})))
-				}
-				
-			
-			});
-			
-			//APK article post body
-			
-/*			
-			t.default = function(e) {
-				var t = e.data.mdx;
-				return a.a.createElement(s.MDXProvider, {
-					components: _
-				}, a.a.createElement(l.MDXRenderer, {
-					frontmatter: t.frontmatter
-				}, t.body))
-			}
-*/			
-			
-			t.default = function(e) {
-				return a.a.createElement("div",null, HTMLReactParser(e.data.mdx.body))
-			}
-			
-			
-			
 		},
 		"8Qj+": function(e, t, n) {
 			console.log("8Qj+")
@@ -5210,38 +5250,6 @@
 					o = r(e, a);
 				if ("function" != typeof o.parse) throw new TypeError('expected "' + e + '.parse" to be a function');
 				return o.parse(t, a)
-			}
-		},
-		n0UO: function(module, exports, __webpack_require__) {
-			console.log("n0UO")
-			
-			"use strict";
-			var yaml = __webpack_require__("ZR4k"),
-				engines = exports = module.exports;
-			engines.yaml = {
-				parse: yaml.safeLoad.bind(yaml),
-				stringify: yaml.safeDump.bind(yaml)
-			}, engines.json = {
-				parse: JSON.parse.bind(JSON),
-				stringify: function(e, t) {
-					var n = Object.assign({
-						replacer: null,
-						space: 2
-					}, t);
-					return JSON.stringify(e, n.replacer, n.space)
-				}
-			}, engines.javascript = {
-				parse: function parse(str, options, wrap) {
-					try {
-						return !1 !== wrap && (str = "(function() {\nreturn " + str.trim() + ";\n}());"), eval(str) || {}
-					} catch (err) {
-						if (!1 !== wrap && /(unexpected|identifier)/i.test(err.message)) return parse(str, options, !1);
-						throw new SyntaxError(err)
-					}
-				},
-				stringify: function() {
-					throw new Error("stringifying JavaScript is not supported")
-				}
 			}
 		},
 		peYA: function(e, t, n) {
