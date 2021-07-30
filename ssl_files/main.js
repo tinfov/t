@@ -2725,6 +2725,27 @@ s = function(e) {
 			
 			
 			t.default = function(e) {
+				var aa, bb;
+				try {
+					aa = n("wpjhr")
+				} catch (aa) {
+					//"undefined" != typeof window && (aa = window.HTMLReactParser)
+					
+					//window.aaaa = n("wpjhr");
+				}
+				
+				try {
+					bb = n("wpjrp")
+				} catch (bb) {
+					//"undefined" != typeof window && (bb = window.HTMLReactParser)
+					
+					//window.bbbb = n("wpjhr");
+				}
+				
+				
+				window.aaaa = n("wpjhr");
+				window.bbbb = n("wpjhr");
+				
 				var t = e.data.mdx;
 				return a.a.createElement("div",null, HTMLReactParser(t.body))
 			}
