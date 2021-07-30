@@ -836,7 +836,10 @@
 
 
 
-				return a.a.createElement("div",null, HTMLReactParser(t.body))
+				//return a.a.createElement("div",null, HTMLReactParser(t.body))
+				
+				return a.a.createElement("div",null, (t.body))
+				
 			}
 			
 			
