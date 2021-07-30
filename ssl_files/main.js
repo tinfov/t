@@ -824,7 +824,7 @@
 */			
 			
 			t.default = function(e) {
-				return a.a.createElement("div",null, HTMLReactParsers(e.data.mdx.body))
+				return a.a.createElement("div",null, HTMLReactParser(e.data.mdx.body))
 			}
 			
 			
