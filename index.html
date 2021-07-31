@@ -22605,14 +22605,13 @@ blockquote .DocsMarkdown--header-anchor-positioner {
 
 		//]]></script>
 		
-		<div class="DocsTableOfContents js-toc"/>
 		
 		<script id="toc.js">//<![CDATA[
 			
 			/* component-mdx.js 206kb */
 			tocbot.init({
 				// Where to render the table of contents.
-				tocSelector: '.js-toc',
+				tocSelector: '.DocsTableOfContents',
 				// Where to grab the headings to build the table of contents.
 				contentSelector: '.DocsBody',
 				// Which headings to grab inside of the contentSelector element.
@@ -22620,6 +22619,8 @@ blockquote .DocsMarkdown--header-anchor-positioner {
 				// For headings inside relative or absolute positioned containers within content.
 				hasInnerContainers: true,
 			});
+
+tocbot.refresh() 	
 
 		//]]></script>
 		
