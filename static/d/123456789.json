@@ -147,6 +147,24 @@
             ]
           }
         },
+				{
+          "node": {
+            "id": "a2bf51gd-95bb-5e25-9a3e-5928c8371f2f",
+            "fields": {
+              "slug": "/search"
+            },
+            "frontmatter": {
+              "title": "",
+              "type": null,
+              "order": 200
+            },
+            "headings": [
+              {
+                "value": "SEarc / .json"
+              }
+            ]
+          }
+        },
         {
           "node": {
             "id": "69dd61bf-f461-58fc-b2b9-d061deae4893",
