@@ -15,8 +15,7 @@
             },
             "headings": [
               {
-                "value": "Cloudflare SSL documentation",
-                "depth": 1
+                "value": "Cloudflare SSL documentation"
               }
             ]
           }
@@ -34,8 +33,7 @@
             },
             "headings": [
               {
-                "value": "Configure your mobile app or IoT device",
-                "depth": 1
+                "value": "Configure your mobile app or IoT device"
               }
             ]
           }
@@ -53,8 +51,7 @@
             },
             "headings": [
               {
-                "value": "Create a client certificate",
-                "depth": 1
+                "value": "Create a client certificate"
               }
             ]
           }
@@ -72,8 +69,7 @@
             },
             "headings": [
               {
-                "value": "Enable mTLS",
-                "depth": 1
+                "value": "Enable mTLS"
               }
             ]
           }
@@ -91,8 +87,7 @@
             },
             "headings": [
               {
-                "value": "Client certificates",
-                "depth": 1
+                "value": "Client certificates"
               }
             ]
           }
@@ -110,8 +105,7 @@
             },
             "headings": [
               {
-                "value": "Revoke a client certificate",
-                "depth": 1
+                "value": "Revoke a client certificate"
               }
             ]
           }
@@ -129,8 +123,7 @@
             },
             "headings": [
               {
-                "value": "Troubleshooting",
-                "depth": 1
+                "value": "Troubleshooting"
               }
             ]
           }
@@ -149,8 +142,7 @@
             },
             "headings": [
               {
-                "value": "Notifications / 123456789.json",
-                "depth": 1
+                "value": "Notifications / 123456789.json"
               }
             ]
           }
@@ -168,8 +160,7 @@
             },
             "headings": [
               {
-                "value": "Status codes",
-                "depth": 1
+                "value": "Status codes"
               }
             ]
           }
