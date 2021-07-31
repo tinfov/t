@@ -2443,7 +2443,12 @@
 				var n = e.frontmatter,
 					r = e.headings;
 					
+				//APK
+				//return void 0 === t && (t = !1), n ? (t ? (r.length && r[0].value || n.title) : (n.title || r.length && r[0].value)) : "Not found"
+				
 				return void 0 === t && (t = !1), n ? (t ? (r.length && r[0].value || n.title) : (n.title || r.length && r[0].value)) : "Not found"
+				
+				return e.headings.value
 			}
 		},
 		"AO7/": function(e, t, n) {
@@ -2451,13 +2456,17 @@
 			r[n("tiKp")("toStringTag")] = "z", e.exports = "[object z]" === String(r)
 		},
 		AQcl: function(e, t, n) {},
+		
 		AXUl: function(e, t, n) {
 			"use strict";
 			t.a = function(e) {
 				var t = e.frontmatter;
+				
 				return t && (t.order || 0 === t.order) ? t.order : 1e7
 			}
 		},
+		
+		
 		B2jG: function(e, t, n) {},
 		BNF5: function(e, t, n) {
 			var r = n("NC/Y").match(/firefox\/(\d+)/i);
@@ -4070,6 +4079,8 @@
 						}), t)
 					}, t
 				}(r.Component),
+				
+				
 				dt = (n("ToJy"), n("AXUl")),
 				pt = function(e) {
 					return e.href = e.path, e.title = Object(j.a)(e), e
