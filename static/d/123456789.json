@@ -11,10 +11,7 @@
             "frontmatter": {
               "title": "Welcome",
               "type": null,
-              "order": 0,
-              "hidden": null,
-              "hideChildren": null,
-              "breadcrumbs": null
+              "order": 0
             },
             "headings": [
               {
@@ -33,10 +30,7 @@
             "frontmatter": {
               "title": "",
               "type": null,
-              "order": 3,
-              "hidden": null,
-              "hideChildren": null,
-              "breadcrumbs": null
+              "order": 3
             },
             "headings": [
               {
@@ -55,10 +49,7 @@
             "frontmatter": {
               "title": "",
               "type": null,
-              "order": 2,
-              "hidden": null,
-              "hideChildren": null,
-              "breadcrumbs": null
+              "order": 2
             },
             "headings": [
               {
@@ -77,10 +68,7 @@
             "frontmatter": {
               "title": "",
               "type": null,
-              "order": 4,
-              "hidden": null,
-              "hideChildren": null,
-              "breadcrumbs": null
+              "order": 4
             },
             "headings": [
               {
@@ -99,10 +87,7 @@
             "frontmatter": {
               "title": "",
               "type": null,
-              "order": 3,
-              "hidden": null,
-              "hideChildren": null,
-              "breadcrumbs": null
+              "order": 3
             },
             "headings": [
               {
@@ -121,10 +106,7 @@
             "frontmatter": {
               "title": "",
               "type": null,
-              "order": 5,
-              "hidden": null,
-              "hideChildren": null,
-              "breadcrumbs": null
+              "order": 5
             },
             "headings": [
               {
@@ -143,10 +125,7 @@
             "frontmatter": {
               "title": "",
               "type": null,
-              "order": 6,
-              "hidden": null,
-              "hideChildren": null,
-              "breadcrumbs": null
+              "order": 6
             },
             "headings": [
               {
@@ -166,10 +145,7 @@
             "frontmatter": {
               "title": "",
               "type": null,
-              "order": 200,
-              "hidden": null,
-              "hideChildren": null,
-              "breadcrumbs": null
+              "order": 200
             },
             "headings": [
               {
@@ -188,10 +164,7 @@
             "frontmatter": {
               "title": "",
               "type": null,
-              "order": 1,
-              "hidden": null,
-              "hideChildren": null,
-              "breadcrumbs": null
+              "order": 1
             },
             "headings": [
               {
