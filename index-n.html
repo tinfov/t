@@ -4225,9 +4225,12 @@ blockquote .DocsMarkdown--header-anchor-positioner {
     //]]></script>
     
 		
+		<!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.css"/-->
 		
   </head>
   <body>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.min.js"></script>
+		
     <noscript id="gatsby-noscript" class="DocsNoscript">This app works best with JavaScript enabled.</noscript>
     <div id="___gatsby">
       <div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper">
@@ -7156,11 +7159,21 @@ blockquote .DocsMarkdown--header-anchor-positioner {
 			}
 		},
 		FnSk: function(e, t, n) {},
+		
+		
+		
+		
 		GddB: function(e, t, n) {
 			"use strict";
 			n.r(t);
 			n("jDwS"), n("tJnr"), n("WMQy"), n("s5O0"), n("JpVE"), n("GrmL"), n("r0n/"), n("5IUh"), n("aA5v"), n("4vhu"), n("sh09"), n("CKxn"), n("heWv"), n("W3dK"), n("coM+"), n("Jf+H"), n("B2jG"), n("xU8C"), n("2zVT"), n("jl5p"), n("rS4F"), n("0+hl"), n("GxjQ"), n("akhO"), n("iEvA"), n("2pG7"), n("5KOQ"), n("Wy/h"), n("FnSk"), n("dyFt"), n("uEa5"), n("xCtd"), n("exxK"), n("AQcl"), n("giUj"), n("JuLZ"), n("LlFk"), n("dLlT"), n("4AlI"), n("z+Nv"), n("phIU"), n("icXS"), n("DTwJ"), n("PucM"), n("ZaTu"), n("hfZl"), n("BmiC"), n("kynB"), n("fI0a")
 		},
+		
+		
+		
+		
+		
+		
 		GdzR: function(e, t, n) {
 			"use strict";
 			n.r(t);
@@ -7322,23 +7335,10 @@ blockquote .DocsMarkdown--header-anchor-positioner {
 						})
 					}))))
 				},
+				
+				//APK
 				L = function(e) {
-					
-					//APK //000000001 // Rut gon con 1 phan tu
-
-	/*				
-					var t = Object(T.useStaticQuery)("000000001").allMdx.edges.map((function(e) {
-							return e.node
-						})),
-		*/				
-						
-						console.log("000000001");
-						
 					var t = JSON.parse(window.useStaticQuery1),
-						
-						
-						
-						
 						n = e.className,
 						r = e.location,
 						i = D(t, r);
@@ -10258,6 +10258,13 @@ blockquote .DocsMarkdown--header-anchor-positioner {
 				//APK DocsTableOfContents
 				Vn = function(e) {
 					var t = e.items;
+					
+					
+					console.log("tao resfreh")
+					
+					//tocbot.refresh() 
+					
+					//APK
 					return t.length ? o.a.createElement("ul", {
 						className: "DocsTableOfContents"
 					}, o.a.createElement(qn, {
@@ -10270,8 +10277,23 @@ blockquote .DocsMarkdown--header-anchor-positioner {
 							key: e.url,
 							item: e
 						})
-					}))) : o.a.createElement(o.a.Fragment, null)
+					}))): o.a.createElement(o.a.Fragment, null)
+					
+					
 				},
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
 				Gn = n("RWNR"),
 				Kn = n("LlRK"),
 				Yn = n.n(Kn),
@@ -10322,9 +10344,17 @@ blockquote .DocsMarkdown--header-anchor-positioner {
 						var t = e.frontmatter;
 						return t ? t.type || "document" : "error"
 					}(t),
+					
+					
+					
+					
 					s = function(e) {
 						var t = e.tableOfContents;
 						return t && t.items && t.items.length ? t.items[0].items : []
+					
+					
+					
+					
 					}(t),
 					c = Object(V.a)().search,
 					p = c.apiKey && c.indexName && c.algoliaOptions ? {} : {
@@ -10355,7 +10385,17 @@ blockquote .DocsMarkdown--header-anchor-positioner {
 				}), o.a.createElement("div", {
 					className: "DocsBody--sidebar-content"
 				}, o.a.createElement("nav", null, o.a.createElement(Vn, {
+				
+				
+				
+				
 					items: s
+					
+					
+					
+					
+					
+					
 				})))), o.a.createElement(l, {
 					id: "docs-content"
 				}), o.a.createElement("div", {
@@ -10388,6 +10428,15 @@ blockquote .DocsMarkdown--header-anchor-positioner {
 				//window.ttttttt2 = t
 			}
 		},
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		GrmL: function(e, t, n) {},
 		GxjQ: function(e, t, n) {},
 		HAuM: function(e, t) {
@@ -11242,18 +11291,13 @@ blockquote .DocsMarkdown--header-anchor-positioner {
 				};
 			var a = !1
 		},
+		
+		//APK
 		KVYG: function(e, t, n) {
 			"use strict";
 			var r = n("Wbzz");
 			t.a = function() {
-				
-				
-				//APK CLOUDFLAREDOCS.JSON
-				//return Object(r.useStaticQuery)("000000003").site.siteMetadata.cloudflareDocs
-				
-				console.log("000000003");
 				return JSON.parse(window.useStaticQuery3)
-				
 			}
 		},
 		LQDL: function(e, t, n) {
@@ -15415,41 +15459,16 @@ blockquote .DocsMarkdown--header-anchor-positioner {
 				i = n("qhky"),
 				a = n("Wbzz");
 
+			//APK
 			function s(e) {
-				
-				console.log("000000002");
-				
-				
 				var t = e.lang,
 					n = e.title,
 					r = e.description,
-					
-					
-					//APK META.JSON
-					
-
-					//s = (e.meta, Object(a.useStaticQuery)("000000002").site),
-					
-					
-					
 					s = (e.meta, JSON.parse(window.useStaticQuery2)),
-					
-					
-					
-					
-					
-					
-					
-					
-					//s = (e.meta, Object(a.useStaticQuery)("/feeds/posts/summary/?max-results=0&alt=json").feed),
-					
 					c = r || s.siteMetadata.description,
-					//c = r || s.subtitle.$t,
-					
-					
 					u = n,
 					l = s.siteMetadata.title;
-					//l = s.title.$t;
+					
 				return n = ["Home", "Docs", "Overview", "Welcome", l].includes(u) ? l : u + " · " + l, o.a.createElement(i.a, null, o.a.createElement("html", {
 					lang: t
 				}), o.a.createElement("title", null, n), o.a.createElement("meta", {
@@ -22596,6 +22615,29 @@ blockquote .DocsMarkdown--header-anchor-positioner {
 			]);
 
 		//]]></script>
+		
+		
+		<script id="toc.js">//<![CDATA[
+			
+		/*
+			tocbot.init({
+				// Where to render the table of contents.
+				tocSelector: '.DocsTableOfContents',
+				// Where to grab the headings to build the table of contents.
+				contentSelector: '.DocsBody',
+				// Which headings to grab inside of the contentSelector element.
+				headingSelector: 'h1, h2, h3',
+				// For headings inside relative or absolute positioned containers within content.
+				hasInnerContainers: true,
+			});
+*/
+
+		//]]></script>
+		
+		
+		
+		
+		
 		<b:section id='www'/>
   </body>
 </html>
