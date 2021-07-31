@@ -15,9 +15,7 @@
         "slug": "/"
       },
       "frontmatter": {
-        "title": "Welcome",
-        "type": null,
-        "order": 0
+        "title": "Welcome"
       
       },
       "headings": [
