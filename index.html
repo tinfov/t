@@ -2435,13 +2435,107 @@
 		A22z: function(e, t, n) {
 			"use strict";
 			t.a = function(e, t) {
-				var n = e.frontmatter,
-					r = e.headings;
+				
+
+/* e=
+						"id": "38139070-47f7-5691-b410-897599f1b059",
+            "fields": {
+              "slug": "/"
+            },
+            "frontmatter": {
+              "title": "Welcome",
+             
+              "order": 0
+            },
+            "headings": [
+              {
+                "value": "Cloudflare SSL documentation"
+              }
+            ]
+
+
+
+
+
+				"id": {
+          "$t": "tag:blogger.com,1999:blog-176988983972172119.post-3143210667579866856"
+        },
+        "published": {
+          "$t": "2021-08-01T14:13:00.008+07:00"
+        },
+        "updated": {
+          "$t": "2021-08-01T14:13:50.130+07:00"
+        },
+        "title": {
+          "type": "text",
+          "$t": "c"
+        },
+        "summary": {
+          "type": "text",
+          "$t": "ccccccccccccccc"
+        },
+        "link": [
+          {
+            "rel": "replies",
+            "type": "application/atom+xml",
+            "href": "https://t.t.info.vn/feeds/3143210667579866856/comments/default",
+            "title": "Đăng Nhận xét"
+          },
+          {
+            "rel": "replies",
+            "type": "text/html",
+            "href": "https://t.t.info.vn/2021/08/c.html#comment-form",
+            "title": "0 Nhận xét"
+          },
+          {
+            "rel": "edit",
+            "type": "application/atom+xml",
+            "href": "https://www.blogger.com/feeds/176988983972172119/posts/default/3143210667579866856"
+          },
+          {
+            "rel": "self",
+            "type": "application/atom+xml",
+            "href": "https://www.blogger.com/feeds/176988983972172119/posts/default/3143210667579866856"
+          },
+          {
+            "rel": "alternate",
+            "type": "text/html",
+            "href": "https://t.t.info.vn/2021/08/c.html",
+            "title": "c"
+          }
+        ],
+        "author": [
+          {
+            "name": {
+              "$t": "/An"
+            },
+            "uri": {
+              "$t": "http://www.blogger.com/profile/03329584729039837975"
+            },
+            "email": {
+              "$t": "noreply@blogger.com"
+            },
+            "gd$image": {
+              "rel": "http://schemas.google.com/g/2005#thumbnail",
+              "width": "32",
+              "height": "32",
+              "src": "//4.bp.blogspot.com/-ZeWIlfgv0I8/Xo2kiTgDEVI/AAAAAAAACP4/1gid_EJV8Iwugq3HDI2Q5_VbpWReykcGACK4BGAYYCw/s113/logo.jpg"
+            }
+          }
+        ],
+        "thr$total": {
+          "$t": "0"
+        }
+				
+*/
 
 				//APK
+				//var n = e.frontmatter,
+					//r = e.headings;
 				//return void 0 === t && (t = !1), n ? (t ? (r.length && r[0].value || n.title) : (n.title || r.length && r[0].value)) : "Not found"
 				
-				return void 0 === t && (t = !1), n ? n.title : "Not found"
+				var n = e.title;
+				return void 0 === t && (t = !1), n ? n.$t : "Not found"
 			}
 		},
 		"AO7/": function(e, t, n) {
@@ -4109,7 +4203,7 @@
 						return at || (at = ht(e))
 						
 						
-						
+/*						
 						//APK MENU.JSON // 123456789
 					}(Object(T.useStaticQuery)("123456789").allMdx.edges.map((function(e) {
 						return e.node
@@ -4117,6 +4211,18 @@
 						//APK
 						return true // !e.frontmatter.hidden
 					})));
+					
+*/
+
+					}(Object(T.useStaticQuery)("9999").entry.map((function(e) {
+						return e
+					})).filter((function(e) {
+						//APK
+						return true // !e.frontmatter.hidden
+					})));
+					
+					
+					
 					return e.children({
 						data: t
 					})
@@ -8097,6 +8203,7 @@
 					
 					if (null != n && null !== (t = n[e]) && void 0 !== t && t.feed) return n[e].feed;
 					
+					
 					throw new Error("The result of this StaticQuery could not be fetched.\n\nThis is likely a bug in Gatsby and if refreshing the page does not fix it, please open an issue in https://github.com/gatsbyjs/gatsby/issues")
 				};
 
@@ -9297,22 +9404,8 @@
 									}
 									//APK
 									//return t.memoizedGet("/ssl/static/d/" + e + ".json").then((function(t) {
-									
-										var url;
-										if (e === "000000001" || e === "000000002" || e === "000000003" ) {
-											url = "feeds/posts/summary/?max-results=0&alt=json&q=" + e;
-										}	else	{
-											url = "https://d.t.info.vn/static/d/" + e + ".json";
-										}
-										
-										return t.memoizedGet(url).then((function(t) {
-										
-										//return t.memoizedGet("/feeds/posts/summary/?max-results=0&alt=json&q=" + e).then((function(t) {
-										
+									return t.memoizedGet("feeds/posts/summary/?alt=json&max-results=" + e).then((function(t) {
 										var n = JSON.parse(t.responseText);
-										
-										//console.log(n);
-										
 										return {
 											staticQueryHash: e,
 											jsonPayload: n
