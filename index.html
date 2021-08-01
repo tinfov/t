@@ -2824,7 +2824,7 @@
 						
 						//return Object(S.a)(e.link[0].href) === Object(S.a)(t)
 						
-						var ret = Object(S.a)(e.link[0].href) === Object(S.a)(t)
+						var ret = Object(S.a)(e.link[4].href) === Object(S.a)(t)
 						
 						console.log(ret)
 						window.rrrrr= ret;
@@ -2839,10 +2839,10 @@
 					try {
 						//for (var o = R(e, r), i = R(e, Object(C.a)(o.fields.slug)); i;) n.unshift({
 						
-						for (var o = R(e, r), i = R(e, Object(C.a)(o.link[0].href)); i;) n.unshift({
+						for (var o = R(e, r), i = R(e, Object(C.a)(o.link[4].href)); i;) n.unshift({
 							title: Object(j.a)(i),
-							url: i.link[0].href
-						}), (i = R(e, Object(C.a)(i.link[0].href))) && "" === Object(S.a)(i.link[0].href) && (i = !1)
+							url: i.link[4].href
+						}), (i = R(e, Object(C.a)(i.link[4].href))) && "" === Object(S.a)(i.link[4].href) && (i = !1)
 					} catch (a) {
 					}
 					
@@ -4130,7 +4130,7 @@
 					e.forEach((function(n, r) {
 						//APK
 						//blogger
-						var o = n.link[0].href.replace("https://t.t.info.vn","");
+						var o = n.link[4].href.replace("https://t.t.info.vn","");
 						e[r].path = o, t[o] = n, e[r].title = Object(j.a)(n);
 						var i = o.split("/").length - 2;
 						e[r].depth = i
