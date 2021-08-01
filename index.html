@@ -2444,6 +2444,24 @@
 				return void 0 === t && (t = !1), n ? (t ? (r.length && r[0].title || n.$t) : (n.$t || r.length && r[0].title)) : "Not found"
 			}
 		},
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		"AO7/": function(e, t, n) {
 			var r = {};
 			r[n("tiKp")("toStringTag")] = "z", e.exports = "[object z]" === String(r)
@@ -2665,6 +2683,11 @@
 			n.r(t);
 			n("jDwS"), n("tJnr"), n("WMQy"), n("s5O0"), n("JpVE"), n("GrmL"), n("r0n/"), n("5IUh"), n("aA5v"), n("4vhu"), n("sh09"), n("CKxn"), n("heWv"), n("W3dK"), n("coM+"), n("Jf+H"), n("B2jG"), n("xU8C"), n("2zVT"), n("jl5p"), n("rS4F"), n("0+hl"), n("GxjQ"), n("akhO"), n("iEvA"), n("2pG7"), n("5KOQ"), n("Wy/h"), n("FnSk"), n("dyFt"), n("uEa5"), n("xCtd"), n("exxK"), n("AQcl"), n("giUj"), n("JuLZ"), n("LlFk"), n("dLlT"), n("4AlI"), n("z+Nv"), n("phIU"), n("icXS"), n("DTwJ"), n("PucM"), n("ZaTu"), n("hfZl"), n("BmiC"), n("kynB"), n("fI0a")
 		},
+		
+		
+		
+		
+		
 		GdzR: function(e, t, n) {
 			"use strict";
 			n.r(t);
@@ -2798,9 +2821,14 @@
 					return e.find((function(e) {
 						//APK
 						//blogger
-						//return Object(S.a)(e.fields.slug) === Object(S.a)(t)
 						
-						return Object(S.a)(e.link[0].href) === Object(S.a)(t)
+						//return Object(S.a)(e.link[0].href) === Object(S.a)(t)
+						
+						var ret = Object(S.a)(e.link[0].href) === Object(S.a)(t)
+						
+						console.log(ret)
+						window.rrrrr= ret;
+						return ret
 						
 					}))
 				},
@@ -2816,10 +2844,12 @@
 							url: i.link[0].href
 						}), (i = R(e, Object(C.a)(i.link[0].href))) && "" === Object(S.a)(i.link[0].href) && (i = !1)
 					} catch (a) {
-						alert("err")
-						console.log(a)
 					}
-					window.nnnnn = n
+					
+					console.log(n)
+					
+					window.nnnn=n
+					
 					return n
 				},
 				A = function e(t) {
@@ -4100,10 +4130,7 @@
 					e.forEach((function(n, r) {
 						//APK
 						//blogger
-						var o = n.link[0].href;
-						
-						window.ooooo=o;
-						
+						var o = n.link[0].href.replace("https://t.t.info.vn","");
 						e[r].path = o, t[o] = n, e[r].title = Object(j.a)(n);
 						var i = o.split("/").length - 2;
 						e[r].depth = i
@@ -5276,7 +5303,6 @@
 						var e = this.state.expanded,
 							n = this.props,
 							r = n.node;
-							window.rrrrr =r;
 							
 							var i = n.location,
 							a = this.props.depth + 1,
@@ -5571,20 +5597,6 @@
 				
 				
 				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
 				Fn = function(e, t) {
 					var n;
 					return function r() {
@@ -5756,18 +5768,12 @@
 						}))))
 					}, t
 				}(o.a.Component),
-				
-				
-				
-				//APK DocsTableOfContents
+
 				Vn = function(e) {
 					var t = e.items;
 					
-					console.log(t);
-					
 					return t.length ? o.a.createElement("ul", {
-						//className: "DocsTableOfContents"
-						className: "toc js-toc"
+						className: "toc js-toc"   //"DocsTableOfContents"
 					}, o.a.createElement(qn, {
 						item: {
 							url: "#docs-content",
@@ -5900,6 +5906,10 @@
 				
 			}
 		},
+		
+		
+		
+		
 		GrmL: function(e, t, n) {},
 		GxjQ: function(e, t, n) {},
 		HAuM: function(e, t) {
@@ -9153,13 +9163,10 @@
 					return e && e.default || e
 				},
 				T = function(e) {
-					var t, tt;
+					var t;
 					
 					//APK URL
-					tt= "https://d.t.info.vn/page-data/" + ("/" === e ? "index" : t = (t = "/" === (t = e)[0] ? t.slice(1) : t).endsWith("/") ? t.slice(0, -1) : t) + "/page-data.json";
-					console.log(e + "    //////////   " + tt)
-					
-					return tt;
+					return "https://d.t.info.vn/page-data/" + ("/" === e ? "index" : t = (t = "/" === (t = e)[0] ? t.slice(1) : t).endsWith("/") ? t.slice(0, -1) : t) + "/page-data.json";
 				};
 
 			function j(e, t) {
