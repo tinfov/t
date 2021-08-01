@@ -2,9 +2,7 @@
   "feed": {
     "entry": [
       {
-				"id": {
-          "$t": "38139070-47f7-5691-b410-897599f1b059"
-        },
+				
         "link": [
           {
             "href": "/",
@@ -19,12 +17,10 @@
         }
       },
       {
-				"id": {
-						"$t": "5723ab69-1dc0-50b8-b36d-ada4a59cc8da"
-				},
+				
         "link": [
           {
-            "href": "/client-certificates/configure-your-mobile-app-or-iot-device",
+            "href": "/client-certificates/configure-your-mobile",
             "title": "Configure your mobile app or IoT device"
           }
         ],
