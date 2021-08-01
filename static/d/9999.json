@@ -1,9 +1,8 @@
 {
   "feed": {
-    "allMdx": {
+    
       "edges": [
         {
-          "node": {
             "id": "38139070-47f7-5691-b410-897599f1b059",
             "fields": {
               "slug": "/"
@@ -18,10 +17,8 @@
                 "value": "Cloudflare SSL documentation"
               }
             ]
-          }
         },
         {
-          "node": {
             "id": "5723ab69-1dc0-50b8-b36d-ada4a59cc8da",
             "fields": {
               "slug": "/client-certificates/configure-your-mobile-app-or-iot-device"
@@ -31,10 +28,8 @@
              
               "order": 3
             }
-          }
         },
         {
-          "node": {
             "id": "9cbb6245-3ad8-59d1-be0b-cf5a8b077406",
             "fields": {
               "slug": "/client-certificates-add/create-a-client-certificate-del"
@@ -44,10 +39,8 @@
              
               "order": 2
             }
-          }
         },
         {
-          "node": {
             "id": "c6320ff2-cc5c-5cb6-9759-7d3cd242edfe",
             "fields": {
               "slug": "/client-certificates/enable-mtls"
@@ -62,10 +55,9 @@
                 "value": "Enable mTLS"
               }
             ]
-          }
+          
         },
         {
-          "node": {
             "id": "2a0b9436-f7fc-5b14-aa50-a78c61aa2b93",
             "fields": {
               "slug": "/client-certificates"
@@ -80,10 +72,9 @@
                 "value": "Client certificates"
               }
             ]
-          }
+          
         },
         {
-          "node": {
             "id": "f73634e3-e5e6-5cd1-a813-f9e648fb9bdb",
             "fields": {
               "slug": "/client-certificates/revoke-client-certificate"
@@ -98,10 +89,9 @@
                 "value": "Revoke a client certificate"
               }
             ]
-          }
+          
         },
         {
-          "node": {
             "id": "1c83ce02-1a47-50eb-a966-bfc497f63803",
             "fields": {
               "slug": "/client-certificates/troubleshooting"
@@ -116,11 +106,9 @@
                 "value": "Troubleshooting"
               }
             ]
-          }
         },
         
 				{
-          "node": {
             "id": "a2bf51ad-95bb-5e25-9a3e-5928c8371f2f",
             "fields": {
               "slug": "/notifications"
@@ -135,10 +123,8 @@
                 "value": "Notifications / 123456789.json"
               }
             ]
-          }
         },
 				{
-          "node": {
             "id": "a2bf51gd-95bb-5e25-9a3e-5928c8371f2f",
             "fields": {
               "slug": "/search"
@@ -153,10 +139,8 @@
                 "value": "SEarc / .json"
               }
             ]
-          }
         },
         {
-          "node": {
             "id": "69dd61bf-f461-58fc-b2b9-d061deae4893",
             "fields": {
               "slug": "/ssl-for-saas/status-codes"
@@ -171,10 +155,8 @@
                 "value": "Status codes"
               }
             ]
-          }
         },
         {
-          "node": {
             "id": "2021",
             "fields": {
               "slug": "/2021"
@@ -188,10 +170,8 @@
                 "value": "2021"
               }
             ]
-          }
         },
         {
-          "node": {
             "id": "08",
             "fields": {
               "slug": "/2021/08"
@@ -205,10 +185,8 @@
                 "value": "08"
               }
             ]
-          }
         },
         {
-          "node": {
             "id": "a",
             "fields": {
               "slug": "/2021/08/a.html"
@@ -222,10 +200,9 @@
                 "value": "aaaa"
               }
             ]
-          }
+          
         },
         {
-          "node": {
             "id": "b",
             "fields": {
               "slug": "/2021/08/b.html"
@@ -240,10 +217,8 @@
                 "value": "bbbb"
               }
             ]
-          }
         },
         {
-          "node": {
             "id": "c",
             "fields": {
               "slug": "/2021/08/c.html"
@@ -253,9 +228,8 @@
               
               "order": 1
             }
-          }
         }
       ]
-    }
+    
   }
 }
