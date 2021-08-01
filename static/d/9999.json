@@ -32,6 +32,25 @@
             "title": "Configure your mobile app or IoT device"
           }
         ],
+				 "author": [
+          {
+            "name": {
+              "$t": "/An"
+            },
+            "uri": {
+              "$t": "http://www.blogger.com/profile/03329584729039837975"
+            },
+            "email": {
+              "$t": "noreply@blogger.com"
+            },
+            "gd$image": {
+              "rel": "http://schemas.google.com/g/2005#thumbnail",
+              "width": "32",
+              "height": "32",
+              "src": "//4.bp.blogspot.com/-ZeWIlfgv0I8/Xo2kiTgDEVI/AAAAAAAACP4/1gid_EJV8Iwugq3HDI2Q5_VbpWReykcGACK4BGAYYCw/s113/logo.jpg"
+            }
+          }
+        ],
         "title": {
           "$t": "Configure your mobile app or IoT device"
         },
