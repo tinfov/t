@@ -1,5 +1,21 @@
 {
+	"version": "1.0",
+  "encoding": "UTF-8",
   "feed": {
+		"generator": {
+      "version": "7.00",
+      "uri": "http://www.blogger.com",
+      "$t": "Blogger"
+    },
+    "openSearch$totalResults": {
+      "$t": "23"
+    },
+    "openSearch$startIndex": {
+      "$t": "1"
+    },
+    "openSearch$itemsPerPage": {
+      "$t": "3"
+    },
     "entry": [
       
       {
