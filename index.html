@@ -2435,18 +2435,13 @@
 		A22z: function(e, t, n) {
 			"use strict";
 			t.a = function(e, t) {
-				
-
-				//APK
-				//blogger
-				
-				//var n = e.frontmatter,
 				var n = e.title;
+					r = e.link[0].title;
+					
+				//APK
+				//return void 0 === t && (t = !1), n ? (t ? (r.length && r[0].value || n.title) : (n.title || r.length && r[0].value)) : "Not found"
 				
-				return void 0 === t && (t = !1), n ? n.$t : "Not found"
-				
-				//var n = e.title;
-				//return void 0 === t && (t = !1), n ? n.$t : "Not found"
+				return void 0 === t && (t = !1), n ? (t ? (r.length && r[0].value || n.$t) : (n.$t || r.length && r[0].value)) : "Not found"
 			}
 		},
 		"AO7/": function(e, t, n) {
@@ -5276,8 +5271,10 @@
 					
 						var e = this.state.expanded,
 							n = this.props,
-							r = n.node,
-							i = n.location,
+							r = n.node;
+							window.rrrrr =r;
+							
+							var i = n.location,
 							a = this.props.depth + 1,
 							s = {};
 						e && (s["is-expanded"] = ""), this.isActive() && (s["is-active"] = ""), this.isActiveRoot() && (s["is-active-root"] = "");
