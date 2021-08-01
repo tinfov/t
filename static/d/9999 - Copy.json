@@ -3,10 +3,12 @@
     "entry": [
       {
         "id": "38139070-47f7-5691-b410-897599f1b059",
-        "link": [{
-          "href": "/",
-					"title": "c"
-        }],
+        "link": [
+          {
+            "href": "/",
+            "title": "c"
+          }
+        ],
         "title": {
           "$t": "Welcome"
         },
@@ -16,10 +18,12 @@
       },
       {
         "id": "5723ab69-1dc0-50b8-b36d-ada4a59cc8da",
-        "link": [{
-          "href": "/client-certificates/configure-your-mobile-app-or-iot-device",
-					"title": "c"
-        }],
+        "link": [
+          {
+            "href": "/client-certificates/configure-your-mobile-app-or-iot-device",
+            "title": "c"
+          }
+        ],
         "title": {
           "$t": "Configure your mobile app or IoT device"
         },
@@ -29,10 +33,12 @@
       },
       {
         "id": "9cbb6245-3ad8-59d1-be0b-cf5a8b077406",
-        "link": [{
-          "href": "/client-certificates-add/create-a-client-certificate-del",
-					"title": "c"
-        }],
+        "link": [
+          {
+            "href": "/client-certificates-add/create-a-client-certificate-del",
+            "title": "c"
+          }
+        ],
         "title": {
           "$t": "Create a client certificate"
         },
@@ -42,10 +48,12 @@
       },
       {
         "id": "c6320ff2-cc5c-5cb6-9759-7d3cd242edfe",
-        "link": [{
-          "href": "/client-certificates/enable-mtls",
-					"title": "c"
-        }],
+        "link": [
+          {
+            "href": "/client-certificates/enable-mtls",
+            "title": "c"
+          }
+        ],
         "title": {
           "$t": "Enable mTLS"
         },
@@ -55,10 +63,12 @@
       },
       {
         "id": "2a0b9436-f7fc-5b14-aa50-a78c61aa2b93",
-        "link": [{
-          "href": "/client-certificates",
-					"title": "c"
-        }],
+        "link": [
+          {
+            "href": "/client-certificates",
+            "title": "c"
+          }
+        ],
         "title": {
           "$t": "Client certificates"
         },
@@ -68,10 +78,12 @@
       },
       {
         "id": "f73634e3-e5e6-5cd1-a813-f9e648fb9bdb",
-        "link": [{
-          "href": "/client-certificates/revoke-client-certificate",
-					"title": "c"
-        }],
+        "link": [
+          {
+            "href": "/client-certificates/revoke-client-certificate",
+            "title": "c"
+          }
+        ],
         "title": {
           "$t": "Revoke a client certificate"
         },
@@ -81,10 +93,12 @@
       },
       {
         "id": "1c83ce02-1a47-50eb-a966-bfc497f63803",
-        "link": [{
-          "href": "/client-certificates/troubleshooting",
-					"title": "c"
-        }],
+        "link": [
+          {
+            "href": "/client-certificates/troubleshooting",
+            "title": "c"
+          }
+        ],
         "title": {
           "$t": "Troubleshooting"
         },
@@ -94,10 +108,12 @@
       },
       {
         "id": "a2bf51ad-95bb-5e25-9a3e-5928c8371f2f",
-        "link": [{
-          "href": "/notifications",
-					"title": "c"
-        }],
+        "link": [
+          {
+            "href": "/notifications",
+            "title": "c"
+          }
+        ],
         "title": {
           "$t": "Notifications / 123456789.json"
         },
@@ -107,10 +123,12 @@
       },
       {
         "id": "a2bf51gd-95bb-5e25-9a3e-5928c8371f2f",
-        "link": [{
-          "href": "/search",
-					"title": "c"
-        }],
+        "link": [
+          {
+            "href": "/search",
+            "title": "c"
+          }
+        ],
         "title": {
           "$t": "SEarc / .json"
         },
@@ -120,10 +138,12 @@
       },
       {
         "id": "69dd61bf-f461-58fc-b2b9-d061deae4893",
-        "link": [{
-          "href": "/ssl-for-saas/status-codes",
-					"title": "c"
-        }],
+        "link": [
+          {
+            "href": "/ssl-for-saas/status-codes",
+            "title": "c"
+          }
+        ],
         "title": {
           "$t": "Status codes"
         },
@@ -133,10 +153,12 @@
       },
       {
         "id": "2021",
-        "link": [{
-          "href": "/2021",
-					"title": "c"
-        }],
+        "link": [
+          {
+            "href": "/2021",
+            "title": "c"
+          }
+        ],
         "title": {
           "$t": "2021"
         },
@@ -146,10 +168,12 @@
       },
       {
         "id": "08",
-        "link": [{
-          "href": "/2021/08",
-					"title": "c"
-        }],
+        "link": [
+          {
+            "href": "/2021/08",
+            "title": "c"
+          }
+        ],
         "title": {
           "$t": "08"
         },
@@ -159,10 +183,12 @@
       },
       {
         "id": "a",
-        "link": [{
-          "href": "/2021/08/a.html",
-					"title": "c"
-        }],
+        "link": [
+          {
+            "href": "/2021/08/a.html",
+            "title": "c"
+          }
+        ],
         "title": {
           "$t": "aa"
         },
@@ -172,10 +198,12 @@
       },
       {
         "id": "b",
-        "link": [{
-          "href": "/2021/08/b.html",
-					"title": "c"
-        }],
+        "link": [
+          {
+            "href": "/2021/08/b.html",
+            "title": "c"
+          }
+        ],
         "title": {
           "$t": "bb"
         },
@@ -185,10 +213,12 @@
       },
       {
         "id": "c",
-        "link": [{
-          "href": "/2021/08/c.html",
-					"title": ""
-        }],
+        "link": [
+          {
+            "href": "/2021/08/c.html",
+            "title": ""
+          }
+        ],
         "title": {
           "$t": "cc"
         },
