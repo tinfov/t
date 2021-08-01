@@ -6,7 +6,7 @@
         "link": [
           {
             "href": "/",
-            "title": "c"
+            "title": "Welcome"
           }
         ],
         "title": {
@@ -21,7 +21,7 @@
         "link": [
           {
             "href": "/client-certificates/configure-your-mobile-app-or-iot-device",
-            "title": "c"
+            "title": "Configure your mobile app or IoT device"
           }
         ],
         "title": {
@@ -36,7 +36,7 @@
         "link": [
           {
             "href": "/client-certificates-add/create-a-client-certificate-del",
-            "title": "c"
+            "title": "Create a client certificate"
           }
         ],
         "title": {
@@ -51,7 +51,7 @@
         "link": [
           {
             "href": "/client-certificates/enable-mtls",
-            "title": "c"
+            "title": "Enable mTLS"
           }
         ],
         "title": {
@@ -66,7 +66,7 @@
         "link": [
           {
             "href": "/client-certificates",
-            "title": "c"
+            "title": "Client certificates"
           }
         ],
         "title": {
@@ -81,7 +81,7 @@
         "link": [
           {
             "href": "/client-certificates/revoke-client-certificate",
-            "title": "c"
+            "title": "Revoke a client certificate"
           }
         ],
         "title": {
@@ -96,7 +96,7 @@
         "link": [
           {
             "href": "/client-certificates/troubleshooting",
-            "title": "c"
+            "title": "Troubleshooting"
           }
         ],
         "title": {
@@ -111,7 +111,7 @@
         "link": [
           {
             "href": "/notifications",
-            "title": "c"
+            "title": "Notifications / 123456789.json"
           }
         ],
         "title": {
@@ -126,7 +126,7 @@
         "link": [
           {
             "href": "/search",
-            "title": "c"
+            "title": "SEarc / .json"
           }
         ],
         "title": {
@@ -141,7 +141,7 @@
         "link": [
           {
             "href": "/ssl-for-saas/status-codes",
-            "title": "c"
+            "title": "Status codes"
           }
         ],
         "title": {
@@ -156,7 +156,7 @@
         "link": [
           {
             "href": "/2021",
-            "title": "c"
+            "title": "c2021"
           }
         ],
         "title": {
@@ -171,7 +171,7 @@
         "link": [
           {
             "href": "/2021/08",
-            "title": "c"
+            "title": "c08"
           }
         ],
         "title": {
@@ -186,7 +186,7 @@
         "link": [
           {
             "href": "/2021/08/a.html",
-            "title": "c"
+            "title": "aa"
           }
         ],
         "title": {
@@ -201,7 +201,7 @@
         "link": [
           {
             "href": "/2021/08/b.html",
-            "title": "c"
+            "title": "bb"
           }
         ],
         "title": {
@@ -216,7 +216,7 @@
         "link": [
           {
             "href": "/2021/08/c.html",
-            "title": ""
+            "title": "cc"
           }
         ],
         "title": {
