@@ -8993,6 +8993,9 @@
 				return t - parseFloat(r) - parseFloat(o)
 			}
 		},
+		
+		
+		//APK
 		emEt: function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "PageResourceStatus", (function() {
@@ -9144,10 +9147,13 @@
 					return e && e.default || e
 				},
 				T = function(e) {
-					var t;
+					var t, tt;
 					
-					//APK
-					return "https://d.t.info.vn/page-data/" + ("/" === e ? "index" : t = (t = "/" === (t = e)[0] ? t.slice(1) : t).endsWith("/") ? t.slice(0, -1) : t) + "/page-data.json"
+					//APK URL
+					tt= "https://d.t.info.vn/page-data/" + ("/" === e ? "index" : t = (t = "/" === (t = e)[0] ? t.slice(1) : t).endsWith("/") ? t.slice(0, -1) : t) + "/page-data.json";
+					console.log(e + "    //////////   " + tt)
+					
+					return tt;
 				};
 
 			function j(e, t) {

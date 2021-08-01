@@ -1,6 +1,6 @@
 {
   "componentChunkName": "component-mdx.js",
-  "path": "/client-certificates/troubleshooting",
+  "path": "/2020/troubleshooting",
   "result": {
     "data": {
       "mdx": {
@@ -11,7 +11,7 @@
     "pageContext": {
       "id": "1c83ce02-1a47-50eb-a966-bfc497f63803",
       "fields": {
-        "slug": "/client-certificates/troubleshooting"
+        "slug": "/2020/troubleshooting"
       },
       "frontmatter": {
         "title": "",
@@ -48,7 +48,7 @@
       },
       "parent": {
         "modifiedTime": "2021-07-26",
-        "relativePath": "client-certificates/troubleshooting.md"
+        "relativePath": "2020/troubleshooting.md"
       }
     }
   },
