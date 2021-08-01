@@ -2437,98 +2437,6 @@
 			t.a = function(e, t) {
 				
 
-/* e=
-						"id": "38139070-47f7-5691-b410-897599f1b059",
-            "fields": {
-              "slug": "/"
-            },
-            "frontmatter": {
-              "title": "Welcome",
-             
-              "order": 0
-            },
-            "headings": [
-              {
-                "value": "Cloudflare SSL documentation"
-              }
-            ]
-
-
-
-
-
-				"id": {
-          "$t": "tag:blogger.com,1999:blog-176988983972172119.post-3143210667579866856"
-        },
-        "published": {
-          "$t": "2021-08-01T14:13:00.008+07:00"
-        },
-        "updated": {
-          "$t": "2021-08-01T14:13:50.130+07:00"
-        },
-        "title": {
-          "type": "text",
-          "$t": "c"
-        },
-        "summary": {
-          "type": "text",
-          "$t": "ccccccccccccccc"
-        },
-        "link": [
-          {
-            "rel": "replies",
-            "type": "application/atom+xml",
-            "href": "https://t.t.info.vn/feeds/3143210667579866856/comments/default",
-            "title": "Đăng Nhận xét"
-          },
-          {
-            "rel": "replies",
-            "type": "text/html",
-            "href": "https://t.t.info.vn/2021/08/c.html#comment-form",
-            "title": "0 Nhận xét"
-          },
-          {
-            "rel": "edit",
-            "type": "application/atom+xml",
-            "href": "https://www.blogger.com/feeds/176988983972172119/posts/default/3143210667579866856"
-          },
-          {
-            "rel": "self",
-            "type": "application/atom+xml",
-            "href": "https://www.blogger.com/feeds/176988983972172119/posts/default/3143210667579866856"
-          },
-          {
-            "rel": "alternate",
-            "type": "text/html",
-            "href": "https://t.t.info.vn/2021/08/c.html",
-            "title": "c"
-          }
-        ],
-        "author": [
-          {
-            "name": {
-              "$t": "/An"
-            },
-            "uri": {
-              "$t": "http://www.blogger.com/profile/03329584729039837975"
-            },
-            "email": {
-              "$t": "noreply@blogger.com"
-            },
-            "gd$image": {
-              "rel": "http://schemas.google.com/g/2005#thumbnail",
-              "width": "32",
-              "height": "32",
-              "src": "//4.bp.blogspot.com/-ZeWIlfgv0I8/Xo2kiTgDEVI/AAAAAAAACP4/1gid_EJV8Iwugq3HDI2Q5_VbpWReykcGACK4BGAYYCw/s113/logo.jpg"
-            }
-          }
-        ],
-        "thr$total": {
-          "$t": "0"
-        }
-				
-*/
-
 				//APK
 				//blogger
 				
@@ -2551,8 +2459,8 @@
 			t.a = function(e) {
 				//APK
 				//blogger
-				var t = e.frontmatter;
-				return t && (t.order || 0 === t.order) ? t.order : 1e7
+				//var t = e.frontmatter;
+				//return t && (t.order || 0 === t.order) ? t.order : 1e7
 				
 				var t = e.thr$total;
 				return t && (t.$t || 0 === t.$t) ? t.$t : 1e7
@@ -4231,7 +4139,8 @@
 						//blogger
 					//}(Object(T.useStaticQuery)("9999").allMdx.edges.map((function(e) {
 					
-					}(Object(T.useStaticQuery)("9999").edges.map((function(e) {
+					}(Object(T.useStaticQuery)("9999").entry.map((function(e) {
+						//return e.node
 						return e
 					})).filter((function(e) {
 						//APK
@@ -5367,37 +5276,6 @@
 					
 					//APK RENDER MENU
 					n.render = function() {     
-/*
-				{
-          "node": {
-            "id": "d3c8641f-c7a0-5a1d-a799-ed1601922def",
-            "fields": {
-              "slug": "/edge-certificates"
-            },
-            "frontmatter": {
-              "title": "",
-              "type": null,
-              "order": 22,
-              "hidden": null,
-              "hideChildren": null,
-              "breadcrumbs": null
-            },
-            "headings": [
-              {
-                "value": " t---Edge certificates",
-                "depth": 11
-              }
-            ]
-          }
-        },
-
-*/				
-					
-					
-					
-					
-					
-					
 					
 						var e = this.state.expanded,
 							n = this.props,
