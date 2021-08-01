@@ -3,9 +3,9 @@
     "entry": [
       {
         "id": "38139070-47f7-5691-b410-897599f1b059",
-        "fields": {
-          "slug": "/"
-        },
+        "link": [{
+          "href": "/"
+        }],
         "title": {
           "$t": "Welcome"
         },
@@ -15,9 +15,9 @@
       },
       {
         "id": "5723ab69-1dc0-50b8-b36d-ada4a59cc8da",
-        "fields": {
-          "slug": "/client-certificates/configure-your-mobile-app-or-iot-device"
-        },
+        "link": [{
+          "href": "/client-certificates/configure-your-mobile-app-or-iot-device"
+        }],
         "title": {
           "$t": "Configure your mobile app or IoT device"
         },
@@ -27,9 +27,9 @@
       },
       {
         "id": "9cbb6245-3ad8-59d1-be0b-cf5a8b077406",
-        "fields": {
-          "slug": "/client-certificates-add/create-a-client-certificate-del"
-        },
+        "link": [{
+          "href": "/client-certificates-add/create-a-client-certificate-del"
+        }],
         "title": {
           "$t": "Create a client certificate"
         },
@@ -39,9 +39,9 @@
       },
       {
         "id": "c6320ff2-cc5c-5cb6-9759-7d3cd242edfe",
-        "fields": {
-          "slug": "/client-certificates/enable-mtls"
-        },
+        "link": [{
+          "href": "/client-certificates/enable-mtls"
+        }],
         "title": {
           "$t": "Enable mTLS"
         },
@@ -51,9 +51,9 @@
       },
       {
         "id": "2a0b9436-f7fc-5b14-aa50-a78c61aa2b93",
-        "fields": {
-          "slug": "/client-certificates"
-        },
+        "link": [{
+          "href": "/client-certificates"
+        }],
         "title": {
           "$t": "Client certificates"
         },
@@ -63,9 +63,9 @@
       },
       {
         "id": "f73634e3-e5e6-5cd1-a813-f9e648fb9bdb",
-        "fields": {
-          "slug": "/client-certificates/revoke-client-certificate"
-        },
+        "link": [{
+          "href": "/client-certificates/revoke-client-certificate"
+        }],
         "title": {
           "$t": "Revoke a client certificate"
         },
@@ -75,9 +75,9 @@
       },
       {
         "id": "1c83ce02-1a47-50eb-a966-bfc497f63803",
-        "fields": {
-          "slug": "/client-certificates/troubleshooting"
-        },
+        "link": [{
+          "href": "/client-certificates/troubleshooting"
+        }],
         "title": {
           "$t": "Troubleshooting"
         },
@@ -87,9 +87,9 @@
       },
       {
         "id": "a2bf51ad-95bb-5e25-9a3e-5928c8371f2f",
-        "fields": {
-          "slug": "/notifications"
-        },
+        "link": [{
+          "href": "/notifications"
+        }],
         "title": {
           "$t": "Notifications / 123456789.json"
         },
@@ -99,9 +99,9 @@
       },
       {
         "id": "a2bf51gd-95bb-5e25-9a3e-5928c8371f2f",
-        "fields": {
-          "slug": "/search"
-        },
+        "link": [{
+          "href": "/search"
+        }],
         "title": {
           "$t": "SEarc / .json"
         },
@@ -111,9 +111,9 @@
       },
       {
         "id": "69dd61bf-f461-58fc-b2b9-d061deae4893",
-        "fields": {
-          "slug": "/ssl-for-saas/status-codes"
-        },
+        "link": [{
+          "href": "/ssl-for-saas/status-codes"
+        }],
         "title": {
           "$t": "Status codes"
         },
@@ -123,9 +123,9 @@
       },
       {
         "id": "2021",
-        "fields": {
-          "slug": "/2021"
-        },
+        "link": [{
+          "href": "/2021"
+        }],
         "title": {
           "$t": "2021"
         },
@@ -135,9 +135,9 @@
       },
       {
         "id": "08",
-        "fields": {
-          "slug": "/2021/08"
-        },
+        "link": [{
+          "href": "/2021/08"
+        }],
         "title": {
           "$t": "08"
         },
@@ -147,9 +147,9 @@
       },
       {
         "id": "a",
-        "fields": {
-          "slug": "/2021/08/a.html"
-        },
+        "link": [{
+          "href": "/2021/08/a.html"
+        }],
         "title": {
           "$t": "aa"
         },
@@ -159,9 +159,9 @@
       },
       {
         "id": "b",
-        "fields": {
-          "slug": "/2021/08/b.html"
-        },
+        "link": [{
+          "href": "/2021/08/b.html"
+        }],
         "title": {
           "$t": "bb"
         },
@@ -171,9 +171,9 @@
       },
       {
         "id": "c",
-        "fields": {
-          "slug": "/2021/08/c.html"
-        },
+        "link": [{
+          "href": "/2021/08/c.html"
+        }],
         "title": {
           "$t": "cc"
         },

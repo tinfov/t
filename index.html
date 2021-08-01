@@ -2441,9 +2441,9 @@
 				//blogger
 				
 				//var n = e.frontmatter,
-				var n = e.title,
-					r = e.headings;
-				return void 0 === t && (t = !1), n ? (t ? (r.length && r[0].value || n.$t) : (n.$t || r.length && r[0].value)) : "Not found"
+				var n = e.title;
+				
+				return void 0 === t && (t = !1), n ? n.$t : "Not found"
 				
 				//var n = e.title;
 				//return void 0 === t && (t = !1), n ? n.$t : "Not found"
@@ -2803,10 +2803,10 @@
 					return e.find((function(e) {
 						//APK
 						//blogger
-						return Object(S.a)(e.fields.slug) === Object(S.a)(t)
+						//return Object(S.a)(e.fields.slug) === Object(S.a)(t)
 						
-						var slug = e.link[4].href.replace("https://t.t.info.vn","");
-						return Object(S.a)(slug) === Object(S.a)(t)
+						return Object(S.a)(e.link[0].href) === Object(S.a)(t)
+						
 					}))
 				},
 				M = Object(P.a)(),
@@ -2814,13 +2814,12 @@
 					var n = [],
 						r = t.pathname.startsWith(M) ? t.pathname.substr(M.length) : t.pathname;
 					try {
-						for (var o = R(e, r), i = R(e, Object(C.a)(o.fields.slug)); i;) n.unshift({
-						//for (var o = R(e, r), i = R(e, Object(C.a)(o.link[4].href.replace("https://t.t.info.vn",""))); i;) n.unshift({
+						//for (var o = R(e, r), i = R(e, Object(C.a)(o.fields.slug)); i;) n.unshift({
+						
+						for (var o = R(e, r), i = R(e, Object(C.a)(o.link[0].href)); i;) n.unshift({
 							title: Object(j.a)(i),
-							url: i.fields.slug
-							//url: i.link[4].href.replace("https://t.t.info.vn","")
-						}), (i = R(e, Object(C.a)(i.fields.slug))) && "" === Object(S.a)(i.fields.slug) && (i = !1)
-						//}), (i = R(e, Object(C.a)(i.link[4].href.replace("https://t.t.info.vn","")))) && "" === Object(S.a)(i.link[4].href.replace("https://t.t.info.vn","")) && (i = !1)
+							url: i.link[0].href
+						}), (i = R(e, Object(C.a)(i.link[0].href))) && "" === Object(S.a)(i.link[0].href) && (i = !1)
 					} catch (a) {}
 					return n
 				},
@@ -4102,10 +4101,7 @@
 					e.forEach((function(n, r) {
 						//APK
 						//blogger
-						var o = n.fields.slug;
-						
-						//var o = n.link[4].href.replace("https://t.t.info.vn","");
-						
+						var o = n.link[0].href;
 						
 						window.ooooo=o;
 						
