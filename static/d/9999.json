@@ -6,8 +6,8 @@
         "fields": {
           "slug": "/"
         },
-        "frontmatter": {
-          "title": "Welcome"
+        "title": {
+          "$t": "Welcome"
         },
         "thr$total": {
           "$t": 0
@@ -18,8 +18,8 @@
         "fields": {
           "slug": "/client-certificates/configure-your-mobile-app-or-iot-device"
         },
-        "frontmatter": {
-          "title": "Configure your mobile app or IoT device"
+        "title": {
+          "$t": "Configure your mobile app or IoT device"
         },
         "thr$total": {
           "$t": 3
@@ -30,8 +30,8 @@
         "fields": {
           "slug": "/client-certificates-add/create-a-client-certificate-del"
         },
-        "frontmatter": {
-          "title": "Create a client certificate"
+        "title": {
+          "$t": "Create a client certificate"
         },
         "thr$total": {
           "$t": 2
@@ -42,8 +42,8 @@
         "fields": {
           "slug": "/client-certificates/enable-mtls"
         },
-        "frontmatter": {
-          "title": "Enable mTLS"
+        "title": {
+          "$t": "Enable mTLS"
         },
         "thr$total": {
           "$t": 4
@@ -54,8 +54,8 @@
         "fields": {
           "slug": "/client-certificates"
         },
-        "frontmatter": {
-          "title": "Client certificates"
+        "title": {
+          "$t": "Client certificates"
         },
         "thr$total": {
           "$t": 3
@@ -66,8 +66,8 @@
         "fields": {
           "slug": "/client-certificates/revoke-client-certificate"
         },
-        "frontmatter": {
-          "title": "Revoke a client certificate"
+        "title": {
+          "$t": "Revoke a client certificate"
         },
         "thr$total": {
           "$t": 5
@@ -78,8 +78,8 @@
         "fields": {
           "slug": "/client-certificates/troubleshooting"
         },
-        "frontmatter": {
-          "title": "Troubleshooting"
+        "title": {
+          "$t": "Troubleshooting"
         },
         "thr$total": {
           "$t": 6
@@ -90,8 +90,8 @@
         "fields": {
           "slug": "/notifications"
         },
-        "frontmatter": {
-          "title": "Notifications / 123456789.json"
+        "title": {
+          "$t": "Notifications / 123456789.json"
         },
         "thr$total": {
           "$t": 200
@@ -102,8 +102,8 @@
         "fields": {
           "slug": "/search"
         },
-        "frontmatter": {
-          "title": "SEarc / .json"
+        "title": {
+          "$t": "SEarc / .json"
         },
         "thr$total": {
           "$t": 200
@@ -114,8 +114,8 @@
         "fields": {
           "slug": "/ssl-for-saas/status-codes"
         },
-        "frontmatter": {
-          "title": "Status codes"
+        "title": {
+          "$t": "Status codes"
         },
         "thr$total": {
           "$t": 1
@@ -126,8 +126,8 @@
         "fields": {
           "slug": "/2021"
         },
-        "frontmatter": {
-          "title": "2021"
+        "title": {
+          "$t": "2021"
         },
         "thr$total": {
           "$t": 1
@@ -138,8 +138,8 @@
         "fields": {
           "slug": "/2021/08"
         },
-        "frontmatter": {
-          "title": "08"
+        "title": {
+          "$t": "08"
         },
         "thr$total": {
           "$t": 1
@@ -150,8 +150,8 @@
         "fields": {
           "slug": "/2021/08/a.html"
         },
-        "frontmatter": {
-          "title": "aa"
+        "title": {
+          "$t": "aa"
         },
         "thr$total": {
           "$t": 1
@@ -162,8 +162,8 @@
         "fields": {
           "slug": "/2021/08/b.html"
         },
-        "frontmatter": {
-          "title": "bb"
+        "title": {
+          "$t": "bb"
         },
         "thr$total": {
           "$t": 1
@@ -174,8 +174,8 @@
         "fields": {
           "slug": "/2021/08/c.html"
         },
-        "frontmatter": {
-          "title": "cc"
+        "title": {
+          "$t": "cc"
         },
         "thr$total": {
           "$t": 1

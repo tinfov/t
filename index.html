@@ -2440,9 +2440,10 @@
 				//APK
 				//blogger
 				
-				var n = e.frontmatter,
+				//var n = e.frontmatter,
+				var n = e.title,
 					r = e.headings;
-				return void 0 === t && (t = !1), n ? (t ? (r.length && r[0].value || n.title) : (n.title || r.length && r[0].value)) : "Not found"
+				return void 0 === t && (t = !1), n ? (t ? (r.length && r[0].value || n.$t) : (n.$t || r.length && r[0].value)) : "Not found"
 				
 				//var n = e.title;
 				//return void 0 === t && (t = !1), n ? n.$t : "Not found"
@@ -4144,7 +4145,7 @@
 						return e
 					})).filter((function(e) {
 						//APK
-						return true // !e.frontmatter.hidden
+						return true 
 					})));
 					
 /*
@@ -4152,7 +4153,7 @@
 						return e
 					})).filter((function(e) {
 						//APK
-						return true // !e.frontmatter.hidden
+						return true 
 					})));
 */					
 					
@@ -5836,10 +5837,6 @@
 					r = e.location,
 					i = Object(j.a)(t, !0),
 					a = function(e) {
-						//APK
-						//var t = e.frontmatter;
-						//return t ? t.type || "document" : "error"
-						
 						var t = e.id;
 						return t ? "document" : "error"
 					}(t),
