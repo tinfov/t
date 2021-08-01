@@ -5287,8 +5287,6 @@
 						var u = {};
 						return this.isHidden() && (u.tabIndex = -1), this.isHidden() && (u["aria-hidden"] = !0), o.a.createElement("li", Object.assign({
 							className: "DocsSidebar--nav-item",
-							//APK
-							//key: r.id.$t
 							key: r.id
 						}, s), this.showChildren() && o.a.createElement("button", Object.assign({
 							onClick: this.onExpandCollapseClick,
@@ -5328,9 +5326,6 @@
 							}
 						}, r.children.map((function(n) {
 							return o.a.createElement(t, {
-								//
-								//key: n.id.$t,
-								
 								key: n.id,
 								node: n,
 								location: i,
@@ -5382,9 +5377,6 @@
 									ref: e.ref
 								}, n.map((function(e) {
 									return o.a.createElement(An, {
-										//
-										//key: e.id.$t,
-										
 										key: e.id,
 										node: e,
 										location: r,
@@ -5842,10 +5834,7 @@
 					r = e.location,
 					i = Object(j.a)(t, !0),
 					a = function(e) {
-						//
-						//var t = e.id;
-						
-						var t = e.id.$t;
+						var t = e.id;
 						return t ? "document" : "error"
 					}(t),
 					s = function(e) {
@@ -12115,8 +12104,6 @@
 
 			function _(e, t) {
 				var n = e.sortIndex - t.sortIndex;
-				//
-				//return 0 !== n ? n : e.id.$t - t.id.$t
 				return 0 !== n ? n : e.id - t.id
 			}
 			var N = [],
