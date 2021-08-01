@@ -571,7 +571,19 @@
       },
       
 			{
-        "id": "c",
+        "id": {
+          "$t": "tag:blogger.com,1999:blog-176988983972172119.post-5627754131031743502"
+        },
+				"published": {
+          "$t": "2021-08-01T14:13:00.005+07:00"
+        },
+        "updated": {
+          "$t": "2021-08-01T14:13:39.236+07:00"
+        },
+				"summary": {
+          "type": "text",
+          "$t": "bbbbbbbbbbbbbbbbb"
+        },
         "link": [
           {
             "rel": "replies",
@@ -601,9 +613,11 @@
           }
         ],
         "title": {
+					"type": "application/atom+xml",
           "$t": "cc"
         },
         "thr$total": {
+					"type": "application/atom+xml",
           "$t": 1
         }
       }
