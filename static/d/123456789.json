@@ -27,15 +27,10 @@
               "slug": "/client-certificates/configure-your-mobile-app-or-iot-device"
             },
             "frontmatter": {
-              "title": "",
+              "title": "Configure your mobile app or IoT device",
              
               "order": 3
-            },
-            "headings": [
-              {
-                "value": "Configure your mobile app or IoT device"
-              }
-            ]
+            }
           }
         },
         {
@@ -45,15 +40,10 @@
               "slug": "/client-certificates-add/create-a-client-certificate-del"
             },
             "frontmatter": {
-              "title": "",
+              "title": "Create a client certificate",
              
               "order": 2
-            },
-            "headings": [
-              {
-                "value": "Create a client certificate"
-              }
-            ]
+            }
           }
         },
         {
@@ -259,15 +249,10 @@
               "slug": "/2021/08/c.html"
             },
             "frontmatter": {
-              "title": "",
+              "title": "cccc",
               
               "order": 1
-            },
-            "headings": [
-              {
-                "value": "cccc"
-              }
-            ]
+            }
           }
         }
       ]

@@ -2437,13 +2437,11 @@
 			t.a = function(e, t) {
 				var n = e.frontmatter,
 					r = e.headings;
-					
+
 				//APK
 				//return void 0 === t && (t = !1), n ? (t ? (r.length && r[0].value || n.title) : (n.title || r.length && r[0].value)) : "Not found"
 				
-				return void 0 === t && (t = !1), n ? (t ? (r.length && r[0].value || n.title) : (n.title || r.length && r[0].value)) : "Not found"
-				
-				return e.headings.value
+				return void 0 === t && (t = !1), n ? n.title : "Not found"
 			}
 		},
 		"AO7/": function(e, t, n) {
