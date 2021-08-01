@@ -314,7 +314,7 @@
           {
             "rel": "replies",
             "type": "application/atom+xml",
-            "href": "/client-certificates-add/create-a-client-certificate",
+            "href": "/client-certificates/create-a-client-certificate",
             "title": "Đăng Nhận xét"
           },
           {
