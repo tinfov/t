@@ -2435,13 +2435,13 @@
 		A22z: function(e, t, n) {
 			"use strict";
 			t.a = function(e, t) {
-				var n = e.title;
-					r = e.link[0].title;
+				var n = e.title,
+					r = e.link;
 					
 				//APK
 				//return void 0 === t && (t = !1), n ? (t ? (r.length && r[0].value || n.title) : (n.title || r.length && r[0].value)) : "Not found"
 				
-				return void 0 === t && (t = !1), n ? (t ? (r.length && r[0].value || n.$t) : (n.$t || r.length && r[0].value)) : "Not found"
+				return void 0 === t && (t = !1), n ? (t ? (r.length && r[0].title || n.$t) : (n.$t || r.length && r[0].title)) : "Not found"
 			}
 		},
 		"AO7/": function(e, t, n) {
