@@ -772,43 +772,6 @@
         "thr$total": {
           "$t": 6
         }
-      },
-      {
-        "id": "c",
-        "link": [
-          {
-            "rel": "replies",
-            "type": "application/atom+xml",
-            "href": "https://t.t.info.vn/feeds/4683177816115685400/comments/default",
-            "title": "Đăng Nhận xét"
-          },
-          {
-            "rel": "replies",
-            "type": "text/html",
-            "href": "https://t.t.info.vn/2021/08/a.html#comment-form",
-            "title": "0 Nhận xét"
-          },
-          {
-            "rel": "edit",
-            "type": "application/atom+xml",
-            "href": "https://www.blogger.com/feeds/176988983972172119/posts/default/4683177816115685400"
-          },
-          {
-            "rel": "self",
-            "type": "application/atom+xml",
-            "href": "https://www.blogger.com/feeds/176988983972172119/posts/default/4683177816115685400"
-          },
-          {
-            "href": "/2021/08/c.html",
-            "title": "cc"
-          }
-        ],
-        "title": {
-          "$t": "cc"
-        },
-        "thr$total": {
-          "$t": 1
-        }
       }
     ]
   }
