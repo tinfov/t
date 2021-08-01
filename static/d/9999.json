@@ -152,7 +152,7 @@
     "entry": [
       {
         "id": {
-          "$t": "tag:blogger.com,1999:blog-176988983972172119.post-3143210667579866856"
+          "$t": "3143210667579866856"
         },
         "published": {
           "$t": "2021-08-01T14:13:00.008+07:00"
@@ -172,7 +172,7 @@
           {
             "rel": "replies",
             "type": "application/atom+xml",
-            "href": "/3143210667579866856/comments/default",
+            "href": "/client-certificates/configure-your-mobile-app-or-iot-device",
             "title": "Đăng Nhận xét"
           },
           {
@@ -223,7 +223,7 @@
       },
       {
         "id": {
-          "$t": "tag:blogger.com,1999:blog-176988983972172119.post-5627754131031743502"
+          "$t": "5627754131031743502"
         },
         "published": {
           "$t": "2021-08-01T14:13:00.005+07:00"
@@ -243,7 +243,7 @@
           {
             "rel": "replies",
             "type": "application/atom+xml",
-            "href": "/5627754131031743502/comments/default",
+            "href": "/client-certificates-add/create-a-client-certificate-del",
             "title": "Đăng Nhận xét"
           },
           {
@@ -294,7 +294,7 @@
       },
       {
         "id": {
-          "$t": "tag:blogger.com,1999:blog-176988983972172119.post-4683177816115685400"
+          "$t": "4683177816115685400"
         },
         "published": {
           "$t": "2021-08-01T14:13:00.003+07:00"
@@ -314,7 +314,7 @@
           {
             "rel": "replies",
             "type": "application/atom+xml",
-            "href": "/4683177816115685400/comments/default",
+            "href": "/client-certificates",
             "title": "Đăng Nhận xét"
           },
           {
