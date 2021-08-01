@@ -12,7 +12,7 @@
       "$t": "tag:blogger.com,1999:blog-176988983972172119"
     },
     "updated": {
-      "$t": "2021-08-01T23:26:49.757+07:00"
+      "$t": "2021-08-02T00:05:43.924+07:00"
     },
     "category": [
       {
@@ -99,7 +99,7 @@
       {
         "rel": "self",
         "type": "application/atom+xml",
-        "href": "https://www.blogger.com/feeds/176988983972172119/posts/summary?alt=json&max-results=3"
+        "href": "https://www.blogger.com/feeds/176988983972172119/posts/summary?alt=json&max-results=1"
       },
       {
         "rel": "alternate",
@@ -113,7 +113,7 @@
       {
         "rel": "next",
         "type": "application/atom+xml",
-        "href": "https://www.blogger.com/feeds/176988983972172119/posts/summary?alt=json&start-index=4&max-results=3"
+        "href": "https://www.blogger.com/feeds/176988983972172119/posts/summary?alt=json&start-index=2&max-results=1"
       }
     ],
     "author": [
@@ -147,7 +147,7 @@
       "$t": "1"
     },
     "openSearch$itemsPerPage": {
-      "$t": "3"
+      "$t": "1"
     },
     "entry": [
       {
@@ -196,148 +196,6 @@
             "type": "text/html",
             "href": "https://t.t.info.vn/2021/08/c.html",
             "title": "c"
-          }
-        ],
-        "author": [
-          {
-            "name": {
-              "$t": "/An"
-            },
-            "uri": {
-              "$t": "http://www.blogger.com/profile/03329584729039837975"
-            },
-            "email": {
-              "$t": "noreply@blogger.com"
-            },
-            "gd$image": {
-              "rel": "http://schemas.google.com/g/2005#thumbnail",
-              "width": "32",
-              "height": "32",
-              "src": "//4.bp.blogspot.com/-ZeWIlfgv0I8/Xo2kiTgDEVI/AAAAAAAACP4/1gid_EJV8Iwugq3HDI2Q5_VbpWReykcGACK4BGAYYCw/s113/logo.jpg"
-            }
-          }
-        ],
-        "thr$total": {
-          "$t": "0"
-        }
-      },
-      {
-        "id": {
-          "$t": "tag:blogger.com,1999:blog-176988983972172119.post-5627754131031743502"
-        },
-        "published": {
-          "$t": "2021-08-01T14:13:00.005+07:00"
-        },
-        "updated": {
-          "$t": "2021-08-01T14:13:39.236+07:00"
-        },
-        "title": {
-          "type": "text",
-          "$t": "b"
-        },
-        "summary": {
-          "type": "text",
-          "$t": "bbbbbbbbbbbbbbbbb"
-        },
-        "link": [
-          {
-            "rel": "replies",
-            "type": "application/atom+xml",
-            "href": "https://t.t.info.vn/feeds/5627754131031743502/comments/default",
-            "title": "Đăng Nhận xét"
-          },
-          {
-            "rel": "replies",
-            "type": "text/html",
-            "href": "https://t.t.info.vn/2021/08/b.html#comment-form",
-            "title": "0 Nhận xét"
-          },
-          {
-            "rel": "edit",
-            "type": "application/atom+xml",
-            "href": "https://www.blogger.com/feeds/176988983972172119/posts/default/5627754131031743502"
-          },
-          {
-            "rel": "self",
-            "type": "application/atom+xml",
-            "href": "https://www.blogger.com/feeds/176988983972172119/posts/default/5627754131031743502"
-          },
-          {
-            "rel": "alternate",
-            "type": "text/html",
-            "href": "https://t.t.info.vn/2021/08/b.html",
-            "title": "b"
-          }
-        ],
-        "author": [
-          {
-            "name": {
-              "$t": "/An"
-            },
-            "uri": {
-              "$t": "http://www.blogger.com/profile/03329584729039837975"
-            },
-            "email": {
-              "$t": "noreply@blogger.com"
-            },
-            "gd$image": {
-              "rel": "http://schemas.google.com/g/2005#thumbnail",
-              "width": "32",
-              "height": "32",
-              "src": "//4.bp.blogspot.com/-ZeWIlfgv0I8/Xo2kiTgDEVI/AAAAAAAACP4/1gid_EJV8Iwugq3HDI2Q5_VbpWReykcGACK4BGAYYCw/s113/logo.jpg"
-            }
-          }
-        ],
-        "thr$total": {
-          "$t": "0"
-        }
-      },
-      {
-        "id": {
-          "$t": "tag:blogger.com,1999:blog-176988983972172119.post-4683177816115685400"
-        },
-        "published": {
-          "$t": "2021-08-01T14:13:00.003+07:00"
-        },
-        "updated": {
-          "$t": "2021-08-01T14:13:28.583+07:00"
-        },
-        "title": {
-          "type": "text",
-          "$t": "a"
-        },
-        "summary": {
-          "type": "text",
-          "$t": "aaaaaaaaaaaaa"
-        },
-        "link": [
-          {
-            "rel": "replies",
-            "type": "application/atom+xml",
-            "href": "https://t.t.info.vn/feeds/4683177816115685400/comments/default",
-            "title": "Đăng Nhận xét"
-          },
-          {
-            "rel": "replies",
-            "type": "text/html",
-            "href": "https://t.t.info.vn/2021/08/a.html#comment-form",
-            "title": "0 Nhận xét"
-          },
-          {
-            "rel": "edit",
-            "type": "application/atom+xml",
-            "href": "https://www.blogger.com/feeds/176988983972172119/posts/default/4683177816115685400"
-          },
-          {
-            "rel": "self",
-            "type": "application/atom+xml",
-            "href": "https://www.blogger.com/feeds/176988983972172119/posts/default/4683177816115685400"
-          },
-          {
-            "rel": "alternate",
-            "type": "text/html",
-            "href": "https://t.t.info.vn/2021/08/a.html",
-            "title": "a"
           }
         ],
         "author": [
