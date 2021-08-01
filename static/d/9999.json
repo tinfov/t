@@ -327,6 +327,7 @@
           }
         ],
         "title": {
+					"type": "text",
           "$t": "Configure your mobile app or IoT device"
         },
         "thr$total": {
@@ -335,7 +336,16 @@
       },
 			{
 				
-        "link": [
+        "id": {
+          "$t": "tag:blogger.com,1999:blog-176988983972172119.post-3143210667579866856"
+        },
+        "published": {
+          "$t": "2021-08-01T14:13:00.008+07:00"
+        },
+        "updated": {
+          "$t": "2021-08-01T14:13:50.130+07:00"
+        },
+				"link": [
           {
             "rel": "replies",
             "type": "application/atom+xml",
@@ -360,10 +370,12 @@
           },
 					{
             "href": "/",
+						"type": "text",
             "title": "Welcome"
           }
         ],
         "title": {
+					"type": "text",
           "$t": "Welcome"
         },
         "thr$total": {
