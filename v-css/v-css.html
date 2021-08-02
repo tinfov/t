@@ -4375,7 +4375,7 @@
       }
 
       .DocsFooter {
-        margin-left: var(--docs-sidebar-width);
+        margin-left: 0;
         padding: 3.5rem 0;
         padding-left: var(--docs-content-gap);
         padding-right: calc(var(--docs-body-sidebar-width) + var(--docs-content-gap));
@@ -4802,6 +4802,44 @@
   transform: translateY(0);
 }
 			
+
+
+main_.is-home {
+  background-color: #5c85ee;
+}
+main_.is-fade {
+  --base-color: #000;
+  background-color: #cc98c6;
+}
+main_.is-clip {
+  background-color: #161636;
+}
+main_.is-cover {
+  background-color: #e66f7f;
+}
+.content {
+  transition: all 0.3s ease-out;
+  opacity: 1;
+  transform: translateY(0);
+}
+.transition {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #c8cc98;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-100%);
+  z-index: 1;
+}
+.transition > h2 {
+  font-size: 40px;
+  color: #202020;
+}
+			
 		</b:skin>
 		
 		<title>(-)</title>
@@ -4811,7 +4849,7 @@
     //]]></script>
 		
   </head>
-  <body data-barba="wrapper">
+  <body>
 		<b:section id='www'><noscript id="noscript" class="DocsNoscript">This app works best with JavaScript enabled.</noscript></b:section>
     <!--div id="___gatsby" style="display:"><div style="outline:none" id="focus-wrapper"-->
 				
@@ -4819,7 +4857,7 @@
 		
 		
 		
-		<div class="DocsPage">
+		<div class="DocsPage" data-barba="wrapper">
 			
 			<div class="DocsMobileHeader">
 				<a class="DocsMobileHeader--cloudflare-logo-link Link Link-without-underline" href="/">
@@ -4854,7 +4892,7 @@
 						</span>
 					</div>
 				</a>
-				<button class="Button DocsMobileTitleHeader--sidebar-toggle-button">
+				<button id="idMobi" class="Button DocsMobileTitleHeader--sidebar-toggle-button">
 					<span class="DocsMobileTitleHeader--sidebar-toggle-button-icon" aria-hidden="true">
 						<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" role="img" xmlns="http://www.w3.org/2000/svg">
 							<title>Navigation menu icon</title>
@@ -4864,6 +4902,17 @@
 						</svg>
 						<span is-visually-hidden="">Open external link</span>
 					</span>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
 				</button>
 			</div>
 			
@@ -5240,9 +5289,11 @@
 						<h1 id="enable-universal-ssl">Enable Universal SSL</h1>
 						
 						
-						<div class="transition">
+						<div class="transition_">
 							<h2>IS: <data:view.pageType/></h2>
 						</div>
+						
+						
 						<div class="content">
 							<h1>We are learning<br />page transitions<br />with Barba.js</h1>
 							<p>This demo is using @barba/css plugin.</p>
@@ -5265,16 +5316,13 @@
 							
 						</div>
 						
-						<div style="display:none">
-						<h2 id="authoritative-full-domains"><span class="DocsMarkdown--header-anchor-positioner"><a class="DocsMarkdown--header-anchor Link Link-without-underline" href="#authoritative-full-domains" aria-hidden="true">​</a></span><span>Authoritative (Full) domains</span></h2><p>For an authoritative or full domain — domains that changed their<a href="https://support.cloudflare.com/hc/articles/205195708" class="DocsMarkdown--link"><span class="DocsMarkdown--link-content">domain nameservers</span><span class="DocsMarkdown--link-external-icon" aria-hidden="true"><svg fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 16 16" role="img" xmlns="http://www.w3.org/2000/svg"><title>External link icon</title><path d="M6.75,1.75h-5v12.5h12.5v-5m0,-4v-3.5h-3.5M8,8l5.5-5.5"></path></svg><span is-visually-hidden="">Open external link</span></span></a>– Universal SSL requires two steps:</p><ol><li>Once you change your domain nameservers, your domain should receive its Universal SSL certificate within<strong>24 hours</strong>.</li><li>Your SSL/TLS mode defaults to<a class="DocsMarkdown--link" href="/ssl/origin-configuration/ssl-modes#flexible"><span class="DocsMarkdown--link-content">Flexible</span></a>, which encrypts traffic between a site visitor and Cloudflare (but not Cloudflare and your origin server). To encrypt traffic between Cloudflare and your origin server, see<a class="DocsMarkdown--link" href="/ssl/origin-configuration/ssl-modes"><span class="DocsMarkdown--link-content">SSL modes</span></a>and<a class="DocsMarkdown--link" href="/ssl/origin-configuration/origin-ca"><span class="DocsMarkdown--link-content">Origin CA certificates</span></a>.</li></ol><h2 id="non-authoritative-partial-domains"><span class="DocsMarkdown--header-anchor-positioner"><a class="DocsMarkdown--header-anchor Link Link-without-underline" href="#non-authoritative-partial-domains" aria-hidden="true">​</a></span><span>Non-authoritative (Partial) domains</span></h2><p>For non-authoritative or partial domains (domains on a CNAME setup), Universal SSL will be:</p><ul><li>Provisioned once the DNS record is<a href="https://support.cloudflare.com/hc/articles/360020348832#h_836723523521544131668686" class="DocsMarkdown--link"><span class="DocsMarkdown--link-content">proxied through Cloudflare</span><span class="DocsMarkdown--link-external-icon" aria-hidden="true"><svg fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 16 16" role="img" xmlns="http://www.w3.org/2000/svg"><title>External link icon</title><path d="M6.75,1.75h-5v12.5h12.5v-5m0,-4v-3.5h-3.5M8,8l5.5-5.5"></path></svg><span is-visually-hidden="">Open external link</span></span></a>(orange-clouded).</li><li>Validated:<ul><li>Immediately if you add<a class="DocsMarkdown--link" href="/ssl/edge-certificates/universal-ssl/changing-dcv-method"><span class="DocsMarkdown--link-content">Domain Control Validation (DCV)</span></a>records to your authoritative DNS.</li><li>After a brief period of downtime if you<strong>do not</strong>add DCV records (once your traffic is proxied).</li></ul></li></ul>
-						
-						</div>
+					
 						
 					</article>
 					
 					
 				</div>
-			</main>
+			
 			
 			
 			
@@ -5302,7 +5350,7 @@
 			</footer>
 			
 			
-
+</main>
 			
 		</div>
 	
@@ -5311,6 +5359,8 @@
     
 		<script type="text/javascript">//<![CDATA[
 			const checkbox=document.getElementById("ThemeToggle");checkbox.addEventListener("change",e=>{var t=e.currentTarget.checked?"dark":"light";localStorage.theme=JSON.stringify({theme:t,updated:+new Date}),document.documentElement.setAttribute("theme",getThemeFromStorage())});
+			
+			document.getElementById("idMobi").addEventListener("onclick",function(){document.documentElement.setAttribute("is-mobile-sidebar-open","true")});
     //]]></script>
 		
 		
@@ -5406,7 +5456,6 @@
 		<script type="text/javascript">//<![CDATA[
 			CollapsibleLists.applyTo(document.getElementById('idMenu'),false);
 			
-	
 
     //]]></script>
 
@@ -5422,7 +5471,7 @@ const body = document.querySelector('body');
 
 barba.hooks.before((data) => {
   const background = data.current.container.dataset.background;
-  body.style.setProperty('--page-background', background);
+  //body.style.setProperty('--page-background', background);
 });
 
 barba.init({
@@ -5459,5 +5508,5 @@ barba.init({
     </script>
 		
 
-    </body>
+	</body>
 </html>
