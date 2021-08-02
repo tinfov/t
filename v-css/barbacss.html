@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html theme="light" is-docs-page="" js-focus-visible-polyfill-available="" data-react-helmet="lang,is-docs-page" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	
+	
+		
+		<style type="text/css">
+		<!--/*--><![CDATA[/*><!--*/
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Work+Sans:wght@300&display=swap);
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+main,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+[hidden] {
+  display: none;
+}
+body {
+  line-height: 1;
+}
+menu,
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+
+
+.home-once {
+  opacity: 0;
+}
+.home-once-active {
+  transition: all 1s linear 0.3s;
+}
+.home-once-to {
+  opacity: 1;
+}
+.home-leave {
+  transform: translateX(0);
+}
+.home-leave-active,
+.home-leave-active .content {
+  transition: all 0.7s var(--easing);
+}
+.home-leave-to .content {
+  transform: translateX(-50%);
+}
+.home-leave-to {
+  transform: translateX(100%);
+}
+.home-enter {
+  transform: translateX(-100%);
+}
+.home-enter-active,
+.home-enter-active .content {
+  transition: all 0.7s var(--easing);
+}
+.home-enter-to {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(0);
+}
+.fade-leave {
+  opacity: 1;
+}
+.fade-leave-active {
+  transition: opacity 0.3s linear;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+.fade-enter-active {
+  transition: opacity 0.3s linear;
+}
+.fade-enter-to {
+  opacity: 1;
+}
+.clip-enter {
+  -webkit-clip-path: circle(0);
+  clip-path: circle(0);
+}
+.clip-enter-active {
+  transition: all 0.75s var(--easing);
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+.clip-enter-to {
+  -webkit-clip-path: circle(75%);
+  clip-path: circle(75%);
+}
+.clip-leave {
+  opacity: 1;
+}
+.clip-leave-active {
+  transition: all 0.75s var(--easing);
+}
+.clip-leave-to {
+  opacity: 0;
+}
+.with-cover-enter,
+.with-cover-leave {
+  transition: transform 0.5s var(--easing);
+}
+.with-cover-leave .transition {
+  transform: translateY(-100%);
+}
+.with-cover-leave-active .transition {
+  transition: transform 0.5s var(--easing);
+}
+.with-cover-leave-to .transition,
+.with-cover-leave .content {
+  transform: translateY(0);
+}
+.with-cover-leave-active .content {
+  transition: transform 0.5s var(--easing);
+}
+.with-cover-leave-to .content {
+  transform: translateY(80px);
+}
+.with-cover-enter .transition {
+  transform: translateY(0);
+}
+.with-cover-enter .content {
+  transform: translateY(-80px);
+}
+.with-cover-enter-active .content,
+.with-cover-enter-active .transition {
+  transition: transform 0.5s var(--easing);
+}
+.with-cover-enter-to .transition {
+  transform: translateY(100%);
+}
+.with-cover-enter-to .content {
+  transform: translateY(0);
+}
+	
+	
+
+.btn-back {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 16px;
+  text-decoration: none;
+  border: 1px solid #fff;
+  padding: 5px 8px;
+  border-radius: 3px;
+  color: #fff;
+  z-index: 99;
+}
+.btn-back:hover {
+  background-color: #3c3d3e;
+  border-color: #3c3d3e;
+  color: #fff;
+}
+:root {
+  --easing: cubic-bezier(0.5, 0.7, 0.4, 1);
+}
+body {
+  --page-background: #fff;
+  font-family: Work Sans, sans-serif;
+  font-weight: 300;
+  overflow: hidden;
+  background-color: var(--page-background);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 900;
+}
+header {
+  --base-color: #fff;
+  width: calc(100% - 28vw);
+  height: 100vh;
+  color: var(--base-color);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 14vw;
+}
+header h1 {
+  font-size: 5vw;
+  margin-bottom: 2.5vh;
+  line-height: 1.4;
+}
+header p {
+  font-size: 2.5vw;
+  line-height: 1.4;
+  opacity: 0.8;
+  margin-bottom: 5.375vh;
+}
+header a {
+  font-size: 2.22vw;
+  padding: 24px 2vw;
+  display: inline-block;
+  text-align: center;
+  color: var(--base-color);
+  border: 3px solid var(--base-color);
+  border-radius: 10px;
+  text-decoration: none;
+}
+header.is-home {
+  background-color: #5c85ee;
+}
+header.is-fade {
+  --base-color: #000;
+  background-color: #cc98c6;
+}
+header.is-clip {
+  background-color: #161636;
+}
+header.is-cover {
+  background-color: #e66f7f;
+}
+.content {
+  transition: all 0.3s ease-out;
+  opacity: 1;
+  transform: translateY(0);
+}
+.transition {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #c8cc98;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-100%);
+  z-index: 1;
+}
+.transition > h2 {
+  font-size: 40px;
+  color: #202020;
+}
+
+	
+		/*]]>*/-->
+		</style>
+		
+		
+		<b:skin>
+		</b:skin>
+		
+		<title>(:)</title>
+  
+		
+  </head>
+  <body data-barba="wrapper">
+    
+		<a class="btn-back" data-barba-prevent="" href="/">← All demos</a>
+		
+		<header data-barba="container" class="is-home" data-barba-namespace="home" data-background="#5C85EE">
+		
+			<b:attr cond='data:view.isHomepage' name='data-barba-namespace' value='home'/>
+			<b:attr cond='data:view.isHomepage' name='data-background' value='#5C85EE'/>
+			<b:attr cond='data:view.isHomepage' name='class' value='is-home'/>
+			
+			<b:attr cond='data:view.isPage' name='data-barba-namespace' value='fade'/>
+			<b:attr cond='data:view.isPage' name='data-background' value='#CC98C6'/>
+			<b:attr cond='data:view.isPage' name='class' value='is-fade'/>
+			
+			
+			<b:attr cond='data:view.isPost' name='data-barba-namespace' value='clip'/>
+			<b:attr cond='data:view.isPost' name='data-background' value='#161636'/>
+			<b:attr cond='data:view.isPost' name='class' value='is-clip'/>
+			
+			<b:attr cond='data:view.isArchive' name='data-barba-namespace' value='cover'/>
+			<b:attr cond='data:view.isArchive' name='data-background' value='#E66F7F'/>
+			<b:attr cond='data:view.isArchive' name='class' value='is-cover'/>
+			
+      <div class="transition">
+        <h2>IS: <data:view.pageType/></h2>
+      </div>
+      <div class="content">
+        <h1>We are learning<br />page transitions<br />with Barba.js</h1>
+        <p>This demo is using @barba/css plugin.</p>
+				
+				<b:if cond='data:view.isHomepage'>
+					<a href="/p/project.html">project Fade Transition</a>
+				</b:if>
+				
+				<b:if cond='data:view.isPage'>
+					<a href="/2021/07/test.html">test - Clip-Path Transition</a>
+				</b:if>
+				
+				<b:if cond='data:view.isPost'>
+					<a href="/2021/07/">2021 - Cover Transition</a>
+				</b:if>
+				
+				<b:if cond='data:view.isArchive'>
+					<a href="/">Slide Home Transition</a>
+				</b:if>
+				
+      </div>
+    </header>
+		
+		<script src="https://unpkg.com/@barba/core"></script>
+		<script src="https://unpkg.com/@barba/css"></script>
+		
+		<script>
+      /*<![CDATA[*/
+			
+barba.use(barbaCss);
+
+const body = document.querySelector('body');
+
+barba.hooks.before((data) => {
+  const background = data.current.container.dataset.background;
+  body.style.setProperty('--page-background', background);
+});
+
+barba.init({
+  transitions: [
+    {
+      name: 'home',
+      sync: true,
+      to: { namespace: ['home'] },
+      once() {},
+      leave() {},
+      enter() {},
+    }, {
+      name: 'fade',
+      to: { namespace: ['fade'] },
+      leave() {},
+      enter() {},
+    }, {
+      name: 'clip',
+      sync: true,
+      to: { namespace: ['clip'] },
+      leave() {},
+      enter() {},
+    }, {
+      name: 'with-cover',
+      to: { namespace: ['with-cover'] },
+      leave() {},
+      enter() {},
+    },
+  ],
+});
+      
+			
+    /*]]>*/
+    </script>
+		
+		<b:section id='www'/>
+  </body>
+</html>

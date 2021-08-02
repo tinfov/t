@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html theme="light" lang="en" is-docs-page="">
+<html theme="light">
   <head>
     <meta charSet="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -4689,7 +4689,120 @@
     /*]]>*/-->
 		</style>
     
-		<b:skin></b:skin>
+		<b:skin>
+
+.home-once {
+  opacity: 0;
+}
+.home-once-active {
+  transition: all 1s linear 0.3s;
+}
+.home-once-to {
+  opacity: 1;
+}
+.home-leave {
+  transform: translateX(0);
+}
+.home-leave-active,
+.home-leave-active .content {
+  transition: all 0.7s var(--easing);
+}
+.home-leave-to .content {
+  transform: translateX(-50%);
+}
+.home-leave-to {
+  transform: translateX(100%);
+}
+.home-enter {
+  transform: translateX(-100%);
+}
+.home-enter-active,
+.home-enter-active .content {
+  transition: all 0.7s var(--easing);
+}
+.home-enter-to {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(0);
+}
+.fade-leave {
+  opacity: 1;
+}
+.fade-leave-active {
+  transition: opacity 0.3s linear;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+.fade-enter-active {
+  transition: opacity 0.3s linear;
+}
+.fade-enter-to {
+  opacity: 1;
+}
+.clip-enter {
+  -webkit-clip-path: circle(0);
+  clip-path: circle(0);
+}
+.clip-enter-active {
+  transition: all 0.75s var(--easing);
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+.clip-enter-to {
+  -webkit-clip-path: circle(75%);
+  clip-path: circle(75%);
+}
+.clip-leave {
+  opacity: 1;
+}
+.clip-leave-active {
+  transition: all 0.75s var(--easing);
+}
+.clip-leave-to {
+  opacity: 0;
+}
+.with-cover-enter,
+.with-cover-leave {
+  transition: transform 0.5s var(--easing);
+}
+.with-cover-leave .transition {
+  transform: translateY(-100%);
+}
+.with-cover-leave-active .transition {
+  transition: transform 0.5s var(--easing);
+}
+.with-cover-leave-to .transition,
+.with-cover-leave .content {
+  transform: translateY(0);
+}
+.with-cover-leave-active .content {
+  transition: transform 0.5s var(--easing);
+}
+.with-cover-leave-to .content {
+  transform: translateY(80px);
+}
+.with-cover-enter .transition {
+  transform: translateY(0);
+}
+.with-cover-enter .content {
+  transform: translateY(-80px);
+}
+.with-cover-enter-active .content,
+.with-cover-enter-active .transition {
+  transition: transform 0.5s var(--easing);
+}
+.with-cover-enter-to .transition {
+  transform: translateY(100%);
+}
+.with-cover-enter-to .content {
+  transform: translateY(0);
+}
+			
+		</b:skin>
 		
 		<title>(-)</title>
 		
@@ -4698,18 +4811,18 @@
     //]]></script>
 		
   </head>
-  <body>
+  <body data-barba="wrapper">
 		<b:section id='www'><noscript id="noscript" class="DocsNoscript">This app works best with JavaScript enabled.</noscript></b:section>
     <!--div id="___gatsby" style="display:"><div style="outline:none" id="focus-wrapper"-->
 				
-		<a class="SkipNavLink" href="#docs-content" data-reach-skip-link="" data-reach-skip-nav-link="">Skip to content</a>
+		<a class="SkipNavLink" data-barba-prevent="" href="#docs-content" data-reach-skip-link="" data-reach-skip-nav-link="">Skip to content</a>
 		
 		
 		
 		<div class="DocsPage">
 			
 			<div class="DocsMobileHeader">
-				<a class="DocsMobileHeader--cloudflare-logo-link Link Link-without-underline" href="https://developers.cloudflare.com/">
+				<a class="DocsMobileHeader--cloudflare-logo-link Link Link-without-underline" href="/">
 					<div class="DocsNavLogoLockup DocsNavLogoLockup-with-small-gap">
 						<div class="DocsNavLogoLockup--logo">
 							<svg viewBox="0 0 48 48" fill="currentColor" role="img" xmlns="http://www.w3.org/2000/svg">
@@ -4762,7 +4875,7 @@
 			<div class="DocsSidebar">
 				<div class="DocsSidebar--sections">
 					<div class="DocsSidebar--section DocsSidebar--header-section">
-						<a class="DocsSidebar--cloudflare-logo-link DocsSidebar--link" href="https://developers.cloudflare.com/">
+						<a class="DocsSidebar--cloudflare-logo-link DocsSidebar--link" href="/">
 							<div class="DocsNavLogoLockup">
 								<div class="DocsNavLogoLockup--logo">
 									<svg viewBox="0 0 48 48" fill="currentColor" role="img" xmlns="http://www.w3.org/2000/svg">
@@ -4808,7 +4921,7 @@
 							<div class="DocsSidebar--section-more-dropdown Dropdown--dropdown">
 								<ul class="Dropdown--list">
 									<li class="Dropdown--item">
-										<a class="Dropdown--link" href="https://cloudflare.com" tabindex="-1">Cloudflare homepage</a>
+										<a class="Dropdown--link" href="/" tabindex="-1">Cloudflare homepage</a>
 									</li>
 								</ul>
 							</div>
@@ -5066,7 +5179,23 @@
 			
 			
 			
-			<main class="DocsBody">
+			<main class="DocsBody is-home" data-barba="container" data-barba-namespace="home" data-background="#5C85EE">
+				<b:attr cond='data:view.isHomepage' name='data-barba-namespace' value='home'/>
+				<b:attr cond='data:view.isHomepage' name='data-background' value='#5C85EE'/>
+				<b:attr cond='data:view.isHomepage' name='class' value='DocsBody is-home'/>
+				
+				<b:attr cond='data:view.isPage' name='data-barba-namespace' value='fade'/>
+				<b:attr cond='data:view.isPage' name='data-background' value='#CC98C6'/>
+				<b:attr cond='data:view.isPage' name='class' value='DocsBody is-fade'/>
+				
+				
+				<b:attr cond='data:view.isPost' name='data-barba-namespace' value='clip'/>
+				<b:attr cond='data:view.isPost' name='data-background' value='#161636'/>
+				<b:attr cond='data:view.isPost' name='class' value='DocsBody is-clip'/>
+				
+				<b:attr cond='data:view.isArchive' name='data-barba-namespace' value='cover'/>
+				<b:attr cond='data:view.isArchive' name='data-background' value='#E66F7F'/>
+				<b:attr cond='data:view.isArchive' name='class' value='DocsBody is-cover'/>
 				
 				
 				<div class="DocsBody--sidebar" with-styled-webkit-scrollbars="">
@@ -5111,34 +5240,35 @@
 						<h1 id="enable-universal-ssl">Enable Universal SSL</h1>
 						
 						
-						<ul class="collapsibleList">
-							<li>
-								Parent item
-								<ul>
-									<li>Child item</li>
-									<li>Child item</li>
-									<li>
-										Parent item
-										<ul>
-											<li>Child item</li>
-											<li>Child item</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li>
-								Parent item
-								<ul>
-									<li>Child item</li>
-									<li>Child item</li>
-								</ul>
-							</li>
-						</ul>
-			
-			
+						<div class="transition">
+							<h2>IS: <data:view.pageType/></h2>
+						</div>
+						<div class="content">
+							<h1>We are learning<br />page transitions<br />with Barba.js</h1>
+							<p>This demo is using @barba/css plugin.</p>
+							
+							<b:if cond='data:view.isHomepage'>
+								<a href="/p/project.html">project Fade Transition</a>
+							</b:if>
+							
+							<b:if cond='data:view.isPage'>
+								<a href="/2021/07/test.html">test - Clip-Path Transition</a>
+							</b:if>
+							
+							<b:if cond='data:view.isPost'>
+								<a href="/2021/07/">2021 - Cover Transition</a>
+							</b:if>
+							
+							<b:if cond='data:view.isArchive'>
+								<a href="/">Slide Home Transition</a>
+							</b:if>
+							
+						</div>
 						
-						
+						<div style="display:none">
 						<h2 id="authoritative-full-domains"><span class="DocsMarkdown--header-anchor-positioner"><a class="DocsMarkdown--header-anchor Link Link-without-underline" href="#authoritative-full-domains" aria-hidden="true">​</a></span><span>Authoritative (Full) domains</span></h2><p>For an authoritative or full domain — domains that changed their<a href="https://support.cloudflare.com/hc/articles/205195708" class="DocsMarkdown--link"><span class="DocsMarkdown--link-content">domain nameservers</span><span class="DocsMarkdown--link-external-icon" aria-hidden="true"><svg fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 16 16" role="img" xmlns="http://www.w3.org/2000/svg"><title>External link icon</title><path d="M6.75,1.75h-5v12.5h12.5v-5m0,-4v-3.5h-3.5M8,8l5.5-5.5"></path></svg><span is-visually-hidden="">Open external link</span></span></a>– Universal SSL requires two steps:</p><ol><li>Once you change your domain nameservers, your domain should receive its Universal SSL certificate within<strong>24 hours</strong>.</li><li>Your SSL/TLS mode defaults to<a class="DocsMarkdown--link" href="/ssl/origin-configuration/ssl-modes#flexible"><span class="DocsMarkdown--link-content">Flexible</span></a>, which encrypts traffic between a site visitor and Cloudflare (but not Cloudflare and your origin server). To encrypt traffic between Cloudflare and your origin server, see<a class="DocsMarkdown--link" href="/ssl/origin-configuration/ssl-modes"><span class="DocsMarkdown--link-content">SSL modes</span></a>and<a class="DocsMarkdown--link" href="/ssl/origin-configuration/origin-ca"><span class="DocsMarkdown--link-content">Origin CA certificates</span></a>.</li></ol><h2 id="non-authoritative-partial-domains"><span class="DocsMarkdown--header-anchor-positioner"><a class="DocsMarkdown--header-anchor Link Link-without-underline" href="#non-authoritative-partial-domains" aria-hidden="true">​</a></span><span>Non-authoritative (Partial) domains</span></h2><p>For non-authoritative or partial domains (domains on a CNAME setup), Universal SSL will be:</p><ul><li>Provisioned once the DNS record is<a href="https://support.cloudflare.com/hc/articles/360020348832#h_836723523521544131668686" class="DocsMarkdown--link"><span class="DocsMarkdown--link-content">proxied through Cloudflare</span><span class="DocsMarkdown--link-external-icon" aria-hidden="true"><svg fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 16 16" role="img" xmlns="http://www.w3.org/2000/svg"><title>External link icon</title><path d="M6.75,1.75h-5v12.5h12.5v-5m0,-4v-3.5h-3.5M8,8l5.5-5.5"></path></svg><span is-visually-hidden="">Open external link</span></span></a>(orange-clouded).</li><li>Validated:<ul><li>Immediately if you add<a class="DocsMarkdown--link" href="/ssl/edge-certificates/universal-ssl/changing-dcv-method"><span class="DocsMarkdown--link-content">Domain Control Validation (DCV)</span></a>records to your authoritative DNS.</li><li>After a brief period of downtime if you<strong>do not</strong>add DCV records (once your traffic is proxied).</li></ul></li></ul>
+						
+						</div>
 						
 					</article>
 					
@@ -5280,6 +5410,54 @@
 
     //]]></script>
 
+		<script src="https://unpkg.com/@barba/core"></script>
+		<script src="https://unpkg.com/@barba/css"></script>
+		
+		<script>
+      /*<![CDATA[*/
+			
+barba.use(barbaCss);
+
+const body = document.querySelector('body');
+
+barba.hooks.before((data) => {
+  const background = data.current.container.dataset.background;
+  body.style.setProperty('--page-background', background);
+});
+
+barba.init({
+  transitions: [
+    {
+      name: 'home',
+      sync: true,
+      to: { namespace: ['home'] },
+      once() {},
+      leave() {},
+      enter() {},
+    }, {
+      name: 'fade',
+      to: { namespace: ['fade'] },
+      leave() {},
+      enter() {},
+    }, {
+      name: 'clip',
+      sync: true,
+      to: { namespace: ['clip'] },
+      leave() {},
+      enter() {},
+    }, {
+      name: 'with-cover',
+      to: { namespace: ['with-cover'] },
+      leave() {},
+      enter() {},
+    },
+  ],
+});
+      
+			
+    /*]]>*/
+    </script>
+		
 
     </body>
 </html>
