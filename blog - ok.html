@@ -2723,6 +2723,11 @@
 						}), (i = R(e, Object(C.a)(i.link[4].href))) && "" === Object(S.a)(i.link[4].href) && (i = !1)
 					} catch (a) {
 					}
+					
+					console.log(n)
+					
+					window.nnnn=n
+					
 					return n
 				},
 				A = function e(t) {
@@ -9188,38 +9193,12 @@
 									return t.memoizedGet("https://d.t.info.vn/static/d/" + e + ".json").then((function(t) {
 									//return t.memoizedGet("feeds/posts/summary/?alt=json&max-results=" + e).then((function(t) {
 									
+									
 										var n = JSON.parse(t.responseText);
-										
-										console.log(n)
-										window.nnnn=n;
-										window.tttt=t;
-										
-										{
-											for (var iii = 0; iii < window.nnnn.category.length; iii++) {
-												
-												var label = window.nnnn.category[i].term;
-											
-											
-											
-												var jsonlabel = JSON.parse(window.tttt.memoizedGet("/feeds/posts/summary/-" + label + "?alt=json&max-results=10").responseText)
-											
-												
-												
-												
-												n.
-											}
-										}
-										
-										
-										
-										
 										return {
 											staticQueryHash: e,
 											jsonPayload: n
 										}
-										
-										
-									
 									}))
 								}))).then((function(e) {
 									var n = {};
