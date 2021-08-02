@@ -1,0 +1,832 @@
+{
+  "version": "1.0",
+  "encoding": "UTF-8",
+  "feed": {
+    "xmlns": "http://www.w3.org/2005/Atom",
+    "xmlns$openSearch": "http://a9.com/-/spec/opensearchrss/1.0/",
+    "xmlns$blogger": "http://schemas.google.com/blogger/2008",
+    "xmlns$georss": "http://www.georss.org/georss",
+    "xmlns$gd": "http://schemas.google.com/g/2005",
+    "xmlns$thr": "http://purl.org/syndication/thread/1.0",
+    "id": {
+      "$t": "tag:blogger.com,1999:blog-176988983972172119"
+    },
+    "updated": {
+      "$t": "2021-08-02T00:05:43.924+07:00"
+    },
+    "category": [
+      {
+        "term": "blog"
+      },
+      {
+        "term": "BXD™"
+      },
+      {
+        "term": "TT"
+      },
+      {
+        "term": "auditing"
+      },
+      {
+        "term": "APK™"
+      },
+      {
+        "term": "Aadhar"
+      },
+      {
+        "term": "AnPhuKhang™"
+      },
+      {
+        "term": "project"
+      },
+      {
+        "term": "404"
+      },
+      {
+        "term": "BCT™"
+      },
+      {
+        "term": "Car Accessory"
+      },
+      {
+        "term": "Car part"
+      },
+      {
+        "term": "Cooking"
+      },
+      {
+        "term": "Food"
+      },
+      {
+        "term": "Luat"
+      },
+      {
+        "term": "Music"
+      },
+      {
+        "term": "Nature"
+      },
+      {
+        "term": "QH™"
+      },
+      {
+        "term": "SEO"
+      },
+      {
+        "term": "Spots"
+      },
+      {
+        "term": "career"
+      },
+      {
+        "term": "careers"
+      }
+    ],
+    "title": {
+      "type": "text",
+      "$t": "T∈ Hữu Lương"
+    },
+    "subtitle": {
+      "type": "html",
+      "$t": "moo ta"
+    },
+    "link": [
+      {
+        "rel": "http://schemas.google.com/g/2005#feed",
+        "type": "application/atom+xml",
+        "href": "https://t.t.info.vn/feeds/posts/summary"
+      },
+      {
+        "rel": "self",
+        "type": "application/atom+xml",
+        "href": "https://www.blogger.com/feeds/176988983972172119/posts/summary/-/blog?alt=json&max-results=9999"
+      },
+      {
+        "rel": "alternate",
+        "type": "text/html",
+        "href": "https://t.t.info.vn/search/label/blog"
+      },
+      {
+        "rel": "hub",
+        "href": "http://pubsubhubbub.appspot.com/"
+      }
+    ],
+    "author": [
+      {
+        "name": {
+          "$t": "/An"
+        },
+        "uri": {
+          "$t": "http://www.blogger.com/profile/03329584729039837975"
+        },
+        "email": {
+          "$t": "noreply@blogger.com"
+        },
+        "gd$image": {
+          "rel": "http://schemas.google.com/g/2005#thumbnail",
+          "width": "32",
+          "height": "32",
+          "src": "//4.bp.blogspot.com/-ZeWIlfgv0I8/Xo2kiTgDEVI/AAAAAAAACP4/1gid_EJV8Iwugq3HDI2Q5_VbpWReykcGACK4BGAYYCw/s113/logo.jpg"
+        }
+      }
+    ],
+    "generator": {
+      "version": "7.00",
+      "uri": "http://www.blogger.com",
+      "$t": "Blogger"
+    },
+    "openSearch$totalResults": {
+      "$t": "8"
+    },
+    "openSearch$startIndex": {
+      "$t": "1"
+    },
+    "openSearch$itemsPerPage": {
+      "$t": "9999"
+    },
+    "entry": [
+      {
+        "id": {
+          "$t": "tag:blogger.com,1999:blog-176988983972172119.post-5123756074834706243"
+        },
+        "published": {
+          "$t": "2020-09-15T18:17:00.000+07:00"
+        },
+        "updated": {
+          "$t": "2021-07-06T23:59:40.892+07:00"
+        },
+        "category": [
+          {
+            "scheme": "http://www.blogger.com/atom/ns#",
+            "term": "blog"
+          },
+          {
+            "scheme": "http://www.blogger.com/atom/ns#",
+            "term": "Food"
+          },
+          {
+            "scheme": "http://www.blogger.com/atom/ns#",
+            "term": "Music"
+          },
+          {
+            "scheme": "http://www.blogger.com/atom/ns#",
+            "term": "Nature"
+          },
+          {
+            "scheme": "http://www.blogger.com/atom/ns#",
+            "term": "Spots"
+          }
+        ],
+        "title": {
+          "type": "text",
+          "$t": "Small Red Spots On Skin"
+        },
+        "summary": {
+          "type": "text",
+          "$t": "Small red spots appear at any place of your skin and if you look closely at your skin, you will find your skin is full of these red spots. Small Red spots on the skin usually appear due to numerous reasons. They are not dangerous and don't pose a great threat to you and your skin. But of course, they put a bad effect on your overall look. Even people avoid taking foods from you if you have red "
+        },
+        "link": [
+          {
+            "rel": "replies",
+            "type": "application/atom+xml",
+            "href": "https://t.t.info.vn/feeds/5123756074834706243/comments/default",
+            "title": "Đăng Nhận xét"
+          },
+          {
+            "rel": "replies",
+            "type": "text/html",
+            "href": "https://t.t.info.vn/2020/09/small-red-spots-on-skin.html#comment-form",
+            "title": "0 Nhận xét"
+          },
+          {
+            "rel": "edit",
+            "type": "application/atom+xml",
+            "href": "https://www.blogger.com/feeds/176988983972172119/posts/default/5123756074834706243"
+          },
+          {
+            "rel": "self",
+            "type": "application/atom+xml",
+            "href": "https://www.blogger.com/feeds/176988983972172119/posts/default/5123756074834706243"
+          },
+          {
+            "rel": "alternate",
+            "type": "text/html",
+            "href": "https://t.t.info.vn/2020/09/small-red-spots-on-skin.html",
+            "title": "Small Red Spots On Skin"
+          }
+        ],
+        "author": [
+          {
+            "name": {
+              "$t": "/An"
+            },
+            "uri": {
+              "$t": "http://www.blogger.com/profile/03329584729039837975"
+            },
+            "email": {
+              "$t": "noreply@blogger.com"
+            },
+            "gd$image": {
+              "rel": "http://schemas.google.com/g/2005#thumbnail",
+              "width": "32",
+              "height": "32",
+              "src": "//4.bp.blogspot.com/-ZeWIlfgv0I8/Xo2kiTgDEVI/AAAAAAAACP4/1gid_EJV8Iwugq3HDI2Q5_VbpWReykcGACK4BGAYYCw/s113/logo.jpg"
+            }
+          }
+        ],
+        "media$thumbnail": {
+          "xmlns$media": "http://search.yahoo.com/mrss/",
+          "url": "https://2.bp.blogspot.com/-gcOhZ6HP8Bo/VupTHihqM-I/AAAAAAAADVs/zjX6ao4I8XI3-dmLL6WCt9xECi6kUN5mQ/s72-c/forest-1149876_960_720.jpg",
+          "height": "72",
+          "width": "72"
+        },
+        "thr$total": {
+          "$t": "0"
+        }
+      },
+      {
+        "id": {
+          "$t": "tag:blogger.com,1999:blog-176988983972172119.post-5212250934925082046"
+        },
+        "published": {
+          "$t": "2020-09-06T23:01:00.002+07:00"
+        },
+        "updated": {
+          "$t": "2021-07-06T23:59:47.435+07:00"
+        },
+        "category": [
+          {
+            "scheme": "http://www.blogger.com/atom/ns#",
+            "term": "blog"
+          }
+        ],
+        "title": {
+          "type": "text",
+          "$t": "post-7"
+        },
+        "summary": {
+          "type": "text",
+          "$t": "We live in a digital world: it is undeniable. The borders between offline and online are mixing and every day billions of people across the planet access the Internet to work, shop, or even watch a movie in their spare time.\nWith this reality, a new consumer arises: the digital consumer. Who is the digital consumer?\nThis consumer is every one of us. We access the web to search for the next "
+        },
+        "link": [
+          {
+            "rel": "replies",
+            "type": "application/atom+xml",
+            "href": "https://t.t.info.vn/feeds/5212250934925082046/comments/default",
+            "title": "Đăng Nhận xét"
+          },
+          {
+            "rel": "replies",
+            "type": "text/html",
+            "href": "https://t.t.info.vn/2020/09/post-7.html#comment-form",
+            "title": "0 Nhận xét"
+          },
+          {
+            "rel": "edit",
+            "type": "application/atom+xml",
+            "href": "https://www.blogger.com/feeds/176988983972172119/posts/default/5212250934925082046"
+          },
+          {
+            "rel": "self",
+            "type": "application/atom+xml",
+            "href": "https://www.blogger.com/feeds/176988983972172119/posts/default/5212250934925082046"
+          },
+          {
+            "rel": "alternate",
+            "type": "text/html",
+            "href": "https://t.t.info.vn/2020/09/post-7.html",
+            "title": "post-7"
+          }
+        ],
+        "author": [
+          {
+            "name": {
+              "$t": "/An"
+            },
+            "uri": {
+              "$t": "http://www.blogger.com/profile/03329584729039837975"
+            },
+            "email": {
+              "$t": "noreply@blogger.com"
+            },
+            "gd$image": {
+              "rel": "http://schemas.google.com/g/2005#thumbnail",
+              "width": "32",
+              "height": "32",
+              "src": "//4.bp.blogspot.com/-ZeWIlfgv0I8/Xo2kiTgDEVI/AAAAAAAACP4/1gid_EJV8Iwugq3HDI2Q5_VbpWReykcGACK4BGAYYCw/s113/logo.jpg"
+            }
+          }
+        ],
+        "thr$total": {
+          "$t": "0"
+        }
+      },
+      {
+        "id": {
+          "$t": "tag:blogger.com,1999:blog-176988983972172119.post-3014966364004456779"
+        },
+        "published": {
+          "$t": "2020-04-22T21:49:00.003+07:00"
+        },
+        "updated": {
+          "$t": "2021-07-08T16:47:44.841+07:00"
+        },
+        "category": [
+          {
+            "scheme": "http://www.blogger.com/atom/ns#",
+            "term": "blog"
+          },
+          {
+            "scheme": "http://www.blogger.com/atom/ns#",
+            "term": "careers"
+          }
+        ],
+        "title": {
+          "type": "text",
+          "$t": "item"
+        },
+        "summary": {
+          "type": "text",
+          "$t": "\n        \n        \n        \n        \n        \n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\tinsights\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t go back\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\tGeneral\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\tJuly 12, 2019\n\t\t\t\t\t\t\t\t\tTop challenges of starting a digital agency. What Brief has learned.\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n"
+        },
+        "link": [
+          {
+            "rel": "replies",
+            "type": "application/atom+xml",
+            "href": "https://t.t.info.vn/feeds/3014966364004456779/comments/default",
+            "title": "Đăng Nhận xét"
+          },
+          {
+            "rel": "replies",
+            "type": "text/html",
+            "href": "https://t.t.info.vn/2020/04/apk.html#comment-form",
+            "title": "4 Nhận xét"
+          },
+          {
+            "rel": "edit",
+            "type": "application/atom+xml",
+            "href": "https://www.blogger.com/feeds/176988983972172119/posts/default/3014966364004456779"
+          },
+          {
+            "rel": "self",
+            "type": "application/atom+xml",
+            "href": "https://www.blogger.com/feeds/176988983972172119/posts/default/3014966364004456779"
+          },
+          {
+            "rel": "alternate",
+            "type": "text/html",
+            "href": "https://t.t.info.vn/2020/04/apk.html",
+            "title": "item"
+          }
+        ],
+        "author": [
+          {
+            "name": {
+              "$t": "/An"
+            },
+            "uri": {
+              "$t": "http://www.blogger.com/profile/03329584729039837975"
+            },
+            "email": {
+              "$t": "noreply@blogger.com"
+            },
+            "gd$image": {
+              "rel": "http://schemas.google.com/g/2005#thumbnail",
+              "width": "32",
+              "height": "32",
+              "src": "//4.bp.blogspot.com/-ZeWIlfgv0I8/Xo2kiTgDEVI/AAAAAAAACP4/1gid_EJV8Iwugq3HDI2Q5_VbpWReykcGACK4BGAYYCw/s113/logo.jpg"
+            }
+          }
+        ],
+        "thr$total": {
+          "$t": "4"
+        }
+      },
+      {
+        "id": {
+          "$t": "tag:blogger.com,1999:blog-176988983972172119.post-7650917654514839475"
+        },
+        "published": {
+          "$t": "2019-12-26T10:10:00.016+07:00"
+        },
+        "updated": {
+          "$t": "2021-07-06T20:48:40.235+07:00"
+        },
+        "category": [
+          {
+            "scheme": "http://www.blogger.com/atom/ns#",
+            "term": "blog"
+          },
+          {
+            "scheme": "http://www.blogger.com/atom/ns#",
+            "term": "BXD™"
+          },
+          {
+            "scheme": "http://www.blogger.com/atom/ns#",
+            "term": "TT"
+          }
+        ],
+        "title": {
+          "type": "text",
+          "$t": "Thông tư 09/2019/TT-BXD"
+        },
+        "summary": {
+          "type": "text",
+          "$t": "\n\n\n\n\n\n\n \n  \n  BỘ KẾ\n  HOẠCH VÀ ĐẦU TƯ\n  ---------\n  \n  \n  CỘNG HÒA\n  XÃ HỘI CHỦ NGHĨA VIỆT NAM\n  Độc lập – Tự do – Hạnh phúc\n  ------------\n  \n \n \n  \n  Số:\n  02/2009/TT-BKH\n  \n  \n  Hà Nội, ngày\n  17 tháng 02 năm 2009\n  \n \n\n\n\n\n \n\nTHÔNG\nTƯ\n\nHƯỚNG\nDẪN LẬP KẾ HOẠCH ĐẤU THẦU\n\nCăn cứ Luật\nĐấu thầu số 61/2005/QH11 ngày 29 tháng 11 năm 2005;\nCăn cứ khoản 1 Điều 67 của Nghị định\n58/2008/NĐ-CP ngày 5 tháng"
+        },
+        "link": [
+          {
+            "rel": "replies",
+            "type": "application/atom+xml",
+            "href": "https://t.t.info.vn/feeds/7650917654514839475/comments/default",
+            "title": "Đăng Nhận xét"
+          },
+          {
+            "rel": "replies",
+            "type": "text/html",
+            "href": "https://t.t.info.vn/2019/12/thong-tu-09-2019-tt-bxd.html#comment-form",
+            "title": "0 Nhận xét"
+          },
+          {
+            "rel": "edit",
+            "type": "application/atom+xml",
+            "href": "https://www.blogger.com/feeds/176988983972172119/posts/default/7650917654514839475"
+          },
+          {
+            "rel": "self",
+            "type": "application/atom+xml",
+            "href": "https://www.blogger.com/feeds/176988983972172119/posts/default/7650917654514839475"
+          },
+          {
+            "rel": "alternate",
+            "type": "text/html",
+            "href": "https://t.t.info.vn/2019/12/thong-tu-09-2019-tt-bxd.html",
+            "title": "Thông tư 09/2019/TT-BXD"
+          }
+        ],
+        "author": [
+          {
+            "name": {
+              "$t": "/An"
+            },
+            "uri": {
+              "$t": "http://www.blogger.com/profile/03329584729039837975"
+            },
+            "email": {
+              "$t": "noreply@blogger.com"
+            },
+            "gd$image": {
+              "rel": "http://schemas.google.com/g/2005#thumbnail",
+              "width": "32",
+              "height": "32",
+              "src": "//4.bp.blogspot.com/-ZeWIlfgv0I8/Xo2kiTgDEVI/AAAAAAAACP4/1gid_EJV8Iwugq3HDI2Q5_VbpWReykcGACK4BGAYYCw/s113/logo.jpg"
+            }
+          }
+        ],
+        "thr$total": {
+          "$t": "0"
+        }
+      },
+      {
+        "id": {
+          "$t": "tag:blogger.com,1999:blog-176988983972172119.post-8828913648690011328"
+        },
+        "published": {
+          "$t": "2019-12-26T10:10:00.010+07:00"
+        },
+        "updated": {
+          "$t": "2021-07-04T22:39:52.737+07:00"
+        },
+        "category": [
+          {
+            "scheme": "http://www.blogger.com/atom/ns#",
+            "term": "blog"
+          },
+          {
+            "scheme": "http://www.blogger.com/atom/ns#",
+            "term": "BXD™"
+          },
+          {
+            "scheme": "http://www.blogger.com/atom/ns#",
+            "term": "TT"
+          }
+        ],
+        "title": {
+          "type": "text",
+          "$t": "Thông tư 11/2019/TT-BXD"
+        },
+        "summary": {
+          "type": "text",
+          "$t": "\n                    \n\n\nTHÔNG TƯ\n\nHướng dẫn xác định giá ca máy và thiết bị thi công xây dựng\n\n\nCăn cứ Luật Xây dựng số 50/2014/QH13 ngày 18 tháng 6 năm 2014;\nCăn cứ Nghị định số 81/2017/NĐ-CP ngày 17 tháng 7 năm 2017 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Xây dựng;\nCăn cứ Nghị định số 68/2019/NĐ-CP ngày 14 tháng 8 năm 2019 của Chính phủ về quản lý chi phí "
+        },
+        "link": [
+          {
+            "rel": "replies",
+            "type": "application/atom+xml",
+            "href": "https://t.t.info.vn/feeds/8828913648690011328/comments/default",
+            "title": "Đăng Nhận xét"
+          },
+          {
+            "rel": "replies",
+            "type": "text/html",
+            "href": "https://t.t.info.vn/2019/12/thong-tu-11-2019-tt-bxd.html#comment-form",
+            "title": "0 Nhận xét"
+          },
+          {
+            "rel": "edit",
+            "type": "application/atom+xml",
+            "href": "https://www.blogger.com/feeds/176988983972172119/posts/default/8828913648690011328"
+          },
+          {
+            "rel": "self",
+            "type": "application/atom+xml",
+            "href": "https://www.blogger.com/feeds/176988983972172119/posts/default/8828913648690011328"
+          },
+          {
+            "rel": "alternate",
+            "type": "text/html",
+            "href": "https://t.t.info.vn/2019/12/thong-tu-11-2019-tt-bxd.html",
+            "title": "Thông tư 11/2019/TT-BXD"
+          }
+        ],
+        "author": [
+          {
+            "name": {
+              "$t": "/An"
+            },
+            "uri": {
+              "$t": "http://www.blogger.com/profile/03329584729039837975"
+            },
+            "email": {
+              "$t": "noreply@blogger.com"
+            },
+            "gd$image": {
+              "rel": "http://schemas.google.com/g/2005#thumbnail",
+              "width": "32",
+              "height": "32",
+              "src": "//4.bp.blogspot.com/-ZeWIlfgv0I8/Xo2kiTgDEVI/AAAAAAAACP4/1gid_EJV8Iwugq3HDI2Q5_VbpWReykcGACK4BGAYYCw/s113/logo.jpg"
+            }
+          }
+        ],
+        "thr$total": {
+          "$t": "0"
+        }
+      },
+      {
+        "id": {
+          "$t": "tag:blogger.com,1999:blog-176988983972172119.post-5549739142194302681"
+        },
+        "published": {
+          "$t": "2019-12-26T10:10:00.009+07:00"
+        },
+        "updated": {
+          "$t": "2021-07-04T22:39:45.038+07:00"
+        },
+        "category": [
+          {
+            "scheme": "http://www.blogger.com/atom/ns#",
+            "term": "blog"
+          },
+          {
+            "scheme": "http://www.blogger.com/atom/ns#",
+            "term": "BXD™"
+          },
+          {
+            "scheme": "http://www.blogger.com/atom/ns#",
+            "term": "TT"
+          }
+        ],
+        "title": {
+          "type": "text",
+          "$t": "Thông tư 13/2019/TT-BXD"
+        },
+        "summary": {
+          "type": "text",
+          "$t": "\n                    \n\n\nTHÔNG TƯ  \n\nQuy định việc quản lý chi phí đầu tư xây dựng các công trình xây dựng thuộc Chương trình mục tiêu quốc gia giảm nghèo bền vững, Chương trình mục tiêu quốc gia về xây dựng nông thôn mới\n\nCăn cứ Nghị định số 81/2017/NĐ-CP ngày 17 tháng 7 năm 2017 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Xây dựng;\nCăn cứ Nghị định số 68/2019/"
+        },
+        "link": [
+          {
+            "rel": "replies",
+            "type": "application/atom+xml",
+            "href": "https://t.t.info.vn/feeds/5549739142194302681/comments/default",
+            "title": "Đăng Nhận xét"
+          },
+          {
+            "rel": "replies",
+            "type": "text/html",
+            "href": "https://t.t.info.vn/2019/12/thong-tu-13-2019-tt-bxd.html#comment-form",
+            "title": "1 Nhận xét"
+          },
+          {
+            "rel": "edit",
+            "type": "application/atom+xml",
+            "href": "https://www.blogger.com/feeds/176988983972172119/posts/default/5549739142194302681"
+          },
+          {
+            "rel": "self",
+            "type": "application/atom+xml",
+            "href": "https://www.blogger.com/feeds/176988983972172119/posts/default/5549739142194302681"
+          },
+          {
+            "rel": "alternate",
+            "type": "text/html",
+            "href": "https://t.t.info.vn/2019/12/thong-tu-13-2019-tt-bxd.html",
+            "title": "Thông tư 13/2019/TT-BXD"
+          }
+        ],
+        "author": [
+          {
+            "name": {
+              "$t": "/An"
+            },
+            "uri": {
+              "$t": "http://www.blogger.com/profile/03329584729039837975"
+            },
+            "email": {
+              "$t": "noreply@blogger.com"
+            },
+            "gd$image": {
+              "rel": "http://schemas.google.com/g/2005#thumbnail",
+              "width": "32",
+              "height": "32",
+              "src": "//4.bp.blogspot.com/-ZeWIlfgv0I8/Xo2kiTgDEVI/AAAAAAAACP4/1gid_EJV8Iwugq3HDI2Q5_VbpWReykcGACK4BGAYYCw/s113/logo.jpg"
+            }
+          }
+        ],
+        "thr$total": {
+          "$t": "1"
+        }
+      },
+      {
+        "id": {
+          "$t": "tag:blogger.com,1999:blog-176988983972172119.post-4085106031726866069"
+        },
+        "published": {
+          "$t": "2019-12-26T10:00:00.003+07:00"
+        },
+        "updated": {
+          "$t": "2021-07-04T22:40:17.201+07:00"
+        },
+        "category": [
+          {
+            "scheme": "http://www.blogger.com/atom/ns#",
+            "term": "blog"
+          },
+          {
+            "scheme": "http://www.blogger.com/atom/ns#",
+            "term": "BXD™"
+          },
+          {
+            "scheme": "http://www.blogger.com/atom/ns#",
+            "term": "TT"
+          }
+        ],
+        "title": {
+          "type": "text",
+          "$t": "Thông tư 10/2019/TT-BXD"
+        },
+        "summary": {
+          "type": "text",
+          "$t": "\n                    \n\n\nTHÔNG TƯ\n\nBan hành định mức xây dựng\n\n___________\nCăn cứ Nghị định số 81/2017/NĐ-CP ngày 17 tháng 7 năm 2017 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Xây dựng;\nCăn cứ Nghị định số 68/2019/NĐ-CP ngày 14 tháng 8 năm 2019 của Chính phủ về quản lý chi phí đầu tư xây dựng;\nTheo đề nghị của Viện trưởng Viện Kinh tế xây dựng và Cục trưởng Cục"
+        },
+        "link": [
+          {
+            "rel": "replies",
+            "type": "application/atom+xml",
+            "href": "https://t.t.info.vn/feeds/4085106031726866069/comments/default",
+            "title": "Đăng Nhận xét"
+          },
+          {
+            "rel": "replies",
+            "type": "text/html",
+            "href": "https://t.t.info.vn/2019/12/thong-tu-10-2019-tt-bxd.html#comment-form",
+            "title": "0 Nhận xét"
+          },
+          {
+            "rel": "edit",
+            "type": "application/atom+xml",
+            "href": "https://www.blogger.com/feeds/176988983972172119/posts/default/4085106031726866069"
+          },
+          {
+            "rel": "self",
+            "type": "application/atom+xml",
+            "href": "https://www.blogger.com/feeds/176988983972172119/posts/default/4085106031726866069"
+          },
+          {
+            "rel": "alternate",
+            "type": "text/html",
+            "href": "https://t.t.info.vn/2019/12/thong-tu-10-2019-tt-bxd.html",
+            "title": "Thông tư 10/2019/TT-BXD"
+          }
+        ],
+        "author": [
+          {
+            "name": {
+              "$t": "/An"
+            },
+            "uri": {
+              "$t": "http://www.blogger.com/profile/03329584729039837975"
+            },
+            "email": {
+              "$t": "noreply@blogger.com"
+            },
+            "gd$image": {
+              "rel": "http://schemas.google.com/g/2005#thumbnail",
+              "width": "32",
+              "height": "32",
+              "src": "//4.bp.blogspot.com/-ZeWIlfgv0I8/Xo2kiTgDEVI/AAAAAAAACP4/1gid_EJV8Iwugq3HDI2Q5_VbpWReykcGACK4BGAYYCw/s113/logo.jpg"
+            }
+          }
+        ],
+        "thr$total": {
+          "$t": "0"
+        }
+      },
+      {
+        "id": {
+          "$t": "tag:blogger.com,1999:blog-176988983972172119.post-4987950890378488048"
+        },
+        "published": {
+          "$t": "2019-12-26T10:00:00.002+07:00"
+        },
+        "updated": {
+          "$t": "2021-07-04T22:40:08.708+07:00"
+        },
+        "category": [
+          {
+            "scheme": "http://www.blogger.com/atom/ns#",
+            "term": "blog"
+          },
+          {
+            "scheme": "http://www.blogger.com/atom/ns#",
+            "term": "BXD™"
+          },
+          {
+            "scheme": "http://www.blogger.com/atom/ns#",
+            "term": "TT"
+          }
+        ],
+        "title": {
+          "type": "text",
+          "$t": "Thông tư 12/2019/TT-BXD"
+        },
+        "summary": {
+          "type": "text",
+          "$t": "\n                    \n\n\nTHÔNG TƯ\n\nHướng dẫn xây dựng và quản lý hệ thống cơ sở dữ liệu\n về định mức, giá xây dựng và chỉ số giá xây dựng\n\n_____________\n\n\nCăn cứ Luật Xây dựng số 50/2014/QH13 ngày 18 tháng 6 năm 2014;\nCăn cứ Nghị định số 81/2017/NĐ-CP ngày 17 tháng 7 năm 2017 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Xây dựng;\nCăn cứ Nghị định số 68/2019/NĐ-CP "
+        },
+        "link": [
+          {
+            "rel": "replies",
+            "type": "application/atom+xml",
+            "href": "https://t.t.info.vn/feeds/4987950890378488048/comments/default",
+            "title": "Đăng Nhận xét"
+          },
+          {
+            "rel": "replies",
+            "type": "text/html",
+            "href": "https://t.t.info.vn/2019/12/thong-tu-12-2019-tt-bxd.html#comment-form",
+            "title": "1 Nhận xét"
+          },
+          {
+            "rel": "edit",
+            "type": "application/atom+xml",
+            "href": "https://www.blogger.com/feeds/176988983972172119/posts/default/4987950890378488048"
+          },
+          {
+            "rel": "self",
+            "type": "application/atom+xml",
+            "href": "https://www.blogger.com/feeds/176988983972172119/posts/default/4987950890378488048"
+          },
+          {
+            "rel": "alternate",
+            "type": "text/html",
+            "href": "https://t.t.info.vn/2019/12/thong-tu-12-2019-tt-bxd.html",
+            "title": "Thông tư 12/2019/TT-BXD"
+          }
+        ],
+        "author": [
+          {
+            "name": {
+              "$t": "/An"
+            },
+            "uri": {
+              "$t": "http://www.blogger.com/profile/03329584729039837975"
+            },
+            "email": {
+              "$t": "noreply@blogger.com"
+            },
+            "gd$image": {
+              "rel": "http://schemas.google.com/g/2005#thumbnail",
+              "width": "32",
+              "height": "32",
+              "src": "//4.bp.blogspot.com/-ZeWIlfgv0I8/Xo2kiTgDEVI/AAAAAAAACP4/1gid_EJV8Iwugq3HDI2Q5_VbpWReykcGACK4BGAYYCw/s113/logo.jpg"
+            }
+          }
+        ],
+        "thr$total": {
+          "$t": "1"
+        }
+      }
+    ]
+  }
+}
