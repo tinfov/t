@@ -1,0 +1,334 @@
+<article class="DocsMarkdown">
+  <h1 id="aws-cloud-hsm">AWS cloud HSM</h1>
+  <aside class="DocsMarkdown--aside" role="note" data-type="note">
+    <div class="DocsMarkdown--aside-header">Note</div>
+    <p>This example imports an existing key pair, but you may prefer to <a href="https://docs.aws.amazon.com/cloudhsm/latest/userguide/manage-keys.html" class="DocsMarkdown--link">
+        <span class="DocsMarkdown--link-content">generate your key on the HSM</span>
+        <span class="DocsMarkdown--link-external-icon" aria-hidden="true">
+          <svg fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 16 16" role="img" aria-labelledby="title-685444892708326" xmlns="http://www.w3.org/2000/svg">
+            <title id="title-685444892708326">External link icon</title>
+            <path d="M6.75,1.75h-5v12.5h12.5v-5m0,-4v-3.5h-3.5M8,8l5.5-5.5"></path>
+          </svg>
+          <span is-visually-hidden="">Open external link</span>
+        </span>
+      </a>. </p>
+  </aside>
+  <hr>
+  
+	
+	<h2 id="before-you-start">
+    <span class="DocsMarkdown--header-anchor-positioner">
+      <a class="DocsMarkdown--header-anchor Link Link-without-underline" href="#before-you-start" aria-hidden="true">​</a>
+    </span>
+    <span>Before you start</span>
+  </h2>
+  <p>Make sure you have:</p>
+  <ul>
+    <li>Provisioned an <a href="https://docs.aws.amazon.com/cloudhsm/latest/userguide/getting-started.html" class="DocsMarkdown--link">
+        <span class="DocsMarkdown--link-content">AWS CloudHSM cluster</span>
+        <span class="DocsMarkdown--link-external-icon" aria-hidden="true">
+          <svg fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 16 16" role="img" aria-labelledby="title-1727759699497875" xmlns="http://www.w3.org/2000/svg">
+            <title id="title-1727759699497875">External link icon</title>
+            <path d="M6.75,1.75h-5v12.5h12.5v-5m0,-4v-3.5h-3.5M8,8l5.5-5.5"></path>
+          </svg>
+          <span is-visually-hidden="">Open external link</span>
+        </span>
+      </a>
+    </li>
+    <li>Installed the <a href="https://docs.aws.amazon.com/cloudhsm/latest/userguide/pkcs11-library-install.html" class="DocsMarkdown--link">
+        <span class="DocsMarkdown--link-content">appropriate software library for PKCS#11</span>
+        <span class="DocsMarkdown--link-external-icon" aria-hidden="true">
+          <svg fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 16 16" role="img" aria-labelledby="title-010657367619264058" xmlns="http://www.w3.org/2000/svg">
+            <title id="title-010657367619264058">External link icon</title>
+            <path d="M6.75,1.75h-5v12.5h12.5v-5m0,-4v-3.5h-3.5M8,8l5.5-5.5"></path>
+          </svg>
+          <span is-visually-hidden="">Open external link</span>
+        </span>
+      </a>
+    </li>
+  </ul>
+  <hr>
+	
+	
+	
+  <h2 id="1-import-the-public-and-private-key-to-the-hsm">
+    <span class="DocsMarkdown--header-anchor-positioner">
+      <a class="DocsMarkdown--header-anchor Link Link-without-underline" href="#1-import-the-public-and-private-key-to-the-hsm" aria-hidden="true">​</a>
+    </span>
+    <span>1. Import the public and private key to the HSM</span>
+  </h2>
+  <p>Before importing the public key, you’ll need to extract it from the certificate provided by your CA. Place the contents of your private key in <code class="InlineCode">privkey.pem</code> and then run the following (replacing certificate.pem with your actual certificate) to populate <code class="InlineCode">pubkey.pm</code>. </p>
+  <pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt">
+				<code>
+					<span class="CodeBlock--rows">
+						<span class="CodeBlock--rows-content">
+							<span class="CodeBlock--row">
+								<span class="CodeBlock--row-indicator"></span>
+								<span class="CodeBlock--row-content">
+									<span class="CodeBlock--token-plain">keyserver$ openssl x509 -pubkey -noout -in certificate.pem &gt; pubkey.pem</span>
+								</span>
+							</span>
+						</span>
+					</span>
+				</code>
+			</pre>
+  <p>Log in to the CloudHSM using a previously created <a href="https://docs.aws.amazon.com/cloudhsm/latest/userguide/hsm-users.html#crypto-user" class="DocsMarkdown--link">
+      <span class="DocsMarkdown--link-content">crypto user</span>
+      <span class="DocsMarkdown--link-external-icon" aria-hidden="true">
+        <svg fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 16 16" role="img" aria-labelledby="title-9402668139977737" xmlns="http://www.w3.org/2000/svg">
+          <title id="title-9402668139977737">External link icon</title>
+          <path d="M6.75,1.75h-5v12.5h12.5v-5m0,-4v-3.5h-3.5M8,8l5.5-5.5"></path>
+        </svg>
+        <span is-visually-hidden="">Open external link</span>
+      </span>
+    </a> (CU) account and generate a key encryption key that will be used to import your private key. </p>
+  <pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt">
+				<code>
+					<span class="CodeBlock--rows">
+						<span class="CodeBlock--rows-content">
+							<span class="CodeBlock--row">
+								<span class="CodeBlock--row-indicator"></span>
+								<span class="CodeBlock--row-content">
+									<span class="CodeBlock--token-plain">keyserver$ /opt/cloudhsm/bin/key_mgmt_util</span>
+								</span>
+							</span>
+							<span class="CodeBlock--row">
+								<span class="CodeBlock--row-indicator"></span>
+								<span class="CodeBlock--row-content">
+									<span class="CodeBlock--token-plain">Command: loginHSM -u CU -s patrick -p donahue</span>
+								</span>
+							</span>
+							<span class="CodeBlock--row">
+								<span class="CodeBlock--row-indicator"></span>
+								<span class="CodeBlock--row-content">
+									<span class="CodeBlock--token-plain">Command: genSymKey -t 31 -s 16 -sess -l import-wrapping-key</span>
+								</span>
+							</span>
+							<span class="CodeBlock--row">
+								<span class="CodeBlock--row-indicator"></span>
+								<span class="CodeBlock--row-content">
+									<span class="CodeBlock--token-plain">...</span>
+								</span>
+							</span>
+							<span class="CodeBlock--row">
+								<span class="CodeBlock--row-indicator"></span>
+								<span class="CodeBlock--row-content">
+									<span class="CodeBlock--token-plain">Symmetric Key Created.  Key Handle: 658</span>
+								</span>
+							</span>
+							<span class="CodeBlock--row">
+								<span class="CodeBlock--row-indicator"></span>
+								<span class="CodeBlock--row-content">
+									<span class="CodeBlock--token-plain">...</span>
+								</span>
+							</span>
+						</span>
+					</span>
+				</code>
+			</pre>
+  <p>Referencing the key handle returned above, import the private and public key, and then log out of the HSM:</p>
+  <pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-txt" language="txt">
+				<code>
+					<span class="CodeBlock--rows">
+						<span class="CodeBlock--rows-content">
+							<span class="CodeBlock--row">
+								<span class="CodeBlock--row-indicator"></span>
+								<span class="CodeBlock--row-content">
+									<span class="CodeBlock--token-plain">Command: importPrivateKey -f privkey.pem -l mykey -id 1 -w 658</span>
+								</span>
+							</span>
+							<span class="CodeBlock--row">
+								<span class="CodeBlock--row-indicator"></span>
+								<span class="CodeBlock--row-content">
+									<span class="CodeBlock--token-plain">...</span>
+								</span>
+							</span>
+							<span class="CodeBlock--row">
+								<span class="CodeBlock--row-indicator"></span>
+								<span class="CodeBlock--row-content">
+									<span class="CodeBlock--token-plain">Cfm3WrapHostKey returned: 0x00 : HSM Return: SUCCESS</span>
+								</span>
+							</span>
+							<span class="CodeBlock--row">
+								<span class="CodeBlock--row-indicator"></span>
+								<span class="CodeBlock--row-content">
+									<span class="CodeBlock--token-plain">Cfm3CreateUnwrapTemplate returned: 0x00 : HSM Return: SUCCESS</span>
+								</span>
+							</span>
+							<span class="CodeBlock--row">
+								<span class="CodeBlock--row-indicator"></span>
+								<span class="CodeBlock--row-content">
+									<span class="CodeBlock--token-plain">Cfm3UnWrapKey returned: 0x00 : HSM Return: SUCCESS</span>
+								</span>
+							</span>
+							<span class="CodeBlock--row">
+								<span class="CodeBlock--row-indicator"></span>
+								<span class="CodeBlock--row-content">
+									<span class="CodeBlock--token-plain">...</span>
+								</span>
+							</span>
+							<span class="CodeBlock--row">
+								<span class="CodeBlock--row-indicator"></span>
+								<span class="CodeBlock--row-content">
+									<span class="CodeBlock--token-plain">Private Key Unwrapped.  Key Handle: 658</span>
+								</span>
+							</span>
+							<span class="CodeBlock--row">
+								<span class="CodeBlock--row-indicator"></span>
+								<span class="CodeBlock--row-content">
+									<span class="CodeBlock--token-plain"></span>
+								</span>
+							</span>
+							<span class="CodeBlock--row">
+								<span class="CodeBlock--row-indicator"></span>
+								<span class="CodeBlock--row-content">
+									<span class="CodeBlock--token-plain"></span>
+								</span>
+							</span>
+							<span class="CodeBlock--row">
+								<span class="CodeBlock--row-indicator"></span>
+								<span class="CodeBlock--row-content">
+									<span class="CodeBlock--token-plain">Command: importPubKey -f pubkey.pem -l mykey -id 1</span>
+								</span>
+							</span>
+							<span class="CodeBlock--row">
+								<span class="CodeBlock--row-indicator"></span>
+								<span class="CodeBlock--row-content">
+									<span class="CodeBlock--token-plain">Cfm3CreatePublicKey returned: 0x00 : HSM Return: SUCCESS</span>
+								</span>
+							</span>
+							<span class="CodeBlock--row">
+								<span class="CodeBlock--row-indicator"></span>
+								<span class="CodeBlock--row-content">
+									<span class="CodeBlock--token-plain">...</span>
+								</span>
+							</span>
+							<span class="CodeBlock--row">
+								<span class="CodeBlock--row-indicator"></span>
+								<span class="CodeBlock--row-content">
+									<span class="CodeBlock--token-plain">Public Key Handle: 941</span>
+								</span>
+							</span>
+							<span class="CodeBlock--row">
+								<span class="CodeBlock--row-indicator"></span>
+								<span class="CodeBlock--row-content">
+									<span class="CodeBlock--token-plain"></span>
+								</span>
+							</span>
+							<span class="CodeBlock--row">
+								<span class="CodeBlock--row-indicator"></span>
+								<span class="CodeBlock--row-content">
+									<span class="CodeBlock--token-plain"></span>
+								</span>
+							</span>
+							<span class="CodeBlock--row">
+								<span class="CodeBlock--row-indicator"></span>
+								<span class="CodeBlock--row-content">
+									<span class="CodeBlock--token-plain">Command: logoutHSM</span>
+								</span>
+							</span>
+							<span class="CodeBlock--row">
+								<span class="CodeBlock--row-indicator"></span>
+								<span class="CodeBlock--row-content">
+									<span class="CodeBlock--token-plain">Command: exit</span>
+								</span>
+							</span>
+						</span>
+					</span>
+				</code>
+			</pre>
+  <hr>
+  <h2 id="2-modify-the-gokeyless-config-file-and-restart-the-service">
+    <span class="DocsMarkdown--header-anchor-positioner">
+      <a class="DocsMarkdown--header-anchor Link Link-without-underline" href="#2-modify-the-gokeyless-config-file-and-restart-the-service" aria-hidden="true">​</a>
+    </span>
+    <span>2. Modify the gokeyless config file and restart the service</span>
+  </h2>
+  <p>Now that the keys are in place, we need to modify the configuration file that the key server will read on startup. Be sure to change the <code class="InlineCode">object=mykey</code> and <code class="InlineCode">pin-value=username:password</code> values to match the key label you provided and CU user you created. </p>
+  <p>Open <code class="InlineCode">/etc/keyless/gokeyless.yaml</code> and immediately after: </p>
+  <pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-yaml" language="yaml">
+					<code>
+						<span class="CodeBlock--rows">
+							<span class="CodeBlock--rows-content">
+								<span class="CodeBlock--row">
+									<span class="CodeBlock--row-indicator"></span>
+									<span class="CodeBlock--row-content">
+										<span class="CodeBlock--token-key CodeBlock--token-atrule">private_key_stores</span>
+										<span class="CodeBlock--token-punctuation">:</span>
+										<span class="CodeBlock--token-plain"></span>
+									</span>
+								</span>
+								<span class="CodeBlock--row">
+									<span class="CodeBlock--row-indicator"></span>
+									<span class="CodeBlock--row-content">
+										<span class="CodeBlock--token-plain"></span>
+										<span class="CodeBlock--token-punctuation">-</span>
+										<span class="CodeBlock--token-plain"></span>
+										<span class="CodeBlock--token-key CodeBlock--token-atrule">dir</span>
+										<span class="CodeBlock--token-punctuation">:</span>
+										<span class="CodeBlock--token-plain"> /etc/keyless/keys</span>
+									</span>
+								</span>
+							</span>
+						</span>
+					</code>
+				</pre>
+  <p>add:</p>
+  <pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-yaml" language="yaml">
+					<code>
+						<span class="CodeBlock--rows">
+							<span class="CodeBlock--rows-content">
+								<span class="CodeBlock--row">
+									<span class="CodeBlock--row-indicator"></span>
+									<span class="CodeBlock--row-content">
+										<span class="CodeBlock--token-punctuation">-</span>
+										<span class="CodeBlock--token-plain"></span>
+										<span class="CodeBlock--token-key CodeBlock--token-atrule">uri</span>
+										<span class="CodeBlock--token-punctuation">:</span>
+										<span class="CodeBlock--token-plain"> pkcs11</span>
+										<span class="CodeBlock--token-punctuation">:</span>
+										<span class="CodeBlock--token-plain">token=cavium;object=mykey</span>
+										<span class="CodeBlock--token-punctuation">?</span>
+										<span class="CodeBlock--token-plain">module</span>
+										<span class="CodeBlock--token-punctuation">-</span>
+										<span class="CodeBlock--token-plain">path=/opt/cloudhsm/lib/libcloudhsm_pkcs11_standard.so</span>
+										<span class="CodeBlock--token-important">&amp;pin</span>
+										<span class="CodeBlock--token-punctuation">-</span>
+										<span class="CodeBlock--token-plain">value=patrick</span>
+										<span class="CodeBlock--token-punctuation">:</span>
+										<span class="CodeBlock--token-plain">donahue</span>
+										<span class="CodeBlock--token-important">&amp;max</span>
+										<span class="CodeBlock--token-punctuation">-</span>
+										<span class="CodeBlock--token-plain">sessions=1</span>
+									</span>
+								</span>
+							</span>
+						</span>
+					</code>
+				</pre>
+  <p>With the config file saved, restart <code class="InlineCode">gokeyless</code> and verify it started successfully. </p>
+  <pre class="CodeBlock CodeBlock-with-rows CodeBlock-scrolls-horizontally CodeBlock-is-light-in-light-theme CodeBlock--language-bash" language="bash">
+					<code>
+						<span class="CodeBlock--rows">
+							<span class="CodeBlock--rows-content">
+								<span class="CodeBlock--row">
+									<span class="CodeBlock--row-indicator"></span>
+									<span class="CodeBlock--row-content">
+										<span class="CodeBlock--token-plain">$ </span>
+										<span class="CodeBlock--token-function">sudo</span>
+										<span class="CodeBlock--token-plain"> systemctl restart gokeyless.service</span>
+									</span>
+								</span>
+								<span class="CodeBlock--row">
+									<span class="CodeBlock--row-indicator"></span>
+									<span class="CodeBlock--row-content">
+										<span class="CodeBlock--token-plain">$ </span>
+										<span class="CodeBlock--token-function">sudo</span>
+										<span class="CodeBlock--token-plain"> systemctl status gokeyless.service -l</span>
+									</span>
+								</span>
+							</span>
+						</span>
+					</code>
+				</pre>
+</article>
