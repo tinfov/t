@@ -5104,11 +5104,12 @@ th {
   padding: 10px 15px;
   border-right: 1px solid;
 }
-.post-date-month, .post-date-year {
+.post-date-month {
   text-transform: uppercase;
   font-size: 1.4rem;
 }
 .post-date-year {
+  font-size: 1.6rem;
 	display:block;
 }
 input[type="number"],
@@ -6843,8 +6844,11 @@ ul.mks_social_widget_ul li {
   display: block;
   line-height: 0.5;
 }
-.style-timeline .post-date-month, .style-timeline .post-date-year  {
+.style-timeline .post-date-month {
   font-size: 1rem;
+}
+.style-timeline .post-date-year  {
+  font-size: 1.2rem;
 }
 .typology_posts_widget .style-timeline .post:before {
   height: calc(100% - 20px);
@@ -8258,8 +8262,11 @@ body:not(.typology-flat) .entry-content .alignfull {
     font-size: 5.6rem;
     line-height: 4.1rem;
   }
-  .post-date-month, .post-date-year {
+  .post-date-month {
     font-size: 1.2rem;
+  }
+	.post-date-year {
+    font-size: 1.4rem;
   }
   .typology-footer .container {
     padding: 0 20%;

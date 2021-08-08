@@ -1231,6 +1231,7 @@ $(document).ready(function(a) {
 			success: function(e) {
 				var href = '';
 				var day = e.entry.updated.$t.substr(8,2);
+				var year = e.entry.updated.$t.substr(0,4);
 				var month = monthNames[new Date(e.entry.updated.$t).getMonth()]
 				
 				var title = e.entry.title.$t;
@@ -1244,7 +1245,7 @@ $(document).ready(function(a) {
 				}
 					
 
-				var h = '<div class="post-date"><span class="post-date-day">' + day + '</span><span class="post-date-month">' + month + '</span></div><h6><a href="' + href + '">' + title + '</a></h6><div class="entry-meta"><div class="meta-item meta-comments"><a href="' + href + '#comments">' + comment + ' Comment' + ((comment >= 2)?"s":"") + '</a></div></div><br/>'
+				var h = '<div class="post-date"><span class="post-date-day">' + day + '</span><span class="post-date-month">' + month + '</span><span class="post-date-year">' + year + '</span></div><h6><a href="' + href + '">' + title + '</a></h6><div class="entry-meta"><div class="meta-item meta-comments"><a href="' + href + '#comments">' + comment + ' Comment' + ((comment >= 2)?"s":"") + '</a></div></div><br/>'
 				
 				b.html(h);
 				
