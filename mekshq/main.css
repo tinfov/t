@@ -6844,7 +6844,7 @@ ul.mks_social_widget_ul li {
   font-size: 1rem;
 }
 .typology_posts_widget .style-timeline .post:before {
-  height: 100%;
+  height: calc(100% - 20px);
   width: 1px;
   display: block;
   content: "";

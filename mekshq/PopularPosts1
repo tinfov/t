@@ -59,3 +59,34 @@
 		</b:includable>
 		</b:widget>
 
+
+
+
+<b:widget id='HTML1' locked='false' title='Gadget Demo - data:widgets[i].posts' type='HTML'>
+  <b:widget-settings>
+    <b:widget-setting name='content'>&lt;!--
+data:widgets[i].posts - XML demo.
+Compatibility : Gadget Version 2.
+Created and provided by Blogger Code PE.
+Author : Soraya Lambrechts
+URL : https://bloggercode-blogconnexion.blogspot.com/1978/02/data-widgets-posts.html
+--&gt;</b:widget-setting>
+  </b:widget-settings>
+  <b:includable id='main'>
+<b:comment>Example</b:comment>
+  <h3>L&#39;indice des articles du gadget Blog sur cette page :</h3>
+
+  <b:if cond='data:widget.version == 1'>
+    Le dictionnaire de données n&#39;est pas compatible avec ce thème. Installez un thème Layouts Version 3 (Essential/Contempo/Emporio/Notable/Soho).
+  <b:else/>
+    <ul>
+      <b:loop index='index' values='data:widgets.Blog.first.posts' var='post'>
+
+        <li>Index <data:index/> - <data:post.title/></li>
+
+      </b:loop>
+    </ul>
+  </b:if>
+
+</b:includable>
+</b:widget>
