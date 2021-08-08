@@ -5110,6 +5110,7 @@ th {
 }
 .post-date-year {
   font-size: 1.6rem;
+	border-top: solid 1px;
 	display:block;
 }
 input[type="number"],
