@@ -5104,7 +5104,7 @@ th {
   padding: 10px 15px;
   border-right: 1px solid;
 }
-.post-date-month {
+.post-date-month, .post-date-year {
   text-transform: uppercase;
   font-size: 1.4rem;
 }
@@ -6840,7 +6840,7 @@ ul.mks_social_widget_ul li {
   display: block;
   line-height: 0.5;
 }
-.style-timeline .post-date-month {
+.style-timeline .post-date-month, .style-timeline .post-date-year  {
   font-size: 1rem;
 }
 .typology_posts_widget .style-timeline .post:before {
@@ -8255,7 +8255,7 @@ body:not(.typology-flat) .entry-content .alignfull {
     font-size: 5.6rem;
     line-height: 4.1rem;
   }
-  .post-date-month {
+  .post-date-month, .post-date-year {
     font-size: 1.2rem;
   }
   .typology-footer .container {
@@ -9292,6 +9292,7 @@ a.mks_button,
 .typology-pagination span,
 .comment-author .fn,
 .post-date-month,
+.post-date-year,
 .typology-button-social,
 .meks-instagram-follow-link a,
 .mks_autor_link_wrap a,
