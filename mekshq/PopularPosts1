@@ -1,0 +1,61 @@
+
+		<b:widget id='PopularPosts1' locked='false' title='Bài đăng phổ biến' type='PopularPosts'>
+			<b:widget-settings>
+				<b:widget-setting name='numItemsToShow'>10</b:widget-setting>
+				<b:widget-setting name='showThumbnails'>true</b:widget-setting>
+				<b:widget-setting name='showSnippets'>true</b:widget-setting>
+				<b:widget-setting name='timeRange'>LAST_MONTH</b:widget-setting>
+			</b:widget-settings>
+			<b:includable id='main'>
+			<b:attr name='id' value=''/>
+			<b:attr name='data-version' value=''/>
+			
+			
+			<!--- typology-slider-wrapper -->
+			<b:attr name='class' value='typology-slider-wrapper-fixed'/>
+			
+						
+				<div class="typology-cover-wrap">
+					<div class="typology-slider-wrapper  typology-cover-slider owl-carousel">
+						
+						<!--- typology-cover-item -->
+						<b:loop values='data:posts' var='post'>
+						<div class="typology-cover-item typology-cover-overlay">
+						
+						
+							<div class="cover-item-container">
+								<header class="entry-header">
+									<div style="max-width: 720px; margin:0 auto; display:inline-block;">
+										<h1 style="text-align: center;"><data:post.title/></h1>
+										
+										<b:if cond='data:showSnippets'>
+											<p style="text-align: center; margin-bottom: 0;"><data:post.snippet/></p>
+										</b:if>
+									</div>
+								</header>
+								<div class="entry-footer">
+									<a expr:href='data:post.href' class="typology-button">Read on</a><a href="javascript:void(0);" class="typology-button button-invert typology-rl pocket" expr:data-url= '"https://getpocket.com/edit?url=" + data:post.href'><i class="fa fa-bookmark-o"></i>Read later</a>	
+								</div>
+									
+							</div>
+							
+							<div class="typology-cover-img">
+								<b:if cond='data:post.featuredImage.isResizable or data:post.thumbnail'>
+									<b:with value='data:post.featuredImage.isResizable ? resizeImage(data:post.featuredImage, 72, &quot;1:1&quot;) : data:post.thumbnail' var='image'>
+										<img alt='' border='0' expr:src='data:image'/>
+									</b:with>
+								</b:if>
+							</div>
+							
+							
+						</div>
+						</b:loop>
+						
+					</div>
+					<b:include name='quickedit'/>
+				</div>
+			
+
+		</b:includable>
+		</b:widget>
+
