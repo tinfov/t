@@ -11543,8 +11543,12 @@ body .meks_ess a:focus {
 								
 							</a>
 						</div>
-						<h6><a expr:href='data:postUrl'><data:postTitle/></a></h6>
 						
+						<b:if cond='data:showPostTitle and data:postTitle != &quot;&quot;'>
+							<h6><a expr:href='data:postUrl'><data:postTitle/></a></h6>
+						</b:if>
+
+		
 						<b:if cond='data:showSnippet and data:postSummary != &quot;&quot;'>
 							<div class="entry-meta">
 								<div class="meta-item"><span><data:postSummary/></span>

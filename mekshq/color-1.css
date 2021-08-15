@@ -1,0 +1,265 @@
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+.post-date-month{
+	color:#333333;
+}
+.typology-single-sticky a{
+	color:#444444;
+}
+.entry-title a:hover,
+.typology-single-sticky a:hover{
+		color:#039be5;
+}
+.bypostauthor .comment-author:before,
+#cancel-comment-reply-link:after{
+	background:#039be5;		
+}
+
+/* General styles */
+a,
+.widget .textwidget a,
+.typology-layout-b .post-date-hidden{
+	color: #039be5;
+}
+/* Header styles */
+
+.typology-header{
+	height:110px;
+}
+.typology-header-sticky-on .typology-header{
+	background:#039be5;
+}
+
+.site-title a,
+.typology-site-description{
+	color: #ffffff;	
+}
+
+.typology-header .typology-nav,
+.typology-header .typology-nav > li > a{
+	color: #ffffff;
+}
+
+.typology-header .typology-nav .sub-menu a{
+ 	color:#444444;
+}
+.typology-header .typology-nav .sub-menu a:hover{
+	color: #039be5;
+}
+.typology-action-button .sub-menu ul a:before{
+	background: #039be5;	
+}
+.sub-menu .current-menu-item a{
+	color:#039be5;
+}
+.dot,
+.typology-header .typology-nav .sub-menu{
+	background:#ffffff;
+}
+.typology-header .typology-main-navigation .sub-menu .current-menu-ancestor > a,
+.typology-header .typology-main-navigation .sub-menu .current-menu-item > a{
+	color: #039be5;
+}
+
+.typology-header-wide .slot-l{
+	left: 35px;
+}
+.typology-header-wide .slot-r{
+	right: 35px;
+}
+
+/* Post styles */
+.meta-item,
+.meta-item span,
+.meta-item a,
+.comment-metadata a{
+	color: #888888;
+}
+.comment-meta .url,
+.meta-item a:hover{
+	color:#333333;
+}
+.typology-post:after,
+.section-title:after,
+.typology-pagination:before{
+	background:rgba(51,51,51,0.2);
+}
+
+
+.typology-layout-b .post-date-day,
+.typology-outline-nav li a:hover,
+.style-timeline .post-date-day{
+	color:#039be5;
+}
+.typology-layout-b .post-date:after,
+blockquote:before,
+q:before{
+	background:#039be5;	
+}
+.typology-sticky-c,
+.typology-sticky-to-top span,
+.sticky-author-date{
+	color: #888888;
+}
+
+.typology-outline-nav li a{
+	color: #444444;
+}
+
+.typology-post.typology-layout-b:before{
+	background:rgba(68,68,68,0.1);
+}
+
+/* Buttons styles */
+.submit,
+.mks_read_more a,
+input[type="submit"],
+a.mks_button,
+.typology-button,
+.submit,
+.typology-button-social,
+.widget .mks_autor_link_wrap a,
+.widget .mks_read_more a{
+	color:#ffffff;
+	background: #039be5;
+	border:1px solid #039be5;
+}
+.button-invert{
+	color:#039be5;
+	background:transparent;
+}
+.widget .mks_autor_link_wrap a:hover,
+.widget .mks_read_more a:hover{
+	color:#ffffff;
+}
+
+.typology-cover-empty,
+.typology-cover,
+.typology-header-sticky{
+	background:#0288d1;	
+}
+.typology-cover-overlay:after{
+	background: rgba(2,136,209,0.6);
+}
+.typology-sidebar-header{
+	background:#039be5;	
+}
+
+.typology-cover,
+.typology-cover .entry-title,
+.typology-cover .entry-title a,
+.typology-cover .meta-item,
+.typology-cover .meta-item span,
+.typology-cover .meta-item a,
+.typology-cover h1,
+.typology-cover h2,
+.typology-cover h3{
+	color: #ffffff;
+}
+
+
+.typology-cover .typology-button{
+	color: #0288d1;
+	background:#ffffff;
+	border:1px solid #ffffff;
+}
+.typology-cover .button-invert{
+	color: #ffffff;
+	background: transparent;
+}
+.typology-cover-slider .owl-dots .owl-dot span{
+	background:#ffffff;
+}
+
+
+/* Widgets */
+.typology-outline-nav li:before,
+.widget ul li:before{
+	background:#039be5;
+}
+.widget a{
+	color:#444444;
+}
+.widget a:hover,
+.widget_calendar table tbody td a,
+.entry-tags a:hover{
+	color:#039be5;
+}
+.widget_calendar table tbody td a:hover,
+.widget table td,
+.entry-tags a{
+	color:#444444;
+}
+.widget table,
+.widget table td,
+.widget_calendar table thead th,
+table,
+td, th{
+	border-color: rgba(68,68,68,0.3);
+}
+.widget ul li,
+.widget .recentcomments{
+	color:#444444;	
+}
+.widget .post-date{
+	color:#888888;
+}
+#today{
+	background:rgba(68,68,68,0.1);
+}
+
+/* Pagination styles */
+
+.typology-pagination .current, .typology-pagination .infinite-scroll a, 
+.typology-pagination .load-more a, 
+.typology-pagination .nav-links .next, 
+.typology-pagination .nav-links .prev, 
+.typology-pagination .next a, 
+.typology-pagination .prev a{
+	color: #ffffff;
+	background:#333333;
+}
+.typology-pagination a, .typology-pagination span{
+	color: #333333;
+	border:1px solid #333333;
+}
+
+/* Footer styles */
+.typology-footer{
+	background:#f8f8f8;
+	color:#aaaaaa;
+}
+.typology-footer h1,
+.typology-footer h2,
+.typology-footer h3,
+.typology-footer h4,
+.typology-footer h5,
+.typology-footer h6{
+	color:#aaaaaa;
+}
+
+.typology-count{
+	background: #039be5;	
+}
+
+.typology-footer a, .typology-footer .widget .textwidget a{
+	color: #888888;	
+}
+
+
+/* Border styles */
+
+input[type="text"], input[type="email"], input[type="url"], input[type="tel"], input[type="number"], input[type="date"], input[type="password"], textarea, select{
+	border-color:rgba(68,68,68,0.2);
+}
+
+blockquote:after, blockquote:before, q:after, q:before{
+    -webkit-box-shadow: 0 0 0 10px #ffffff;	
+    box-shadow: 0 0 0 10px #ffffff;		
+}
