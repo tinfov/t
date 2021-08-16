@@ -2599,48 +2599,9 @@ class TableOfContents { constructor({ from, to }) { this.fromElement = from; thi
             <!--[ Footer content ]-->
             <div class='footerContent'>
               <b:section id='footer-widget-1' maxwidgets='3' showaddelement='true'>
-                <b:widget id='LinkList01' locked='false' title='Support' type='LinkList' version='2' visible='true'>
+								<b:widget cond='!data:view.isPreview' id='HTML001' locked='false' title='Connect' type='HTML' version='2' visible='true'>
                   <b:widget-settings>
-                    <b:widget-setting name='sorting'>NONE</b:widget-setting>
-                    <b:widget-setting name='text-1'>Documentation</b:widget-setting>
-                    <b:widget-setting name='link-1'>https://mortextemplates.blogspot.com/</b:widget-setting>
-                    <b:widget-setting name='text-0'>Contact</b:widget-setting>
-                    <b:widget-setting name='link-0'>https://mortextemplates.blogspot.com/</b:widget-setting>
-                  </b:widget-settings>
-                  <b:includable id='main'>
-                    <b:include name='widget-title'/>
-                    <b:include name='content'/>
-                  </b:includable>
-                  <b:includable id='content'>
-                    <div class='widget-content'>
-                      <ul>
-                        <b:loop values='data:links' var='link'>
-                          <li>
-                            <a expr:href='data:link.target'>
-                              <svg class='line' viewBox='0 0 24 24'><g><path d='M19.75 11.7257L4.75 11.7257'/>
-<path d='M13.7002 5.70131L19.7502 11.7253L13.7002 17.7503'/></g></svg>
-                              <span><data:link.name/></span>
-                            </a>
-                          </li>
-                        </b:loop>
-                      </ul>
-                    </div>
-                  </b:includable>
-                </b:widget>
-                <b:widget cond='!data:view.isPreview' id='HTML001' locked='false' title='About Us' type='HTML' version='2' visible='true'>
-                  <b:widget-settings>
-                    <b:widget-setting name='content'>&lt;div class=&#39;aboutUs&#39;&gt;
-  &lt;div class=&#39;aboutTitle&#39;&gt;
-    &lt;div class=&#39;titleText&#39; data-text=&#39;Made with coffee by&#39;&gt;
-      &lt;h3&gt;Fletro Pro V6&lt;/h3&gt;
-    &lt;/div&gt;
-
-    &lt;!--[ Delete comment tag on section bellow and change data-src=&#39;#&#39; attribute with your logo url ]--&gt;
-    &lt;!-- &lt;img class=&#39;lazy&#39; alt=&#39;Jago Desain&#39; data-src=&#39;#&#39; src=&#39;data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=&#39;/&gt; --&gt;
-
-  &lt;/div&gt;
-  &lt;p class=&#39;aboutDesc&#39;&gt;Lake&#39;s largest consumer, ultricies members as poverty or a peanut.&lt;/p&gt;
-&lt;/div&gt;</b:widget-setting>
+                    <b:widget-setting name='content'><![CDATA[<div class="aboutUs"><div class="aboutTitle"><div class="titleText" data-text="Connect with"><h3>APK.</h3></div></div><p class="aboutDesc"><hr/></p></div>]]></b:widget-setting>
                   </b:widget-settings>
                   <b:includable id='main'>
                     <div class='widget-content'>                   
@@ -2648,17 +2609,18 @@ class TableOfContents { constructor({ from, to }) { this.fromElement = from; thi
                     </div>
                   </b:includable>
                 </b:widget>
-                <b:widget id='LinkList001' locked='false' title='Social Media Link' type='LinkList' version='2' visible='true'>
+                
+								<b:widget id='LinkList001' locked='false' title='Social' type='LinkList' version='2' visible='true'>
                   <b:widget-settings>
-                    <b:widget-setting name='link-3'>https://mortextemplates.blogspot.com/</b:widget-setting>
+                    <b:widget-setting name='link-3'>https://www.youtube.com/AnPhuKhang</b:widget-setting>
                     <b:widget-setting name='sorting'>NONE</b:widget-setting>
-                    <b:widget-setting name='link-4'>https://mortextemplates.blogspot.com/</b:widget-setting>
+                    <b:widget-setting name='link-4'>https://www.linkedin.com/in/AnPhuKhang</b:widget-setting>
                     <b:widget-setting name='text-1'>Instagram</b:widget-setting>
-                    <b:widget-setting name='link-1'>https://mortextemplates.blogspot.com/</b:widget-setting>
+                    <b:widget-setting name='link-1'>https://www.instagram.com/AnPhuKhang/</b:widget-setting>
                     <b:widget-setting name='text-0'>Facebook</b:widget-setting>
-                    <b:widget-setting name='link-2'>https://mortextemplates.blogspot.com/</b:widget-setting>
+                    <b:widget-setting name='link-2'>https://www.twitter.com/AnPhuKhangVN</b:widget-setting>
                     <b:widget-setting name='text-3'>Youtube</b:widget-setting>
-                    <b:widget-setting name='link-0'>https://mortextemplates.blogspot.com/</b:widget-setting>
+                    <b:widget-setting name='link-0'>https://www.facebook.com/anphukhang.com.vn</b:widget-setting>
                     <b:widget-setting name='text-2'>Twitter</b:widget-setting>
                     <b:widget-setting name='text-4'>LinkedIn</b:widget-setting>
                   </b:widget-settings>
@@ -2669,7 +2631,7 @@ class TableOfContents { constructor({ from, to }) { this.fromElement = from; thi
                     <ul class='aboutLinks'>                      
                       <b:loop values='data:links' var='link'>
                         <li>
-                          <a class='link' expr:aria-label='data:link.name' expr:href='data:link.target'>
+                          <a class='link' expr:aria-label='data:link.name' target='_blank' expr:href='data:link.target'>
                             <b:if cond='data:link.name == &quot;Instagram&quot;'>
                               <!--[ Instagram icon ]-->
                               <svg class='c-1' viewBox='0 0 32 32'><path d='M20.45,13.32a1,1,0,0,0-.57,1.3,4,4,0,1,1-2.31-2.3,1,1,0,1,0,.71-1.87,6,6,0,0,0-6.37,9.85,6,6,0,0,0,8.48,0,6,6,0,0,0,1.36-6.41A1,1,0,0,0,20.45,13.32Z'/><circle cx='23' cy='9' r='1'/><path d='M28,9a5,5,0,0,0-4.9-5h0A77.11,77.11,0,0,0,9,4,5,5,0,0,0,4,8.92,91.91,91.91,0,0,0,4,23a5,5,0,0,0,4.9,5h0c2.36.22,4.73.34,7.1.34s4.71-.11,7.05-.34A5,5,0,0,0,28,23.08,87.09,87.09,0,0,0,28,9ZM26,23a3,3,0,0,1-3,3h-.1A71.73,71.73,0,0,1,9,26a3,3,0,0,1-3-3.08A92.4,92.4,0,0,1,6,9,3,3,0,0,1,9.09,6q3.44-.31,6.9-.32T23,6a3,3,0,0,1,3,3.08A85.13,85.13,0,0,1,26,23Z'/></svg>
@@ -2709,14 +2671,51 @@ class TableOfContents { constructor({ from, to }) { this.fromElement = from; thi
                   </b:includable>
                 </b:widget>
               </b:section>
-              <b:section id='footer-widget-2' maxwidgets='2' showaddelement='true'>
-                <b:widget id='LinkList02' locked='false' title='Company' type='LinkList' version='2' visible='true'>
+              
+							<b:section id='footer-widget-2' maxwidgets='2' showaddelement='true'>
+                <b:widget id='LinkList02' locked='false' title='About Us' type='LinkList' version='2' visible='true'>
                   <b:widget-settings>
                     <b:widget-setting name='sorting'>NONE</b:widget-setting>
-                    <b:widget-setting name='text-1'>Blog</b:widget-setting>
-                    <b:widget-setting name='link-1'>https://mortextemplates.blogspot.com/</b:widget-setting>
-                    <b:widget-setting name='text-0'>About</b:widget-setting>
-                    <b:widget-setting name='link-0'>https://mortextemplates.blogspot.com/</b:widget-setting>
+                    <b:widget-setting name='text-1'>Services</b:widget-setting>
+                    <b:widget-setting name='link-1'>/p/services.html</b:widget-setting>
+                    <b:widget-setting name='text-0'>About us</b:widget-setting>
+                    <b:widget-setting name='link-2'>/p/projects.html</b:widget-setting>
+                    <b:widget-setting name='link-0'>/p/about.html</b:widget-setting>
+                    <b:widget-setting name='text-2'>Projects</b:widget-setting>
+                  </b:widget-settings>
+                  <b:includable id='main'>
+                    <b:include name='widget-title'/>
+                    <b:include name='content'/>
+                  </b:includable>
+                  <b:includable id='content'>
+                    <div class='widget-content'>
+                      <ul>
+                        <b:loop values='data:links' var='link'>
+                          <li>
+                            <a expr:href='data:link.target'>
+                              <svg class='line' viewBox='0 0 24 24'><g><path d='M19.75 11.7257L4.75 11.7257'/><path d='M13.7002 5.70131L19.7502 11.7253L13.7002 17.7503'/></g></svg>
+                              <span><data:link.name/></span>
+                            </a>
+                          </li>
+                        </b:loop>
+                      </ul>
+                    </div>
+                  </b:includable>
+                </b:widget>
+              </b:section>
+              
+							<b:section id='footer-widget-3' maxwidgets='2' showaddelement='true'>
+                <b:widget id='LinkList03' locked='false' title='Services' type='LinkList' version='2' visible='true'>
+                  <b:widget-settings>
+                    <b:widget-setting name='link-3'>/p/design.html</b:widget-setting>
+                    <b:widget-setting name='sorting'>NONE</b:widget-setting>
+                    <b:widget-setting name='text-1'>Build</b:widget-setting>
+                    <b:widget-setting name='link-1'>/p/build.html</b:widget-setting>
+                    <b:widget-setting name='text-0'>Audit</b:widget-setting>
+                    <b:widget-setting name='link-2'>/p/consultant.html</b:widget-setting>
+                    <b:widget-setting name='text-3'>Design</b:widget-setting>
+                    <b:widget-setting name='link-0'>/p/audit.html</b:widget-setting>
+                    <b:widget-setting name='text-2'>Consultant</b:widget-setting>
                   </b:widget-settings>
                   <b:includable id='main'>
                     <b:include name='widget-title'/>
@@ -2739,57 +2738,19 @@ class TableOfContents { constructor({ from, to }) { this.fromElement = from; thi
                   </b:includable>
                 </b:widget>
               </b:section>
-              <b:section id='footer-widget-3' maxwidgets='2' showaddelement='true'>
-                <b:widget id='LinkList03' locked='false' title='Product &amp;amp; Service' type='LinkList' version='2' visible='true'>
-                  <b:widget-settings>
-                    <b:widget-setting name='sorting'>NONE</b:widget-setting>
-                    <b:widget-setting name='text-1'>Other Product</b:widget-setting>
-                    <b:widget-setting name='link-1'>mortextemplates.blogspot.com</b:widget-setting>
-                    <b:widget-setting name='text-0'>Blogger Theme</b:widget-setting>
-                    <b:widget-setting name='link-0'>mortextemplates.blogspot.com</b:widget-setting>
-                  </b:widget-settings>
-                  <b:includable id='main'>
-                    <b:include name='widget-title'/>
-                    <b:include name='content'/>
-                  </b:includable>
-                  <b:includable id='content'>
-                    <div class='widget-content'>
-                      <ul>
-                        <b:loop values='data:links' var='link'>
-                          <li>
-                            <a expr:href='data:link.target'>
-                              <svg class='line' viewBox='0 0 24 24'><g><path d='M19.75 11.7257L4.75 11.7257'/>
-<path d='M13.7002 5.70131L19.7502 11.7253L13.7002 17.7503'/></g></svg>
-                              <span><data:link.name/></span>
-                            </a>
-                          </li>
-                        </b:loop>
-                      </ul>
-                    </div>
-                  </b:includable>
-                </b:widget>
-              </b:section>
-              <b:section id='footer-widget-4' maxwidgets='2' showaddelement='true'>
-                <b:widget id='FollowByEmail00' locked='false' title='Get updates' type='FollowByEmail' version='2' visible='true'>
-                  <b:includable id='main'>
-                    <b:include name='widget-title'/>
-                    <b:include name='content'/>
-                  </b:includable>
-                  <b:includable id='content'>
-                    <div class='follow-inner'>
-                      <label class='follow-text' for='email-input'>
-                        <span>Get updates right in your inbox. Join to get notified with all new stuff</span>
-                      </label>
-                    
-                      <form expr:action='&quot;https://feedburner.google.com/fb/a/mailverify?uri=&quot; + data:feedPath' method='get' target='_blank'>
-                        <input autocomplete='on' class='followAddress' id='email-input' name='email' placeholder='e.g. youremail@gmail.com' type='email'/>
-                        <input class='followSubmit' expr:value='data:messages.subscribe' id='email-submit' type='submit'/>
-                        <input expr:value='data:feedPath' name='uri' type='hidden'/>
-                        <input name='loc' type='hidden' value='en_US'/>
-                      </form>
-                    </div>
-                  </b:includable>
-                </b:widget>
+              
+							<b:section id='footer-widget-4' maxwidgets='2' showaddelement='true'>
+								<b:widget id='HTML1' locked='false' title='Get updates' type='HTML' visible='true'>
+									<b:widget-settings>
+										<b:widget-setting name='content'><![CDATA[<label class="follow-text" for="email-input"><span>Get updates right in your inbox. Join to get notified with all new stuff</span></label><form expr:action="&quot;https://feedburner.google.com/fb/a/mailverify?uri=&quot; + data:feedPath" method="get" target="_blank"><input autocomplete="on" class="followAddress" id="email-input" name="email" placeholder="e.g. youremail@gmail.com" type="email"> <input class="followSubmit" expr:value="data:messages.subscribe" id="email-submit" type="submit"> <input expr:value="data:feedPath" name="uri" type="hidden"> <input name="loc" type="hidden" value="en_US"></form>]]></b:widget-setting>
+									</b:widget-settings>
+									<b:includable id='main'>
+										<div class='widget-content'>
+											<data:content/>
+										</div>
+									</b:includable>
+								</b:widget>
+
               </b:section>
             </div>
             

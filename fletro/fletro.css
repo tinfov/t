@@ -40,7 +40,7 @@ header .Header{margin:auto 0;background-repeat:no-repeat;background-size:100%;ba
 header .Header img{max-width:150px;max-height:30px}
 header .Header h1, header .Header h2{display:flex;align-items:center; font-size: clamp(16px, -0.875rem + 8.333333vw, 18px); font-weight:600;color:inherit}
 header .Header .headerInner .headerTitle{max-width:160px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis; display:block}
-header .Header .headerInner .headerSubtitle{margin-left:5px;font-family:var(--font-body);font-weight:400;font-size:11px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;max-width:50px;vertical-align:middle;opacity:.6;flex-shrink:0}
+header .Header .headerInner .headerSubtitle{margin-left:5px;font-family:var(--font-body);font-weight:400;font-size:11px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;max-width:50px;vertical-align:middle;opacity:.6;flex-shrink:0;display:none}
 header .Header .headerInner .headerSubtitle:before{content: attr(data-text)}
 header .sectionContent{position:relative;display:flex;align-items:center;height:100%;width:100%}
 
@@ -224,8 +224,8 @@ article .noteAlert:before{content:'\2691'}
 
 article .textIndent{text-indent:2.2rem}
 article .dropCap{float:left;margin:6px 8px 0 0;font-size:55px;line-height:45px}
-article .extLink:after{content:'';width:14px;height:14px;display:inline-block;margin-left:5px; background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23204ecf' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'><path d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'/><polyline points='15 3 21 3 21 9'/><line x1='10' x2='21' y1='14' y2='3'/></svg>") center / 15px no-repeat}
-article .extLink.alt:after{background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23204ecf' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'><path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'/><path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'/></svg>")}
+.extLink:after{content:'';width:14px;height:14px;display:inline-block;margin-left:5px; background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23204ecf' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'><path d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'/><polyline points='15 3 21 3 21 9'/><line x1='10' x2='21' y1='14' y2='3'/></svg>") center / 15px no-repeat}
+.extLink.alt:after{background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23204ecf' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'><path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'/><path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'/></svg>")}
 article .postCaption{display:block;font-size:12px;line-height:1.8em;margin-top:5px}
 article .postReference{display:block;font-size:13px;color:var(--body-altColor);line-height:1.7em}
 article.post .postEntry img.fullImg{display:block!important;margin-bottom:10px;position:relative;width:110%;max-width:none;left:-5%}
@@ -675,8 +675,8 @@ footer .widget{margin-bottom:35px}
 footer .widget ul{list-style:none;margin:0;padding:0}
 footer .footerContent{display:flex;flex-wrap:wrap}
 footer .footerContent > *:first-child{width:25%;margin-right:auto}
-footer .footerContent > *:last-child{width:30%;margin-left:auto}
-footer .footerContent > *{width:18%}
+footer .footerContent > *:last-child{width:25%;margin-left:auto}
+footer .footerContent > *{width:22%}
 footer .footerContent .title{color:inherit;margin-bottom:12px}
 footer .footerContent .title:after{display:none}
 footer .LinkList a{display:inline-flex;align-items:center;color:inherit;line-height:24px}
@@ -688,7 +688,7 @@ footer .aboutLinks{display:flex;align-items:flex-start}
 footer .aboutLinks li:not(:last-child){margin-right:5px}
 footer .LinkList .aboutLinks a svg.line{width:20px;height:22px;margin-right:0;stroke:var(--icon-altColor);stroke-width:1.5}
 .darkMode footer .LinkList .aboutLinks a svg.line{stroke:var(--dark-text)}
-footer .LinkList .aboutLinks a{display:flex}
+footer .LinkList .aboutLinks a{display:flex;padding-right:0 4px}
 
 footer .creditInner{display:flex;justify-content:space-between}
 footer .creditInner p{margin:0;padding-right:20px;overflow:hidden;white-space:nowrap}
