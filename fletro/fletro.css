@@ -197,7 +197,7 @@ article:hover .postMore{opacity:1}
 article.post .postTitle{font-size:38px;margin:0;line-height:1.4em}
 article.post h1, article.post h2, article.post h3, article.post h4, article.post h5, article.post h6{margin:1.7em 0 20px;font-weight:700;line-height:1.4em}
 article.post h1:target, article.post h2:target, article.post h3:target, article.post h4:target, article.post h5:target, article.post h6:target{padding-top:70px;margin-top:0}
-article.post .postDescription{margin-top:15px;font-size:15px;line-height:1.5em;color:var(--body-altColor);overflow:hidden;display:none;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+article.post .postDescription{margin-top:15px;font-size:15px;line-height:1.5em;color:var(--body-altColor);overflow:hidden;-webkit-line-clamp:2;-webkit-box-orient:vertical}
 article.post .postInfo{margin-top:35px; margin-bottom:25px;justify-content:flex-start;align-items:center; color:var(--head-color)}
 article.post .postInfo .postAuthorImage{margin-right:10px}
 article.post .postInfo .postAuthorImage .authorImage{width:38px;height:38px;border-radius:50%;background-size:cover;background-position:center}
