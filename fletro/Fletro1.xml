@@ -2601,7 +2601,7 @@ class TableOfContents { constructor({ from, to }) { this.fromElement = from; thi
               <b:section id='footer-widget-1' maxwidgets='3' showaddelement='true'>
 								<b:widget cond='!data:view.isPreview' id='HTML001' locked='false' title='Connect' type='HTML' version='2' visible='true'>
                   <b:widget-settings>
-                    <b:widget-setting name='content'><![CDATA[<div class="aboutUs"><div class="aboutTitle"><div class="titleText" data-text="Connect with"><h3>APK.</h3></div></div><p class="aboutDesc"><hr/></p></div>]]></b:widget-setting>
+                    <b:widget-setting name='content'><![CDATA[<div class="aboutUs"><div class="aboutTitle"><div class="titleText" data-text="Connect with us:"><h3>APK.</h3></div></div><hr/><p class="aboutDesc">Add: <a target='_blank' class="extLink" href="//g.page/anphukhang">65/1C Đông Bắc</a></p></div>]]></b:widget-setting>
                   </b:widget-settings>
                   <b:includable id='main'>
                     <div class='widget-content'>                   
@@ -2742,12 +2742,14 @@ class TableOfContents { constructor({ from, to }) { this.fromElement = from; thi
 							<b:section id='footer-widget-4' maxwidgets='2' showaddelement='true'>
 								<b:widget id='HTML1' locked='false' title='Get updates' type='HTML' visible='true'>
 									<b:widget-settings>
-										<b:widget-setting name='content'><![CDATA[<label class="follow-text" for="email-input"><span>Get updates right in your inbox. Join to get notified with all new stuff</span></label><form expr:action="&quot;https://feedburner.google.com/fb/a/mailverify?uri=&quot; + data:feedPath" method="get" target="_blank"><input autocomplete="on" class="followAddress" id="email-input" name="email" placeholder="e.g. youremail@gmail.com" type="email"> <input class="followSubmit" expr:value="data:messages.subscribe" id="email-submit" type="submit"> <input expr:value="data:feedPath" name="uri" type="hidden"> <input name="loc" type="hidden" value="en_US"></form>]]></b:widget-setting>
+										<b:widget-setting name='content'><![CDATA[<label class="follow-text" for="email-input"><span>Get updates right in your inbox. Join to get notified with all new stuff</span></label><form action='https://api.follow.it/subscription-form/b29tOVFwdlhHdnB0T1psUjhEVzdHWHRXckV3WjE2Yms3dGlJdnRDeHRUNVFhN2tCSTE0OFdFZ25DbFk3RElkMEQ4MnNQNlBkc3QrLy96RnRqYzN6cGc1VWNZaXIwSjZvWm5sLzRQVEhoeitSSUUvRVp4ejZqRzA3Y2xCcmVqVGt8QVcxTlBQUThOYkNaSFFzNU0ySWwybHoxcUMxT0pZcnV1eUdKVnVzQWZMaz0=/8' method="post" target="_blank"><input autocomplete="on" class="followAddress" id="email-input" name="email" placeholder="e.g. youremail@gmail.com" type="email"/> <input class="followSubmit" expr:value="data:messages.subscribe" id="email-submit" type="submit"/> <input value="anphukhang" name="uri" type="hidden"/> <input name="loc" type="hidden" value="en_US"/></form>]]></b:widget-setting>
 									</b:widget-settings>
 									<b:includable id='main'>
 										<div class='widget-content'>
 											<data:content/>
+
 										</div>
+
 									</b:includable>
 								</b:widget>
 

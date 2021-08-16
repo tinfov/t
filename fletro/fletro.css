@@ -530,7 +530,7 @@ article .postNav > *:not(:last-child){margin-right:8px}
 .widget .imgThumb{display:block;position:absolute;top:50%;left:50%;max-width:none;max-height:105%;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%)}
 
 /* Widget Input */
-.widget input[type=text], .widget input[type=email], .widget textarea{display:block;width:100%;border:1px solid rgba(0,0,0,.05);outline:0;padding:15px 15px;margin-bottom:15px}
+.widget input[type=text], .widget input[type=email], .widget textarea{display:block;width:100%;border:1px solid rgba(0,0,0,.05);outline:0;padding:8px}
 .widget input[type=text]:focus, .widget input[type=email]:focus, .widget textarea:focus{border-color:var(--body-color)}
 .widget input[type=button], .widget input[type=submit]{display:inline-flex;align-items:center;margin:15px 0 0;padding:10px 20px;outline:0;border:0;border-radius:2px;color:#fefefe;background-color:var(--link-bgColor);font-size:14px;font-family:var(--font-body);white-space:nowrap;overflow:hidden;max-width:100%}
 .widget input[type=button]:hover, .widget input[type=submit]:hover{opacity:.7}
