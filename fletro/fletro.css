@@ -749,6 +749,10 @@ footer .toTop svg{stroke:var(--foot-icon);margin-left:5px}
 /* Lazy Youtube */
 .lazyYoutube{background-color:var(--highlight-bg);position:relative;overflow:hidden;padding-top:56.25%;border-radius:2px}
 .lazyYoutube img{width:100%;top:-16.84%;left:0;opacity:.95}
+
+.lazyYoutube.intro{padding-top:38%}
+.lazyYoutube.intro img{top:-16.84%}
+
 .lazyYoutube img, .lazyYoutube iframe, .lazyYoutube .playBut{position:absolute}
 .lazyYoutube iframe{height:100%;width:100%;top:0;left:0}
 .lazyYoutube .playBut{top:50%;left:50%;transform:translate3d(-50%,-50%,0);-webkit-transition:all .5s ease;transition:all .5s ease}

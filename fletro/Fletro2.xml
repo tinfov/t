@@ -1151,7 +1151,14 @@ class TableOfContents { constructor({ from, to }) { this.fromElement = from; thi
 							</b:widget>
 						
 						</b:section>
-          </b:tag>
+          
+						<div class='lazyYoutube' data-embed='yB5BiKMiwK4'>
+							<div class='playBut'>
+								<svg class='svg-play' viewbox='0 0 213.7 213.7'><polygon class='triangle' points='73.5,62.5 148.5,105.8 73.5,149.1'></polygon><circle class='circle' cx='106.8' cy='106.8' r='103.3'></circle></svg>
+							</div>
+						</div>
+					
+					</b:tag>
           
           <div class='largeSection'>
             <b:section class='sectionInner' id='largeContent' maxwidgets='2' showaddelement='true'>
