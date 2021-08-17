@@ -1116,7 +1116,7 @@ class TableOfContents { constructor({ from, to }) { this.fromElement = from; thi
           <b:tag class='sliderSection' cond='data:view.isHomepage' name='div'>
             <b:section cond='data:view.isHomepage' id='sliderContent' maxwidgets='1' showaddelement='true'>
               
-							<b:widget id='LinkList0001' locked='false' title='Slider Large' type='LinkList' version='2' visible='true'>
+							<b:widget id='LinkList0001' locked='false' title='Slider Large' type='LinkList' version='2' visible='false'>
 								<b:widget-settings>
 									<b:widget-setting name='link-5'>https://lh3.googleusercontent.com/p/AF1QipMrFps1nbrZIR0YwLTnu6dJdkG_ziyZUNbu3tPF=s1280</b:widget-setting>
                   <b:widget-setting name='link-3'>https://lh3.googleusercontent.com/p/AF1QipMMrrmeivqFDmEA5YA6Z8SXeEcpU7Fs7QiQJ0EC=s1280</b:widget-setting>
@@ -1152,7 +1152,7 @@ class TableOfContents { constructor({ from, to }) { this.fromElement = from; thi
 						
 						</b:section>
           
-						<div class='lazyYoutube' data-embed='yB5BiKMiwK4'>
+						<div class='lazyYoutube intro' data-embed='yB5BiKMiwK4'>
 							<div class='playBut'>
 								<svg class='svg-play' viewbox='0 0 213.7 213.7'><polygon class='triangle' points='73.5,62.5 148.5,105.8 73.5,149.1'></polygon><circle class='circle' cx='106.8' cy='106.8' r='103.3'></circle></svg>
 							</div>

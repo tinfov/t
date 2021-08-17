@@ -751,7 +751,7 @@ footer .toTop svg{stroke:var(--foot-icon);margin-left:5px}
 .lazyYoutube img{width:100%;top:-16.84%;left:0;opacity:.95}
 
 .lazyYoutube.intro{padding-top:38%}
-.lazyYoutube.intro img{top:-16.84%}
+.lazyYoutube.intro img{top:-50%}
 
 .lazyYoutube img, .lazyYoutube iframe, .lazyYoutube .playBut{position:absolute}
 .lazyYoutube iframe{height:100%;width:100%;top:0;left:0}
