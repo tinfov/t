@@ -432,7 +432,6 @@ header .headerIcon .navShare svg{height:19px}
 .headerSearch button{background:transparent;border:0;outline:0;padding:0;position:absolute;left:18px;top:0;display:flex;align-items:center;height:100%}
 .headerSearch button.close{right:15px;left:auto;opacity:0;visibility:hidden; transition:var(--transition-1);-webkit-transition:var(--transition-1)}
 .headerSearch button.close svg{width:16px;height:16px;stroke:var(--dark-textAlt)}
-.headerSearch .Label{max-width:540px}
 .searchInput:checked ~ .mainWrapper .headerSearch{opacity:1;visibility:visible;margin-right:0}
 
 /* Scroll Menu */
@@ -871,7 +870,7 @@ article .postNav > *:not(:last-child){margin-right:8px}
 .Profile .defaultAvatar svg.line{width:20px;height:19px;stroke:var(--dark-textAlt)}
 .Profile .team ul{display:flex;flex-wrap:wrap;align-items:flex-start; list-style:none;margin:0;padding:0}
 .Profile .team > ul > li{width:54px;position:relative}
-.Profile .team > ul > li:not(:first-child){margin-left:-15px}
+.Profile .team > ul > li:not(:first-child){margin-left:5px}
 .Profile .team .teamMember > *, .Profile .team .moreMember > *{display:block;background-color:var(--body-bgColor);padding:3px;border-radius:50%}
 .Profile .team .profileImage, .Profile .team .profileMore span{position:relative;padding-top:100%;background-color:#f1f1f0;border-radius:50%;overflow:hidden}
 .Profile .team .toolTips{position:absolute;white-space:nowrap;bottom:-20px;left:50%;transform:translate(-50%, 0);-webkit-transform:translate(-50%, 0);-webkit-transition:var(--transition-1);transition:var(--transition-1);font-size:11px;background-color:var(--dark-bgAlt);padding:4px 8px;color:var(--dark-text);opacity:0;visibility:hidden;border-radius:3px}
@@ -1668,7 +1667,10 @@ var randomRelatedIndex, showRelatedPost;
           </div>
         </div>
       </b:includable>
-      <b:includable id='postAuthorImage'>
+			
+			
+			
+      <!--<b:includable id='postAuthorImage'>
         <b:if cond='data:widgets.Blog.first.allBylineItems.author and data:post.author.authorPhoto.image'>
           <div class='postAuthorImage'>
             <b:if cond='!data:view.isPost'>
@@ -1678,8 +1680,30 @@ var randomRelatedIndex, showRelatedPost;
             </b:if>
           </div>
         </b:if>
+      </b:includable>-->
+			
+			
+			<b:includable id='postAuthorImage'>
+        <b:if cond='data:widgets.Blog.first.allBylineItems.author and data:post.author.authorPhoto.image'>
+          <div class='postAuthorImage'>
+            <b:if cond='!data:view.isPost'>
+							<b:loop values='data:post.labels first (l => l.name in ["APK™","BCA™","BCT™","BGDĐT™","BGTVT™","BKHĐT™","BKHCN™","BLĐTBXH™","BNG™","BNV™","BNNPTNT™","BQP™","BTC™","BTNMT™","BTTTT™","BTP™","BVHTTDL™","BXD™","BYT™","NHNN™","TTCP™","UBDT™","VPCP™","QH™","CTN™","CP™","TTCP™"])' var='label'>
+						
+								<div class='authorImage lazy' expr:data-bg='"https://d.t.info.vn/img/logo/" + data:label.name + ".jpg"'/>
+							</b:loop>
+							
+							
+							
+							
+              
+              <b:else/>
+              <div class='authorImage lazy' expr:data-bg='resizeImage(data:post.author.authorPhoto.image,38,&quot;1:1&quot;)'/>
+            </b:if>
+          </div>
+        </b:if>
       </b:includable>
-      <b:includable id='postAuthorName'>
+			
+      <!--<b:includable id='postAuthorName'>
         <b:if cond='data:widgets.Blog.first.allBylineItems.author'>
           <div class='authorName fn' expr:data-text='data:widgets.Blog.first.allBylineItems.author.label'>
             <b:if cond='data:post.author.profileUrl'>
@@ -1690,8 +1714,24 @@ var randomRelatedIndex, showRelatedPost;
             </b:if>
           </div>
         </b:if>
+      </b:includable>-->
+			
+			<b:includable id='postAuthorName'>
+        <b:if cond='data:widgets.Blog.first.allBylineItems.author'>
+          <div class='authorName fn' expr:data-text='data:widgets.Blog.first.allBylineItems.author.label'>
+            <b:if cond='data:post.author.profileUrl'>
+              <meta expr:content='data:post.author.profileUrl' property='author'/>
+              <a expr:aria-label='data:post.author.name' expr:data-text='data:post.author.name' expr:href='data:post.author.profileUrl' rel='author noreferrer' target='_blank'/>
+              <b:else/>
+							<b:loop values='data:post.labels first (l => l.name in ["APK™","BCA™","BCT™","BGDĐT™","BGTVT™","BKHĐT™","BKHCN™","BLĐTBXH™","BNG™","BNV™","BNNPTNT™","BQP™","BTC™","BTNMT™","BTTTT™","BTP™","BVHTTDL™","BXD™","BYT™","NHNN™","TTCP™","UBDT™","VPCP™","QH™","CTN™","CP™","TTCP™"])' var='label'>
+								<span expr:data-text='data:label.name'/>
+							</b:loop>
+            </b:if>
+          </div>
+        </b:if>
       </b:includable>
-      <b:includable id='postLabel'>
+			
+      <!--<b:includable id='postLabel'>
         <div class='postLabel' expr:data-text='data:widgets.Blog.first.allBylineItems.labels.label'>
           <b:loop index='i' values='data:post.labels' var='label'>
             <b:if cond='data:i == 0'>
@@ -1703,7 +1743,21 @@ var randomRelatedIndex, showRelatedPost;
             </b:if>
           </b:loop>
         </div>
+      </b:includable>-->
+			
+			<b:includable id='postLabel'>
+        <div class='postLabel' expr:data-text='data:widgets.Blog.first.allBylineItems.labels.label'>
+          <b:loop values='data:post.labels first (l => l.name not in ["APK™","BCA™","BCT™","BGDĐT™","BGTVT™","BKHĐT™","BKHCN™","BLĐTBXH™","BNG™","BNV™","BNNPTNT™","BQP™","BTC™","BTNMT™","BTTTT™","BTP™","BVHTTDL™","BXD™","BYT™","NHNN™","TTCP™","UBDT™","VPCP™","QH™","CTN™","CP™","TTCP™"])' var='label'>
+						<b:tag expr:data-text='data:label.name' expr:name='data:blog.url != data:label.url ? &quot;a&quot; : &quot;span&quot;'>
+							<b:attr cond='data:blog.url != data:label.url' expr:value='data:label.url.canonical' name='href'/>
+							<b:attr cond='data:blog.url != data:label.url' name='rel' value='tag'/>
+							<b:attr cond='data:blog.url != data:label.url' expr:value='data:label.name' name='aria-label'/>
+						</b:tag>
+          </b:loop>
+        </div>
       </b:includable>
+	
+			
       <b:includable id='postJumpLinks'>
         <div class='postInfo jumpLink'>
           <a class='postMore' expr:aria-label='data:blog.jumpLinkMessage' expr:data-text='data:messages.keepReading' expr:href='data:post.url.canonical'><svg class='line' viewBox='0 0 24 24'><path d='M19.75 11.7257L4.75 11.7257'/><path d='M13.7002 5.70131L19.7502 11.7253L13.7002 17.7503'/></svg></a>
@@ -2091,7 +2145,7 @@ error: &quot;<a class='jsLoad error' expr:data-text='data:messages.moreEllipsis'
               <b:section class='sectionInner' cond='!data:view.isLayoutMode' id='headerTags' maxwidgets='1' showaddelement='no'>
                 <b:widget id='Label000' locked='true' title='Saran pencarian' type='Label' version='2' visible='true'>
                   <b:widget-settings>
-                    <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
+                    <b:widget-setting name='sorting'>FREQUENCY</b:widget-setting>
                     <b:widget-setting name='display'>CLOUD</b:widget-setting>
                     <b:widget-setting name='selectedLabelsList'/>
                     <b:widget-setting name='showType'>ALL</b:widget-setting>
@@ -2103,7 +2157,7 @@ error: &quot;<a class='jsLoad error' expr:data-text='data:messages.moreEllipsis'
                   </b:includable>
                   <b:includable id='cloud'>
                     <b:loop index='tags' values='data:labels' var='label'>
-                      <b:if cond='data:tags &lt;= 6'>
+                      <b:if cond='data:tags &lt;= 16'>
                         <div class='labelSize'>
                           <b:class expr:name='&quot;labelSize-&quot; + data:label.cssSize'/>
                           <b:tag class='labelName' expr:name='data:blog.url != data:label.url ? &quot;a&quot; : &quot;div&quot;'>
@@ -2114,12 +2168,12 @@ error: &quot;<a class='jsLoad error' expr:data-text='data:messages.moreEllipsis'
                           </b:tag>
                         </div>
                       </b:if>
-                      <b:if cond='data:tags == 7'>
+                      <b:if cond='data:tags == 17'>
                         <div class='labelShow'>
                           <input class='labelInput hidden' id='offall-label' type='checkbox'/>
                           <div class='labelAll'>
                             <b:loop index='alltags' values='data:labels' var='label'>
-                              <b:if cond='data:alltags &gt;= 7'>
+                              <b:if cond='data:alltags &gt;= 17'>
                                 <div class='labelSize'>
                                   <b:class expr:name='&quot;labelSize-&quot; + data:label.cssSize'/>
                                   <b:tag class='labelName' expr:name='data:blog.url != data:label.url ? &quot;a&quot; : &quot;div&quot;'>
@@ -2132,7 +2186,7 @@ error: &quot;<a class='jsLoad error' expr:data-text='data:messages.moreEllipsis'
                               </b:if>
                             </b:loop>
                           </div>
-                          <label aria-label='Show label' class='label-more' expr:data-hide='data:messages.showLess' expr:data-show='data:messages.showMore' expr:data-text='&quot;+&quot; + (data:labels.length - 7)' for='offall-label'/>
+                          <label aria-label='Show label' class='label-more' expr:data-hide='data:messages.showLess' expr:data-show='data:messages.showMore' expr:data-text='&quot;+&quot; + (data:labels.length - 17)' for='offall-label'/>
                         </div>
                       </b:if>
                     </b:loop>
@@ -3010,9 +3064,9 @@ error: &quot;<a class='jsLoad error' expr:data-text='data:messages.moreEllipsis'
                     &quot;height&quot;: 720,
                     &quot;width&quot;: 1200
                     <b:else/>
-                    &quot;url&quot;: &quot;https://1.bp.blogspot.com/-E250bQMM8tk/XomH5DdorOI/AAAAAAAAPY8/SCYwi79WjckWC8wHKK7OblI82BpT9JquACNcBGAsYHQ/s1600/jagotheme-img.png&quot;,
-                    &quot;height&quot;: 720,
-                    &quot;width&quot;: 1280
+                    &quot;url&quot;: &quot;https://lh3.googleusercontent.com/253iPQsa9_LD64ZwoHkL_kAIgMPaIRcu7WX7le5tluqqQMsrbEJfMfwv3mbxou8s6NCUpK2G5KBtQWosSw=w1080-h608-p-no-v0&quot;,
+                    &quot;height&quot;: 608,
+                    &quot;width&quot;: 1080
                     </b:if>
                   },
                 </b:includable>
@@ -3477,7 +3531,9 @@ error: &quot;<a class='jsLoad error' expr:data-text='data:messages.moreEllipsis'
                 </b:includable>
                 <b:includable id='viewProfileLink'/>
               </b:widget>
-              <b:widget cond='data:view.isHomepage or data:view.isPost' id='PopularPosts00' locked='false' title='Popular post' type='PopularPosts' version='2' visible='true'>
+              
+							
+							<b:widget cond='data:view.isHomepage or data:view.isPost' id='PopularPosts00' locked='false' title='Popular post' type='PopularPosts' version='2' visible='true'>
                 <b:widget-settings>
                   <b:widget-setting name='numItemsToShow'>5</b:widget-setting>
                   <b:widget-setting name='showThumbnails'>true</b:widget-setting>
@@ -3589,15 +3645,10 @@ error: &quot;<a class='jsLoad error' expr:data-text='data:messages.moreEllipsis'
                   </div>
                 </b:includable>
               </b:widget>
-            </b:section>
             
-						
-						<b:section cond='!data:view.isPreview and !data:blog.isMobileRequest and data:view.isHomepage or data:view.isPost' id='side-sticky' showaddelement='true'>
-              
-							
-							<b:widget id='Label00' locked='false' title='Labels' type='Label' version='2' visible='true'>
+							<b:widget id='Label00' locked='false' title='Tác giả' type='Label' version='2' visible='true'>
                 <b:widget-settings>
-                  <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
+                  <b:widget-setting name='sorting'>FREQUENCY</b:widget-setting>
                   <b:widget-setting name='display'>CLOUD</b:widget-setting>
                   <b:widget-setting name='selectedLabelsList'/>
                   <b:widget-setting name='showType'>ALL</b:widget-setting>
@@ -3608,9 +3659,20 @@ error: &quot;<a class='jsLoad error' expr:data-text='data:messages.moreEllipsis'
                   <b:include name='content'/>
                 </b:includable>
                 <b:includable id='cloud'>
-                  <b:loop index='tags' values='data:labels' var='label'>
-                    <!--[ Only show 4 label ]-->
-                    <b:if cond='data:tags &lt;= 3'>
+                  <!--<b:loop index='tags' values='data:labels' var='label'>-->
+									
+									<!--
+									Bộ Công an,Bộ Công thương,Bộ Giáo dục và Đào tạo,Bộ Giao thông vận tải,Bộ Kế hoạch và Đầu tư,Bộ Khoa học và Công nghệ,Bộ Lao động - Thương binh và Xã hội,Bộ Ngoại giao,Bộ Nội vụ,Bộ Nông nghiệp và Phát triển nông thôn,Bộ Quốc phòng,Bộ Tài chính,Bộ Tài nguyên và Môi trường,Bộ Thông tin và Truyền thông,Bộ Tư pháp,Bộ Văn hóa - Thể thao và Du lịch,Bộ Xây dựng,Bộ Y tế,Ngân hàng Nhà nước,Thanh tra Chính phủ,Ủy ban Dân tộc,Văn phòng Chính phủ,Quốc hội,Chủ tịch nước,Chính phủ,Thủ tướng Chính phủ
+
+									APK™,BCA™,BCT™,BGDĐT™,BGTVT™,BKHĐT™,BKHCN™,BLĐTBXH™,BNG™,BNV™,BNNPTNT™,BQP™,BTC™,BTNMT™,BTTTT™,BTP™,BVHTTDL™,BXD™,BYT™,NHNN™,TTCP™,UBDT™,VPCP™,QH™,CTN™,CP™,TTCP™
+									-->
+									
+									
+
+									<b:loop index='tags' values='data:labels where (l => l.name in ["APK™","BCA™","BCT™","BGDĐT™","BGTVT™","BKHĐT™","BKHCN™","BLĐTBXH™","BNG™","BNV™","BNNPTNT™","BQP™","BTC™","BTNMT™","BTTTT™","BTP™","BVHTTDL™","BXD™","BYT™","NHNN™","TTCP™","UBDT™","VPCP™","QH™","CTN™","CP™","TTCP™"])' var='label'>
+                    
+										<!--[ Only show 8 label ]-->
+                    <b:if cond='data:tags &lt;= 7'>
                       <div class='labelSize'>
                         <b:class expr:name='&quot;labelSize-&quot; + data:label.cssSize'/>
                         <b:tag class='labelName' expr:name='data:blog.url != data:label.url ? &quot;a&quot; : &quot;div&quot;'>
@@ -3621,14 +3683,17 @@ error: &quot;<a class='jsLoad error' expr:data-text='data:messages.moreEllipsis'
                         </b:tag>
                       </div>
                     </b:if>
-                    <!--[ Hide another label from 5th list ]-->
-                    <b:if cond='data:tags == 4'>
+                    <!--[ Hide another label from 9th list ]-->
+                    <b:if cond='data:tags == 8'>
                       <div class='labelShow'>
-                        <input class='labelInput hidden' id='offall-label2' type='checkbox'/>
+                        <input class='labelInput hidden' id='offall-label1' type='checkbox'/>
                         <div class='labelAll'>
-                          <b:loop index='alltags' values='data:labels' var='label'>
-                            <!--[ Show label from 5th list ]-->
-                            <b:if cond='data:alltags &gt;= 4'>
+                          <!--<b:loop index='alltags' values='data:labels' var='label'>-->
+													
+													<b:loop index='alltags' values='data:labels where (l => l.name in ["APK™","BCA™","BCT™","BGDĐT™","BGTVT™","BKHĐT™","BKHCN™","BLĐTBXH™","BNG™","BNV™","BNNPTNT™","BQP™","BTC™","BTNMT™","BTTTT™","BTP™","BVHTTDL™","BXD™","BYT™","NHNN™","TTCP™","UBDT™","VPCP™","QH™","CTN™","CP™","TTCP™"])' var='label'>
+													
+                            <!--[ Show label from 9th list ]-->
+                            <b:if cond='data:alltags &gt;= 8'>
                               <div class='labelSize'>
                                 <b:class expr:name='&quot;labelSize-&quot; + data:label.cssSize'/>
                                 <b:tag class='labelName' expr:name='data:blog.url != data:label.url ? &quot;a&quot; : &quot;div&quot;'>
@@ -3641,7 +3706,128 @@ error: &quot;<a class='jsLoad error' expr:data-text='data:messages.moreEllipsis'
                             </b:if>
                           </b:loop>
                         </div>
-                        <label aria-label='Show label' class='label-more' expr:data-hide='data:messages.showLess' expr:data-show='data:messages.showMore' expr:data-text='&quot;+&quot; + (data:labels.length - 4)' for='offall-label2'/>
+                        <label aria-label='Show label' class='label-more' expr:data-hide='data:messages.showLess' expr:data-show='data:messages.showMore' expr:data-text='&quot;+&quot; + (data:labels count (l => l.name in ["APK™","BCA™","BCT™","BGDĐT™","BGTVT™","BKHĐT™","BKHCN™","BLĐTBXH™","BNG™","BNV™","BNNPTNT™","BQP™","BTC™","BTNMT™","BTTTT™","BTP™","BVHTTDL™","BXD™","BYT™","NHNN™","TTCP™","UBDT™","VPCP™","QH™","CTN™","CP™","TTCP™"]) - 8)' for='offall-label1'/>
+												
+												
+												
+												
+												
+                      </div>
+                    </b:if>
+										
+                  </b:loop>
+                </b:includable>
+                <b:includable id='content'>
+                  <div class='widget-content'>
+                    <b:class expr:name='data:this.display'/>
+                    <b:include cond='data:this.display == &quot;list&quot;' name='list'/>
+                    <b:include cond='data:this.display == &quot;cloud&quot;' name='cloud'/>
+                  </div>
+                </b:includable>
+                <b:includable id='list'>
+                  <ul>
+                    <b:loop index='tags' values='data:labels' var='label'>
+                      <!--[ Only show 8 label ]-->
+                      <b:if cond='data:tags &lt;= 7'>
+                        <li>
+                          <b:tag class='labelName' expr:name='data:blog.url != data:label.url ? &quot;a&quot; : &quot;div&quot;'>
+                            <b:attr cond='data:blog.url != data:label.url' expr:value='data:label.url' name='href'/>
+                            <b:attr cond='data:blog.url != data:label.url' expr:value='data:label.name' name='aria-label'/>
+                            <span class='labelTitle'><data:label.name/></span>
+                            <b:tag class='labelCount' cond='data:this.showFreqNumbers' expr:data-text='data:label.count' name='span'/>
+                            <svg class='line' viewBox='0 0 24 24'><path clip-rule='evenodd' d='M11.6648 18.6316L5.73341 21.881C5.25984 22.1271 4.67641 21.9529 4.41533 21.4874V21.4874C4.3398 21.3432 4.29905 21.1834 4.29634 21.0206V6.62244C4.29634 3.87644 6.17277 2.77805 8.873 2.77805H15.2162C17.8341 2.77805 19.7929 3.80322 19.7929 6.43937V21.0206C19.7929 21.2804 19.6897 21.5295 19.506 21.7132C19.3224 21.8968 19.0733 22 18.8135 22C18.6478 21.9974 18.485 21.9567 18.3375 21.881L12.3696 18.6316C12.1497 18.5128 11.8847 18.5128 11.6648 18.6316Z' fill-rule='evenodd'/></svg>
+                          </b:tag>
+                        </li>
+                      </b:if>
+                      <!--[ Hide another label from 9th list ]-->
+                      <b:if cond='data:tags == 8'>
+                        <li class='labelShow'>
+                          <input class='labelInput hidden' id='offall-label2' type='checkbox'/>
+                          <div class='labelAll'>
+                            <ul>
+                              <b:loop index='alltags' values='data:labels' var='label'>
+                                <!--[ Show label from 9th list ]-->
+                                <b:if cond='data:alltags &gt;= 8'>
+                                  <li>
+                                    <b:tag class='labelName' expr:name='data:blog.url != data:label.url ? &quot;a&quot; : &quot;div&quot;'>
+                                      <b:attr cond='data:blog.url != data:label.url' expr:value='data:label.url' name='href'/>
+                                      <b:attr cond='data:blog.url != data:label.url' expr:value='data:label.name' name='aria-label'/>
+                                      <span class='labelTitle'><data:label.name/></span>
+                                      <b:tag class='labelCount' cond='data:this.showFreqNumbers' expr:data-text='data:label.count' name='span'/>
+                                      <svg class='line' viewBox='0 0 24 24'><path clip-rule='evenodd' d='M11.6648 18.6316L5.73341 21.881C5.25984 22.1271 4.67641 21.9529 4.41533 21.4874V21.4874C4.3398 21.3432 4.29905 21.1834 4.29634 21.0206V6.62244C4.29634 3.87644 6.17277 2.77805 8.873 2.77805H15.2162C17.8341 2.77805 19.7929 3.80322 19.7929 6.43937V21.0206C19.7929 21.2804 19.6897 21.5295 19.506 21.7132C19.3224 21.8968 19.0733 22 18.8135 22C18.6478 21.9974 18.485 21.9567 18.3375 21.881L12.3696 18.6316C12.1497 18.5128 11.8847 18.5128 11.6648 18.6316Z' fill-rule='evenodd'/></svg>
+                                    </b:tag>
+                                  </li>
+                                </b:if>
+                              </b:loop>
+                            </ul>
+                          </div>
+                          <label aria-label='Show label' class='label-more' expr:data-hide='data:messages.showLess' expr:data-show='data:messages.showMore' expr:data-text='&quot;+&quot; + (data:labels.length - 8)' for='offall-label2' role='button'/>
+                        </li>
+                      </b:if>
+                    </b:loop>
+                  </ul>
+                </b:includable>
+              </b:widget>
+              
+							
+							
+							
+						</b:section>
+            
+						
+						<b:section cond='!data:view.isPreview and !data:blog.isMobileRequest and data:view.isHomepage or data:view.isPost' id='side-sticky' showaddelement='true'>
+              
+							
+							<b:widget id='Label01' locked='false' title='Labels' type='Label' version='2' visible='true'>
+                <b:widget-settings>
+                  <b:widget-setting name='sorting'>FREQUENCY</b:widget-setting>
+                  <b:widget-setting name='display'>CLOUD</b:widget-setting>
+                  <b:widget-setting name='selectedLabelsList'/>
+                  <b:widget-setting name='showType'>ALL</b:widget-setting>
+                  <b:widget-setting name='showFreqNumbers'>true</b:widget-setting>
+                </b:widget-settings>
+                <b:includable id='main' var='this'>
+                  <b:include name='widget-title'/>
+                  <b:include name='content'/>
+                </b:includable>
+                <b:includable id='cloud'>
+                  <!--<b:loop index='tags' values='data:labels' var='label'>-->
+									<b:loop index='tags' values='data:labels where (l => l.name not in ["APK™","BCA™","BCT™","BGDĐT™","BGTVT™","BKHĐT™","BKHCN™","BLĐTBXH™","BNG™","BNV™","BNNPTNT™","BQP™","BTC™","BTNMT™","BTTTT™","BTP™","BVHTTDL™","BXD™","BYT™","NHNN™","TTCP™","UBDT™","VPCP™","QH™","CTN™","CP™","TTCP™"] )' var='label'>
+                    <!--[ Only show 8 label ]-->
+                    <b:if cond='data:tags &lt;= 7'>
+                      <div class='labelSize'>
+                        <b:class expr:name='&quot;labelSize-&quot; + data:label.cssSize'/>
+                        <b:tag class='labelName' expr:name='data:blog.url != data:label.url ? &quot;a&quot; : &quot;div&quot;'>
+                          <b:attr cond='data:blog.url != data:label.url' expr:value='data:label.url' name='href'/>
+                          <b:attr cond='data:blog.url != data:label.url' expr:value='data:label.name' name='aria-label'/>
+                          <span class='labelTitle'><data:label.name/></span>
+                          <b:tag class='labelCount' cond='data:this.showFreqNumbers' expr:data-text='&quot;(&quot; + data:label.count + &quot;)&quot;' name='span'/>
+                        </b:tag>
+                      </div>
+                    </b:if>
+                    <!--[ Hide another label from 9th list ]-->
+                    <b:if cond='data:tags == 8'>
+                      <div class='labelShow'>
+                        <input class='labelInput hidden' id='offall-label3' type='checkbox'/>
+                        <div class='labelAll'>
+                          <!--<b:loop index='alltags' values='data:labels' var='label'>-->
+													
+													<b:loop index='alltags' values='data:labels where (l => l.name not in ["APK™","BCA™","BCT™","BGDĐT™","BGTVT™","BKHĐT™","BKHCN™","BLĐTBXH™","BNG™","BNV™","BNNPTNT™","BQP™","BTC™","BTNMT™","BTTTT™","BTP™","BVHTTDL™","BXD™","BYT™","NHNN™","TTCP™","UBDT™","VPCP™","QH™","CTN™","CP™","TTCP™"])' var='label'>
+                            <!--[ Show label from 9th list ]-->
+                            <b:if cond='data:alltags &gt;= 8'>
+                              <div class='labelSize'>
+                                <b:class expr:name='&quot;labelSize-&quot; + data:label.cssSize'/>
+                                <b:tag class='labelName' expr:name='data:blog.url != data:label.url ? &quot;a&quot; : &quot;div&quot;'>
+                                  <b:attr cond='data:blog.url != data:label.url' expr:value='data:label.url' name='href'/>
+                                  <b:attr cond='data:blog.url != data:label.url' expr:value='data:label.name' name='aria-label'/>
+                                  <span class='labelTitle'><data:label.name/></span>
+                                  <b:tag class='labelCount' cond='data:this.showFreqNumbers' expr:data-text='&quot;(&quot; + data:label.count + &quot;)&quot;' name='span'/>
+                                </b:tag>
+                              </div>
+                            </b:if>
+                          </b:loop>
+                        </div>
+                        <label aria-label='Show label' class='label-more' expr:data-hide='data:messages.showLess' expr:data-show='data:messages.showMore' expr:data-text='&quot;+&quot; + (data:labels count (l => l.name not in ["APK™","BCA™","BCT™","BGDĐT™","BGTVT™","BKHĐT™","BKHCN™","BLĐTBXH™","BNG™","BNV™","BNNPTNT™","BQP™","BTC™","BTNMT™","BTTTT™","BTP™","BVHTTDL™","BXD™","BYT™","NHNN™","TTCP™","UBDT™","VPCP™","QH™","CTN™","CP™","TTCP™"]) - 8)' for='offall-label3'/>
                       </div>
                     </b:if>
                   </b:loop>
@@ -3656,8 +3842,8 @@ error: &quot;<a class='jsLoad error' expr:data-text='data:messages.moreEllipsis'
                 <b:includable id='list'>
                   <ul>
                     <b:loop index='tags' values='data:labels' var='label'>
-                      <!--[ Only show 4 label ]-->
-                      <b:if cond='data:tags &lt;= 3'>
+                      <!--[ Only show 8 label ]-->
+                      <b:if cond='data:tags &lt;= 7'>
                         <li>
                           <b:tag class='labelName' expr:name='data:blog.url != data:label.url ? &quot;a&quot; : &quot;div&quot;'>
                             <b:attr cond='data:blog.url != data:label.url' expr:value='data:label.url' name='href'/>
@@ -3668,15 +3854,15 @@ error: &quot;<a class='jsLoad error' expr:data-text='data:messages.moreEllipsis'
                           </b:tag>
                         </li>
                       </b:if>
-                      <!--[ Hide another label from 5th list ]-->
-                      <b:if cond='data:tags == 4'>
+                      <!--[ Hide another label from 9th list ]-->
+                      <b:if cond='data:tags == 8'>
                         <li class='labelShow'>
-                          <input class='labelInput hidden' id='offall-label2' type='checkbox'/>
+                          <input class='labelInput hidden' id='offall-label4' type='checkbox'/>
                           <div class='labelAll'>
                             <ul>
                               <b:loop index='alltags' values='data:labels' var='label'>
-                                <!--[ Show label from 5th list ]-->
-                                <b:if cond='data:alltags &gt;= 4'>
+                                <!--[ Show label from 9th list ]-->
+                                <b:if cond='data:alltags &gt;= 8'>
                                   <li>
                                     <b:tag class='labelName' expr:name='data:blog.url != data:label.url ? &quot;a&quot; : &quot;div&quot;'>
                                       <b:attr cond='data:blog.url != data:label.url' expr:value='data:label.url' name='href'/>
@@ -3690,7 +3876,7 @@ error: &quot;<a class='jsLoad error' expr:data-text='data:messages.moreEllipsis'
                               </b:loop>
                             </ul>
                           </div>
-                          <label aria-label='Show label' class='label-more' expr:data-hide='data:messages.showLess' expr:data-show='data:messages.showMore' expr:data-text='&quot;+&quot; + (data:labels.length - 4)' for='offall-label2' role='button'/>
+                          <label aria-label='Show label' class='label-more' expr:data-hide='data:messages.showLess' expr:data-show='data:messages.showMore' expr:data-text='&quot;+&quot; + (data:labels.length - 8)' for='offall-label4' role='button'/>
                         </li>
                       </b:if>
                     </b:loop>
@@ -3698,6 +3884,7 @@ error: &quot;<a class='jsLoad error' expr:data-text='data:messages.moreEllipsis'
                 </b:includable>
               </b:widget>
               
+							
 							
 							<b:widget cond='!data:view.isPreview' id='HTML00' locked='false' title='Sticky Ads' type='HTML' version='2' visible='true'>
                 <b:widget-settings>
