@@ -2161,22 +2161,6 @@ body#layout #HTML003 .widget-content, body#layout #HTML005 .widget-content, body
                     </b:tag>
                   </section>
                   
-                  
-									<b:if cond='data:view.isPost and data:blog.isMobileRequest'>
-										<!--[ Sticky ad ]-->
-										<input class='stickAdin hidden' id='stickAdin' type='checkbox'/>
-										<div class='stickAd'>
-											<label class='stickAdclose' for='stickAdin'>
-												<svg class='line' viewBox='0 0 24 24'><use href='#icoClose'/></svg>
-											</label>
-											<div class='stickAdcontent'>
-												<ins class='adsbygoogle' data-ad-client='ca-pub-5631570205646916' data-ad-format='horizontal' data-ad-slot='0000000000' data-full-width-responsive='false' style='display:block;text-align:center'/>
-												<!--script>(adsbygoogle = window.adsbygoogle || []).push({});</script-->
-											</div>
-										</div>
-									</b:if>
-									
-									
 									<b:if cond='data:post.allowComments'>
                     <!--[ Comment button ]-->
                     <label class='commentBallon' for='forshow-comment'>
@@ -2583,6 +2567,7 @@ body#layout #HTML003 .widget-content, body#layout #HTML005 .widget-content, body
 				</div>
         
         <!--[ Footer section ]-->
+				<input class="stickAdin hidden" id="stickAdin" type="checkbox" checked="checked"/>
         <footer>
           <div class='sectionInner'>
             
@@ -2727,7 +2712,18 @@ body#layout #HTML003 .widget-content, body#layout #HTML005 .widget-content, body
           </div>
         </footer>
         
-        
+        <b:if cond='data:view.isPost and data:blog.isMobileRequest'>
+					<!--[ Sticky ad ]-->
+					<div class='stickAd'>
+						<label class='stickAdclose' for='stickAdin'>
+							<svg class='line' viewBox='0 0 24 24'><use href='#icoClose'/></svg>
+						</label>
+						<div class='stickAdcontent'>
+							<ins class='adsbygoogle' data-ad-client='ca-pub-5631570205646916' data-ad-format='horizontal' data-ad-slot='0000000000' data-full-width-responsive='false' style='display:block;text-align:center'/>
+							<!--script>(adsbygoogle = window.adsbygoogle || []).push({});</script-->
+						</div>
+					</div>
+				</b:if>
         
       <b:else/>
         <!--[ Error pages ]-->
