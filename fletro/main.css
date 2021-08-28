@@ -1,20 +1,3 @@
-
-
-/* Font Body */
-@font-face{font-family: 'Noto Sans';font-style: italic;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/notosans/v11/o-0OIpQlx3QUlC5A4PNr4ARMQ_m87A.woff2) format('woff2'), url(https://fonts.gstatic.com/s/notosans/v11/o-0OIpQlx3QUlC5A4PNr4DRG.woff) format('woff')}
-@font-face{font-family: 'Noto Sans';font-style: italic;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/notosans/v11/o-0TIpQlx3QUlC5A4PNr4Az5ZuyDzW0.woff2) format('woff2'), url(https://fonts.gstatic.com/s/notosans/v11/o-0TIpQlx3QUlC5A4PNr4Az5ZtyH.woff) format('woff')}
-@font-face{font-family: 'Noto Sans';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/notosans/v11/o-0IIpQlx3QUlC5A4PNr5TRA.woff2) format('woff2'), url(https://fonts.gstatic.com/s/notosans/v11/o-0IIpQlx3QUlC5A4PNb4Q.woff) format('woff')}
-@font-face{font-family: 'Noto Sans';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/notosans/v11/o-0NIpQlx3QUlC5A4PNjXhFVZNyB.woff2) format('woff2'), url(https://fonts.gstatic.com/s/notosans/v11/o-0NIpQlx3QUlC5A4PNjXhFlYA.woff) format('woff')}
-
-/* Font Heading */
-@font-face {font-family: 'Poppins';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v13/pxiByp8kv8JHgFVrLCz7V1g.woff) format('woff'), url(https://fonts.gstatic.com/s/poppins/v13/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2) format('woff2')}
-@font-face {font-family: 'Poppins';font-style: italic;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v15/pxiDyp8kv8JHgFVrJJLmy15lEw.woff) format('woff'), url(https://fonts.gstatic.com/s/poppins/v15/pxiDyp8kv8JHgFVrJJLmy15VF9eO.woff2) format('woff2')}
-@font-face {font-family: 'Poppins';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLEj6V1g.woff) format('woff'), url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2) format('woff2')}
-@font-face {font-family: 'Poppins';font-style: italic;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v15/pxiDyp8kv8JHgFVrJJLmr19lEw.woff) format('woff'), url(https://fonts.gstatic.com/s/poppins/v15/pxiDyp8kv8JHgFVrJJLmr19VF9eO.woff2) format('woff2')}
-
-/* Source Code Font */
-@font-face {font-family: 'Fira Mono';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/firamono/v9/N0bX2SlFPv1weGeLZDtQIg.woff) format('woff'), url(https://fonts.gstatic.com/s/firamono/v9/N0bX2SlFPv1weGeLZDtgJv7S.woff2) format('woff2')}
-
 /* Standar CSS */
 *,:after,:before{-webkit-box-sizing:border-box;box-sizing:border-box}
 h1, h2, h3, h4, h5, h6{margin:0;font-weight:700;font-family:var(--font-head);color:var(--head-color)} h1{font-size:1.8rem} h2{font-size:1.7rem} h3{font-size:1.5rem} h4{font-size:1.3rem} h5{font-size:1.2rem} h6{font-size:1.1rem}
@@ -755,8 +738,8 @@ footer .toTop svg{stroke:var(--foot-icon);margin-left:5px}
 .stickAdin:checked ~ .stickAd .stickAdcontent{display:none}
 .darkMode .stickAd{background-color:var(--dark-bgAlt)}
 
-.stickAdin:checked ~ footer{margin-bottom:0}
-.stickAdin:not(:checked) ~ footer{margin-bottom:4rem}
+.stickAdin:checked ~ footer, .stickAdin:checked ~ .commentBallon, .stickAdin:checked ~ .toTopBallon{margin-bottom:0}
+.stickAdin:not(:checked) ~ footer, .stickAdin:not(:checked) ~ .commentBallon, .stickAdin:not(:checked) ~ .toTopBallon{margin-bottom:4rem}
 
 /* Button and Icon */
 .button{display:inline-flex;align-items:center;margin:15px 15px 15px 0;padding:10px 20px;outline:0;border:0;border-radius:2px;color:#fefefe;background-color:var(--link-bgColor);font-size:14px;font-family:var(--font-body);white-space:nowrap;overflow:hidden;max-width:100%}
@@ -1053,7 +1036,6 @@ footer .toTop svg{stroke:var(--foot-icon);margin-left:5px}
 	footer .footerContent > *:first-child,
 	footer .footerContent > *:last-child {width:100%}
 	
-
 }
 
 /* Dark More */
@@ -1154,3 +1136,44 @@ background: linear-gradient(to right, #f857a6, #ff5858)!important;
 
 
 
+
+			
+		 svg.blog-admin{fill:none !important; display:none}
+		 svg.pid-1821385306{fill:red !important; display:block}
+		 svg.pid-2085183289{fill:green !important; display:block}
+
+
+
+
+.headerTitle::first-letter{background:rgb(80, 103, 197);color:#fff;padding:0 5px;border-radius:4px;letter-spacing:normal;top:-5px;margin-right:3px}
+
+ins.adsbygoogle[data-ad-status="unfilled"] {
+	/*display: none !important;*/
+}
+
+.dropDown svg{margin-right:10px}
+
+
+a.blog-admin.comment-delete{position:absolute;right:0;top:0;border-radius: 0 0 0 15px;background: var(--content-bg);}
+.darkMode a.blog-admin.comment-delete{background: var(--dark-bgAlt);}
+
+
+.disabled-link {
+  pointer-events: none;
+}
+
+.commentBlock.line-through{
+	text-decoration:line-through;
+}
+
+.commentReplies.line-through .commentContent{
+	text-decoration:line-through;
+}
+
+
+a.zalo-share-button{
+	cursor: alias;
+}
+.shareIcon.shareButton{
+	cursor: pointer;
+}

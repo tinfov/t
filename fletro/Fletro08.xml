@@ -10,7 +10,7 @@
 <b:with value='["blog","Blog","bLog","blOg","bloG","BLog","BlOg","BloG","bLOg","bLoG","blOG","BLOg","BLoG","BlOG","bLOG","BLOG"]' var='defBlogType'>                
 <b:with value='["ads","Ads","aDs","adS","ADs","AdS","aDS","ADS"]' var='defAdsType'>
 
-	<head>
+<head>
 											
   <b:defaultmarkups>
     <!--[ Blogger defaultmarkups ]-->
@@ -385,6 +385,9 @@ error: &quot;<a class='jsLoad error' expr:data-text='data:messages.moreEllipsis'
   <meta charset='UTF-8'/>
   <meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/>
   <meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin='true'/>
 
   <b:if cond='!data:view.isError'>
     <!--[ Browser data, description and keyword ]-->
@@ -498,7 +501,10 @@ body#layout #HTML003 .widget-content, body#layout #HTML005 .widget-content, body
 ]]></b:template-skin>
   </b:if>
 
-  <!--[ CSS stylesheet ]-->
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&amp;family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;family=Poppins:ital,wght@0,400;0,600;1,400;1,600&amp;display=swap" rel="stylesheet"/> 
+
+	
+	<!--[ CSS stylesheet ]-->
   &lt;style&gt;&lt;!-- /* <b:skin version='1.3.0'><![CDATA[
 /*
 <Group description="Theme Color">
@@ -589,6 +595,7 @@ body#layout #HTML003 .widget-content, body#layout #HTML005 .widget-content, body
 </Group>
 */
 
+
 /* Variable color */
 :root{
 --head-color: $(head.color) ;
@@ -658,58 +665,11 @@ body#layout #HTML003 .widget-content, body#layout #HTML005 .widget-content, body
 
 
 
-
-
-
 ]]></b:skin>
-    
-	   <!--<link rel="stylesheet" href="https://d.t.info.vn/fletro/main.css"/>-->
+
+
+
 		
-		<style>
-			
-		 svg.blog-admin{fill:none !important; display:none}
-		 svg.pid-1821385306{fill:red !important; display:block}
-		 svg.pid-2085183289{fill:green !important; display:block}
-
-
-
-
-.headerTitle::first-letter{background:rgb(80, 103, 197);color:#fff;padding:0 5px;border-radius:4px;letter-spacing:normal;top:-5px;margin-right:3px}
-
-ins.adsbygoogle[data-ad-status="unfilled"] {
-	/*display: none !important;*/
-}
-
-.dropDown svg{margin-right:10px}
-
-
-a.blog-admin.comment-delete{position:absolute;right:0;top:0;border-radius: 0 0 0 15px;background: var(--content-bg);}
-.darkMode a.blog-admin.comment-delete{background: var(--dark-bgAlt);}
-
-
-.disabled-link {
-  pointer-events: none;
-}
-
-.commentBlock.line-through{
-	text-decoration:line-through;
-}
-
-.commentReplies.line-through .commentContent{
-	text-decoration:line-through;
-}
-
-
-a.zalo-share-button{
-	cursor: alias;
-}
-.shareIcon.shareButton{
-	cursor: pointer;
-}
-
-
-		</style>
-			
   <b:if cond='data:view.isPost'>
     <style>@media screen and (max-width:480px){.relatedPosts .itemTitle:after{content:&#39;<data:blog.title/>&#39;}} article .tocInner .tocTitle:after, article .spoilerInput:checked + .spoilerTitle label:before{content:&#39;<data:messages.showLess/>&#39;} article .tocInner .tocInput:checked ~ .tocTitle:after, article .spoilerTitle label::before, article .buttonImage label:before{content:&#39;<data:messages.showAll/>&#39;}</style>
   </b:if> 
@@ -724,7 +684,7 @@ a.zalo-share-button{
     <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag(&#39;js&#39;, new Date()); gtag(&#39;config&#39;, &#39;<data:blog.analyticsAccountNumber/>&#39;);</script>
   </b:if>
 				
-	</head>
+</head>
 
   <body class='gridLayout' id='mainContent'>
     <b:class cond='data:view.isMultipleItems' name='onIndex'/>
@@ -735,6 +695,7 @@ a.zalo-share-button{
     <b:class cond='data:view.isPost' name='onPost'/>
     <b:class cond='data:view.isError' name='error404'/>
     
+		<link href="https://d.t.info.vn/fletro/main.css" rel="stylesheet"/> 
 		
     <b:if cond='!data:view.isError'>
       <script>/*<![CDATA[*/ (localStorage.getItem('mode')) === 'darkmode' ? document.querySelector('#mainContent').classList.add('darkMode') : document.querySelector('#mainContent').classList.remove('darkMode') /*]]>*/</script>
@@ -744,7 +705,7 @@ a.zalo-share-button{
       <input class='searchInput hidden' id='offsearch-box' type='checkbox'/>
       <input class='setInput hidden' id='offsetting-box' type='checkbox'/>
       <input class='navInput hidden' id='offnav-input' type='checkbox'/>
-			
+			<input class='stickAdin hidden' id='stickAdin' type='checkbox'/>
     </b:if>
     
     <div class='mainWrapper'>
@@ -2608,7 +2569,7 @@ a.zalo-share-button{
         
 				<b:if cond='data:view.isPost and data:blog.isMobileRequest'>
           <!--[ Sticky ad ]-->
-					<input class='stickAdin hidden' id='stickAdin' type='checkbox'/>
+					
           <div class='stickAd'>
             <label class='stickAdclose' for='stickAdin'>
               <svg class='line' viewBox='0 0 24 24'><use href='#icoClose'/></svg>
