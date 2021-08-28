@@ -500,9 +500,6 @@ body#layout #HTML003 .widget-content, body#layout #HTML005 .widget-content, body
 
 ]]></b:template-skin>
   </b:if>
-
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&amp;family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;family=Poppins:ital,wght@0,400;0,600;1,400;1,600&amp;display=swap" rel="stylesheet"/> 
-
 	
 	<!--[ CSS stylesheet ]-->
   &lt;style&gt;&lt;!-- /* <b:skin version='1.3.0'><![CDATA[
@@ -667,7 +664,9 @@ body#layout #HTML003 .widget-content, body#layout #HTML005 .widget-content, body
 
 ]]></b:skin>
 
-
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Mono&amp;family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;family=Poppins:ital,wght@0,400;0,600;1,400;1,600&amp;display=swap" rel="stylesheet"/>
+	
+	<link href="https://d.t.info.vn/fletro/main.css" rel="stylesheet"/> 
 
 		
   <b:if cond='data:view.isPost'>
@@ -695,7 +694,7 @@ body#layout #HTML003 .widget-content, body#layout #HTML005 .widget-content, body
     <b:class cond='data:view.isPost' name='onPost'/>
     <b:class cond='data:view.isError' name='error404'/>
     
-		<link href="https://d.t.info.vn/fletro/main.css" rel="stylesheet"/> 
+		
 		
     <b:if cond='!data:view.isError'>
       <script>/*<![CDATA[*/ (localStorage.getItem('mode')) === 'darkmode' ? document.querySelector('#mainContent').classList.add('darkMode') : document.querySelector('#mainContent').classList.remove('darkMode') /*]]>*/</script>
@@ -705,7 +704,7 @@ body#layout #HTML003 .widget-content, body#layout #HTML005 .widget-content, body
       <input class='searchInput hidden' id='offsearch-box' type='checkbox'/>
       <input class='setInput hidden' id='offsetting-box' type='checkbox'/>
       <input class='navInput hidden' id='offnav-input' type='checkbox'/>
-			<input class='stickAdin hidden' id='stickAdin' type='checkbox'/>
+			
     </b:if>
     
     <div class='mainWrapper'>
@@ -2162,7 +2161,23 @@ body#layout #HTML003 .widget-content, body#layout #HTML005 .widget-content, body
                     </b:tag>
                   </section>
                   
-                  <b:if cond='data:post.allowComments'>
+                  
+									<b:if cond='data:view.isPost and data:blog.isMobileRequest'>
+										<!--[ Sticky ad ]-->
+										<input class='stickAdin hidden' id='stickAdin' type='checkbox'/>
+										<div class='stickAd'>
+											<label class='stickAdclose' for='stickAdin'>
+												<svg class='line' viewBox='0 0 24 24'><use href='#icoClose'/></svg>
+											</label>
+											<div class='stickAdcontent'>
+												<ins class='adsbygoogle' data-ad-client='ca-pub-5631570205646916' data-ad-format='horizontal' data-ad-slot='0000000000' data-full-width-responsive='false' style='display:block;text-align:center'/>
+												<!--script>(adsbygoogle = window.adsbygoogle || []).push({});</script-->
+											</div>
+										</div>
+									</b:if>
+									
+									
+									<b:if cond='data:post.allowComments'>
                     <!--[ Comment button ]-->
                     <label class='commentBallon' for='forshow-comment'>
 											<svg class='svg-1' viewBox='0 0 32 32'><use href='#icoCommentBallon'/></svg>
@@ -2567,20 +2582,6 @@ body#layout #HTML003 .widget-content, body#layout #HTML005 .widget-content, body
         
 				</div>
         
-				<b:if cond='data:view.isPost and data:blog.isMobileRequest'>
-          <!--[ Sticky ad ]-->
-					
-          <div class='stickAd'>
-            <label class='stickAdclose' for='stickAdin'>
-              <svg class='line' viewBox='0 0 24 24'><use href='#icoClose'/></svg>
-            </label>
-            <div class='stickAdcontent'>
-              <ins class='adsbygoogle' data-ad-client='ca-pub-5631570205646916' data-ad-format='horizontal' data-ad-slot='0000000000' data-full-width-responsive='false' style='display:block;text-align:center'/>
-              <!--script>(adsbygoogle = window.adsbygoogle || []).push({});</script-->
-            </div>
-          </div>
-        </b:if>
-				
         <!--[ Footer section ]-->
         <footer>
           <div class='sectionInner'>

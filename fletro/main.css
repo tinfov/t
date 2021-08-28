@@ -739,7 +739,7 @@ footer .toTop svg{stroke:var(--foot-icon);margin-left:5px}
 .darkMode .stickAd{background-color:var(--dark-bgAlt)}
 
 .stickAdin:checked ~ footer, .stickAdin:checked ~ .commentBallon, .stickAdin:checked ~ .toTopBallon{margin-bottom:0}
-.stickAdin:not(:checked) ~ footer, .stickAdin:not(:checked) ~ .commentBallon, .stickAdin:not(:checked) ~ .toTopBallon{margin-bottom:4rem}
+.stickAdin:not(:checked) ~ footer, .stickAdin:not(:checked) ~ .commentBallon, .stickAdin:not(:checked) ~ .toTopBallon{margin-bottom:5rem}
 
 /* Button and Icon */
 .button{display:inline-flex;align-items:center;margin:15px 15px 15px 0;padding:10px 20px;outline:0;border:0;border-radius:2px;color:#fefefe;background-color:var(--link-bgColor);font-size:14px;font-family:var(--font-body);white-space:nowrap;overflow:hidden;max-width:100%}
