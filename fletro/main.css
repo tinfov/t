@@ -355,7 +355,7 @@ article .tabsHead > *:after{content:'';display:block;width:100%;height:2px;backg
 #headerTags .tabsHead > *:after{content:'';display:block;width:100%;height:2px;background-color:var(--body-bgColor);position:absolute;left:0;bottom:-1px;visibility:hidden;opacity:0}
 article .tabsContent, #headerTags .tabsContent{position:relative}
 article .tabsContent > *{display:none;width:100%}
-#headerTags .tabsContent > *{display:none;width:100%}
+#headerTags .tabsContent > *{display:none;margin:0 5%;}
 article .tabsContent > * p:first-child{margin-top:0}
 article .postBody input[id*="1"]:checked ~ .postTabs label[for*="1"]:after, 
 article .postBody input[id*="2"]:checked ~ .postTabs label[for*="2"]:after,

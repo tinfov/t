@@ -10,6 +10,8 @@
 <b:with value='["blog","Blog","bLog","blOg","bloG","BLog","BlOg","BloG","bLOg","bLoG","blOG","BLOg","BLoG","BlOG","bLOG","BLOG"]' var='defBlogType'>                
 <b:with value='["ads","Ads","aDs","adS","ADs","AdS","aDS","ADS"]' var='defAdsType'>
 
+
+
 <head>
 											
   <b:defaultmarkups>
@@ -243,10 +245,8 @@ var randomRelatedIndex, showRelatedPost;
         <div class='postHeader ads'>
 					<svg class='line' viewBox='0 0 24 24'><use href='#icoSponsored'/></svg>
           <div class='postLabel'>
-            <b:loop index='s' values='data:post.labels' var='label'>
-              <b:if cond='data:s == 0'>
-                <b:tag expr:data-text='data:label.name' name='span'/>
-              </b:if>
+            <b:loop values='data:post.labels first (l => (l.name not in data:defSource) and (l.name not in data:defAdsType))' var='label'>
+							<b:tag expr:data-text='data:label.name' name='span'/>
             </b:loop>
           </div>
         </div>
@@ -694,8 +694,6 @@ body#layout #HTML003 .widget-content, body#layout #HTML005 .widget-content, body
     <b:class cond='data:view.isPost' name='onPost'/>
     <b:class cond='data:view.isError' name='error404'/>
     
-		
-		
     <b:if cond='!data:view.isError'>
       <script>/*<![CDATA[*/ (localStorage.getItem('mode')) === 'darkmode' ? document.querySelector('#mainContent').classList.add('darkMode') : document.querySelector('#mainContent').classList.remove('darkMode') /*]]>*/</script>
       
@@ -1801,7 +1799,7 @@ body#layout #HTML003 .widget-content, body#layout #HTML005 .widget-content, body
 											
 											<!-- Chia se Zalo -->
                       <div class='shareIcon zalo'>
-                        <a class='zalo-share-button' aria-label='Share to Zalo' expr:data-href='data:post.canonicalUrl' rel='nofollow noreferrer' role='button' target='_blank' title='Share to Zalo' data-oaid="579745863508352884" data-layout="1" data-color="white" data-customize="true">
+                        <a class='zalo-share-button' aria-label='Share to Zalo' expr:data-href='data:post.canonicalUrl' rel='nofollow noreferrer' role='button' target='_blank' title='Share to Zalo' data-oaid="3955538831635477814" data-layout="1" data-color="white" data-customize="true">
                           <svg viewBox='0 0 50 50'><use href='#icoZalo'/></svg>
 												</a>
                       </div>
@@ -1828,10 +1826,8 @@ body#layout #HTML003 .widget-content, body#layout #HTML005 .widget-content, body
                                 <div class='previewTitle' expr:data-text='data:post.title'/>
                                 <div class='previewLabel'>
                                   <b:if cond='data:widgets.Blog.first.allBylineItems.labels'>
-                                    <b:loop index='i' values='data:post.labels' var='label'>
-                                      <b:if cond='data:i == 0'>
-                                        <b:tag expr:data-text='&quot;#&quot; + data:label.name' name='span'/>
-                                      </b:if>
+                                    <b:loop values='data:post.labels first (l => (l.name not in data:defSource) and (l.name not in data:defAdsType))' var='label'>
+																			<b:tag expr:data-text='&quot;#&quot; + data:label.name' name='span'/>
                                     </b:loop>
                                   </b:if>
                                 </div>
@@ -2212,7 +2208,7 @@ body#layout #HTML003 .widget-content, body#layout #HTML005 .widget-content, body
 									
 									<data:profile.type/>
 									
-										<b:loop values='data:profile.authors'  var='author'>
+										<b:loop values='data:profile.super.authors'  var='author'>
 										
 											a
 											<data:author.userUrl/>
@@ -2312,7 +2308,7 @@ body#layout #HTML003 .widget-content, body#layout #HTML005 .widget-content, body
 											<b:else/>
 												<li>
 													<div class='teamMember'>
-														<b:include data='author' name='teamProfileImg'/>
+														<b:include data='author' name='teamProfileLink'/>
 													</div>
 												</li>
 											</b:if>
@@ -2334,6 +2330,14 @@ body#layout #HTML003 .widget-content, body#layout #HTML005 .widget-content, body
                     <div class='toolTips'><data:display-name/></div>
                   </div>
                 </b:includable>
+								
+								<b:includable id='teamProfileLink'>
+                  <a class='profileLink' expr:href='data:userUrl' expr:title='data:display-name' rel='nofollow noreferrer' target='_blank'>
+                    <div class='profileImage'><b:include name='profileImage'/></div>
+                    <div class='profileName'><data:display-name/></div>
+                  </a>
+                </b:includable>
+								
                 <b:includable id='teamProfileMember'>
                   <div class='profileLink'>
                     <div class='profileImage'><b:include name='profileImage'/></div>
@@ -2567,10 +2571,12 @@ body#layout #HTML003 .widget-content, body#layout #HTML005 .widget-content, body
 				</div>
         
         <!--[ Footer section ]-->
-				<input class="stickAdin hidden" id="stickAdin" type="checkbox" checked="checked"/>
+				<input class="stickAdin hidden" id="stickAdin" type="checkbox">
+					<b:attr cond='data:view.isPost and data:blog.isMobileRequest' name='checked' value='checked'/>
+				</input>
+				
         <footer>
           <div class='sectionInner'>
-            
             <!--[ Footer content ]-->
             <div class='footerContent'>
               <div class="section">
@@ -2595,7 +2601,7 @@ body#layout #HTML003 .widget-content, body#layout #HTML005 .widget-content, body
 											<div class="fb-like" data-href="https://www.facebook.com/anphukhang.com.vn" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="false"></div>
 										</li>
 										<li>
-											<div class="link zalo-follow-only-button" data-oaid="579745863508352884"/>
+											<div class="link zalo-follow-only-button" data-oaid="3955538831635477814"/>
 										</li>
 									</ul>
 								</div>
@@ -2766,4 +2772,5 @@ body#layout #HTML003 .widget-content, body#layout #HTML005 .widget-content, body
 	</body>
 
 </b:with></b:with></b:with>
+
 </html>
