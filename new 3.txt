@@ -1,0 +1,56 @@
+<b:includable id='snippetedPostsV2'>
+									<!-- Don't render the post that TOP. -->
+									<b:loop values='data:widgets.PopularPosts filter (w => w.sectionId == &quot;largeContent&quot;)' var='popularPosts'>
+										<b:with value='data:popularPosts.posts map (p => p.id)'  var='popularPostIds'>
+										<b:with value='data:posts filter (post => post.id not in data:popularPostIds)' var='posts'>
+										
+											<div class='itemPopulars' role='feed'>
+												<!-- Don't render the post that we're currently already looking at. -->
+												<b:loop index='i' values='data:posts filter (p => p.id != data:view.postId)' var='post'>
+													<article class='itemPopular'>
+														<b:class cond='data:this.postDisplay.showFeaturedImage and !data:post.featuredImage' name='noThumbnail'/>
+														<b:class cond='!data:this.postDisplay.showFeaturedImage' name='noImage'/>
+														<b:class cond='data:i == 0 and data:this.postDisplay.showFeaturedImage and data:post.featuredImage' name='mostPopular'/>
+														<b:include name='snippetedPostContent'/>
+													</article>
+												</b:loop>
+											</div>
+										
+										</b:with>
+										</b:with>
+									</b:loop>
+                </b:includable>
+								
+								
+								
+								
+								
+								<b:widget id='LinkList0' locked='true' title='AUTHOR BLOG' type='LinkList' version='2' visible='true'>
+                    <b:widget-settings>
+                      <b:widget-setting name='link-3'>https://www.youtube.com/anphukhang/</b:widget-setting>
+                      <b:widget-setting name='sorting'>NONE</b:widget-setting>
+                      <b:widget-setting name='link-4'>https://www.linkedin.com/in/anphukhang/</b:widget-setting>
+                      <b:widget-setting name='text-1'>Instagram</b:widget-setting>
+                      <b:widget-setting name='link-1'>https://www.instagram.com/anphukhang</b:widget-setting>
+                      <b:widget-setting name='text-0'>Facebook</b:widget-setting>
+                      <b:widget-setting name='link-2'>https://www.twitter.com/AnPhuKhangVN</b:widget-setting>
+                      <b:widget-setting name='text-3'>Youtube</b:widget-setting>
+                      <b:widget-setting name='link-0'>https://www.facebook.com/anphukhang.com.vn</b:widget-setting>
+                      <b:widget-setting name='text-2'>Twitter</b:widget-setting>
+                      <b:widget-setting name='text-4'>Linkedin</b:widget-setting>
+                    </b:widget-settings>
+                    <b:includable id='main'>
+                      <b:include name='content'/>
+                    </b:includable>
+                    <b:includable id='content'>                    
+                      <ul>                      
+                        <b:loop values='data:links' var='link'>
+                          <li>
+                            <a class='link' expr:aria-label='data:link.name' expr:href='data:link.target' target='_blank'>
+															<svg class='c-1' viewBox='0 0 32 32'><use expr:href='"#ico" + data:link.name'/></svg>
+                            </a>
+                          </li>
+                        </b:loop>
+                      </ul>
+                    </b:includable>
+                  </b:widget>

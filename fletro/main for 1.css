@@ -1,3 +1,4 @@
+
 /* Standar CSS */
 *,:after,:before{-webkit-box-sizing:border-box;box-sizing:border-box}
 h1, h2, h3, h4, h5, h6{margin:0;font-weight:700;font-family:var(--font-head);color:var(--head-color)} h1{font-size:1.8rem} h2{font-size:1.7rem} h3{font-size:1.5rem} h4{font-size:1.3rem} h5{font-size:1.2rem} h6{font-size:1.1rem}
@@ -1143,9 +1144,10 @@ background: linear-gradient(to right, #f857a6, #ff5858)!important;
 
 
 			
-		 .blog-admin{display:none}
-		.pid-1821385306{fill:red !important; display:block}
-		 .pid-2085183289{fill:green !important; display:block}
+		 svg.blog-admin{fill:none !important; display:none}
+		 svg.pid-1821385306{fill:red !important; display:block}
+		 svg.pid-2085183289{fill:green !important; display:block}
+
 
 
 
@@ -1158,8 +1160,8 @@ ins.adsbygoogle[data-ad-status="unfilled"] {
 .dropDown svg{margin-right:10px}
 
 
-.commentReplies .commentThread a.comment-delete{position:absolute;right:0;top:0;border-radius: 0 0 0 15px;background: var(--content-bg);}
-.darkMode .commentReplies .commentThread a.comment-delete{background: var(--dark-bgAlt);}
+a.blog-admin.comment-delete{position:absolute;right:0;top:0;border-radius: 0 0 0 15px;background: var(--content-bg);}
+.darkMode a.blog-admin.comment-delete{background: var(--dark-bgAlt);}
 
 
 .disabled-link {
